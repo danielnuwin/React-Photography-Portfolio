@@ -1,0 +1,548 @@
+.slider1{
+	background-image: url("/src/assets/img/slider1.jpg");
+}
+.slider2{
+    background-image: url("/src/assets/img/slider2.jpg");
+}
+.slider3{
+    background-image: url("/src/assets/img/slider3.jpg");
+}
+.slider4{
+    background-image: url("/src/assets/img/slider4.jpg");
+}
+.slider5{
+    background-image: url("/src/assets/img/slider5.jpg");
+}
+.slider6{
+    background-image: url("/src/assets/img/slider6.jpg");
+}
+.slider7{
+    background-image: url("/src/assets/img/slider7.jpg");
+}
+
+/*----------------------------------------*/
+/*  Portfolio page CSS
+/*----------------------------------------*/
+.portfolio-filter {
+	list-style: none;
+}
+
+.portfolio-filter li {
+	display: inline-block;
+	margin-right: 40px;
+	font-size: 14px;
+	color: #222;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.portfolio-filter li.active {
+	text-decoration: underline;
+	-webkit-text-decoration-color: #2046f2;
+	        text-decoration-color: #2046f2;
+}
+
+.portfolio-warp {
+	display: block;
+	overflow: hidden;
+}
+
+.portfolio-warp .grid-item {
+	width: 20%;
+	background-position: center;
+}
+
+.portfolio-warp .grid-item:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.portfolio-warp .grid-item.grid-wide,
+.portfolio-warp .grid-item.grid-long {
+	width: 40%;
+}
+
+.portfolio-warp .grid-item a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(186, 255, 0, 0.45);
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.portfolio-warp .grid-item a:after {
+	position: absolute;
+	content: "+";
+	left: 50%;
+	top: 60%;
+	width: 48px;
+	margin-left: -24px;
+	margin-top: -24px;
+	color: #fff;
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-warp .grid-item:hover a {
+	opacity: 1;
+}
+
+.portfolio-warp .grid-item:hover a:after {
+	top: 50%;
+}
+
+.portfolio-warp .grid-sizer {
+	width: 20%;
+}
+
+/*----------------------------------------*/
+/* Carousel Intro CSS
+/*----------------------------------------*/  
+#carouselIntro .gradient {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  }
+
+#carouselIntro .view {
+    background-image: url('../images/slider1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  #carouselIntro .view2 {
+    background-image: url('../images/slider6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  .view3{
+    background-image: url('../images/slider7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  } 
+  .view4{
+    background-image: url('../images/slider4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+
+
+  /* Navbar CSS */
+  #navigation h6 {
+    line-height: 1.7;
+  }
+
+  #navigation strong {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  #navigation .navbar {
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+   
+  /* #navigation .brand {
+    color: black;
+  } */
+
+  #navigation .top-nav-collapse {
+    background: white !important;
+  }
+  #navigation .top-nav-collapse .brand{
+    /* color: white; */
+  }
+
+	/* Gallery Filter Project */
+	.colorBlackLink {
+		color: black;
+	}
+
+  /* #navigation {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+  }
+   */
+  .slideshow{
+    top:20px;
+  } 
+
+  #Template h1 {
+    margin-bottom: 1em;
+  }
+  
+  .center {
+    text-align: center;
+  }
+
+  /* Gallery Container View */
+  #GalleryContainer h1 {
+    margin-bottom: .4em;
+  }
+  /* Margin of Masonry Grid */
+  #GalleryContainer {
+		/* margin: 0.5em; */
+		margin-top: -3em;
+  }
+
+  /* TabFilter */
+  #Tab .TabList {
+    border: 'none';
+    margin: '1.5em'
+  }
+  #Tab .TabFilter {
+    cursor: "pointer";
+  }
+
+  .centerdiv {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .clearBorder {
+    border-bottom: none;
+  }
+
+  .nav-format{
+    padding-left: 24px;
+    color: black;
+  }
+
+  /* Button */
+
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	.button,
+	buttonMore {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out;
+		background-color: rgba(229, 230, 231, 0.375);
+		border: 0;
+		border-radius: 3.5em;
+		color: #ffffff;
+		cursor: pointer;
+		display: inline-block;
+		height: 3.5em;
+		line-height: 3.5em;
+		outline: 0;
+		padding: 0 2em 0 2em;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+	}
+
+		input[type="button"].down,
+		input[type="submit"].down,
+		input[type="reset"].down,
+		.button.down,
+		button.down {
+			width: 5em;
+			height: 5em;
+			line-height: 4.5em;
+			padding: 0;
+			background-image: url("../images/buttons/dark-arrow.svg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			text-indent: -10em;
+      overflow: hidden;
+      margin-bottom: 2em;
+		}
+
+			input[type="button"].down.anchored,
+			input[type="submit"].down.anchored,
+			input[type="reset"].down.anchored,
+			.button.down.anchored,
+			button.down.anchored {
+				bottom: 0;
+				border-bottom: 0;
+				border-radius: 3em 3em 0 0;
+				height: 4.5em;
+				margin-left: -2.5em;
+			}
+
+		input[type="button"].anchored,
+		input[type="submit"].anchored,
+		input[type="reset"].anchored,
+		.button.anchored,
+		button.anchored {
+			position: absolute;
+			left: 50%;
+		}
+
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		.button:hover,
+		button:hover {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
+
+		input[type="button"]:active,
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		.button:active,
+		button:active {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
+
+		input[type="button"].style2,
+		input[type="submit"].style2,
+		input[type="reset"].style2,
+		.button.style2,
+		button.style2 {
+			background-color: transparent;
+			border: solid 2px #f8f9fa;
+			color: inherit;
+		}
+
+			input[type="button"].style2:hover,
+			input[type="submit"].style2:hover,
+			input[type="reset"].style2:hover,
+			.button.style2:hover,
+			button.style2:hover {
+				background-color: rgba(229, 230, 231, 0.375);
+			}
+
+			input[type="button"].style2:active,
+			input[type="submit"].style2:active,
+			input[type="reset"].style2:active,
+			.button.style2:active,
+			button.style2:active {
+				background-color: rgba(229, 230, 231, 0.375);
+			}
+
+			/* input[type="button"].style2.down,
+			input[type="submit"].style2.down,
+			input[type="reset"].style2.down,
+			.button.style2.down,
+			button.style2.down {
+				background-image: url("../images/buttons/arrow.svg");
+			} */
+
+			/* HR Line Break */
+			/* #section2 {
+				margin-top: 3rem;
+				margin-bottom: 4rem;
+				border: 0;
+				width: 75em;
+				border-top: 1px solid rgba(0,0,0,.1);
+			} */
+
+			/* Project Header */
+			#headerbox {
+				margin: -6em 18em 3em 18em;
+			}
+			#headerbox .Card{
+				padding: 1.25rem;	
+			}
+			.headerbg{
+				height: 450px;
+			}
+
+
+/* ===========================
+  Responsive
+==============================*/
+@media only screen and (max-width: 1477px) {
+.view .imgFit{
+		height: 50vh !important;
+		width: 93vw !important;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	.view .imgFit{
+		height: 40vh !important;
+		width: 93vw !important;
+	}
+}
+
+/* Medium screen : 992px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	/* #headerbox {
+		margin: -7em 6em -3em 6em;
+	} */
+
+	.view .imgFit{
+		height: 35vh !important;
+		width: 93vw !important;
+	}
+}
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#navigation .navbar:not(.top-nav-collapse) {
+		background: white !important;
+	}
+	#navigation .brand {
+	/* color: whitesmoke; */
+	}
+	
+	#btngroup {
+		position: relative;
+		display: grid;
+		vertical-align: middle;
+	}
+	#headerbox {
+		margin: -7em 3em 5em 3em;
+	}
+
+	.view .imgFit{
+		height:38vh !important;
+		width: 93vw !important;
+		object-position: center !important;
+	}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+	
+	#headerbox {
+		margin: -7em 3em 5em 3em;
+	}
+	.headerbg{
+		height: 300px;
+	}
+	.headerTitle{
+		font-size: 2.5em !important;
+	}
+	.headerDate{
+		font-size: 1em !important;
+	}
+	.headerDesc{
+		font-size: 1em !important;
+	}
+	.display-3 {
+		font-size: 1.5em !important;
+		margin-top: 1em !important;
+	}
+	.subtext-header{
+		font-size: 1em !important;
+	}
+	/* All Project Card Size */
+	.view .imgFit{
+		height: 27em !important;
+    /* width: 32em !important; */
+		object-fit: cover !important;
+		object-position: center !important;
+	}
+	.section .project-margins{
+		margin: 1em !important;
+	}
+	.view .imgFit{
+		height:25vh !important;
+		width: 97vw !important;
+		object-position: center !important;
+	}
+
+	.project-margins {
+		margin: -3em 1em 1em 1em !important;
+	}
+	
+}
+
+/* small mobile :320px. */
+@media only screen and (max-width: 479px) {
+	.headerbg{
+		height: 250px;
+	}
+}
+
+
+/* ===========================
+  All Projects Cards
+==============================*/
+.collection-card .stripe{
+	position:absolute;
+	bottom:1rem;
+	width:100%;
+	text-align:center;
+	padding:1.2rem;
+}
+.collection-card .stripe.dark{
+	background-color: #263238 ;
+}
+.collection-card .stripe.dark a p{
+	color:#eee
+}
+.collection-card .stripe.light{
+	background-color:rgba(255,255,255,.7)
+}
+.collection-card .stripe.light a p{
+	color:#424242
+}
+.collection-card .stripe a p{
+	padding:0;
+	margin:0;
+	letter-spacing:.25rem
+}
+.card-margin{
+	margin-bottom: 2em !important;
+}
+.figureFit{
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.imgFit{
+	height: 60vh !important;
+	width: 93vw !important;
+	object-fit: cover !important;
+	object-position: center !important;
+}
+
+.project-margins{
+	margin: 3em;
+}
+
+/* For Responsive Gallery Info */
+.view .stripe{
+	position:absolute;
+	bottom:2rem;
+	width:100%;
+	text-align:center;
+	padding:1.2rem;
+}
+.view .stripe.dark{
+	background-color:rgb(64,64,64, .7)
+
+
+}
+.view .stripe.dark a p{
+	color:#eee
+}
+.view.stripe.light{
+	background-color:rgba(255,255,255,.7)
+}
+.view .stripe.light a p{
+	color:#424242
+}
+.view .stripe a p{
+	padding:0;
+	margin:0;
+	letter-spacing:.25rem
+}

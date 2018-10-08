@@ -1,5 +1,5 @@
-# React Photography Portfolio
-> This is my photography 
+# React Webpack Starter
+> This is a boilerplate for React 16 & Webpack 4. It includes webpack-dev-server and a build script
 
 ## Quick Start
 
@@ -18,7 +18,8 @@ npm run build
 
 ### Author
 
-Daniel Nguyen
+Brad Traversy
+[Traversy Media](http://www.traversymedia.com)
 
 ### Version
 
