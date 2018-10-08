@@ -1,13 +1,13 @@
 {
-  "name": "react_webpack_starter",
+  "name": "react_photography_portfolio",
   "version": "1.0.0",
-  "description": "Boilerplate for React apps",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --hisotry-api-fallback",
     "build": "webpack --mode production --hisotry-api-fallback"
   },
-  "author": "Brad Traversy",
+  "author": "Daniel Nguyen",
   "license": "MIT",
   "dependencies": {
     "animate.css": "^3.7.0",
@@ -15,7 +15,7 @@
     "classnames": "^2.2.6",
     "cors": "^2.8.4",
     "file-loader": "^1.1.11",
-    "jquery": "^1.9.1",
+    "jquery": "^1.12.4",
     "material-ui": "^0.20.2",
     "mdbreact": "^4.7.1",
     "muicss": "^0.9.41",
