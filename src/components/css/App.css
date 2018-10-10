@@ -116,28 +116,28 @@
   }
 
 #carouselIntro .view {
-    background-image: url('../images/slider1.jpg');
+    background-image: url('../../images/slider1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
   }
   #carouselIntro .view2 {
-    background-image: url('../images/slider6.jpg');
+    background-image: url('../../images/slider6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
   }
   .view3{
-    background-image: url('../images/slider7.jpg');
+    background-image: url('../../images/slider7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 100vh;
   } 
   .view4{
-    background-image: url('../images/slider4.jpg');
+    background-image: url('../../images/slider4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -199,16 +199,21 @@
   /* Margin of Masonry Grid */
   #GalleryContainer {
 		/* margin: 0.5em; */
-		margin-top: -3em;
+		margin-top: -5em;
   }
 
   /* TabFilter */
   #Tab .TabList {
-    border: 'none';
-    margin: '1.5em'
+    border: 'none' !important;
+	margin: '-5em 0 2em 0em' !important;
   }
+
   #Tab .TabFilter {
     cursor: "pointer";
+  }
+
+  .GalleryContainer {
+	margin: '-5em 0 2em 0em' !important;
   }
 
   .centerdiv {
@@ -264,7 +269,7 @@
 			height: 5em;
 			line-height: 4.5em;
 			padding: 0;
-			background-image: url("../images/buttons/dark-arrow.svg");
+			background-image: url("../../images/buttons/dark-arrow.svg");
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
@@ -340,7 +345,7 @@
 			input[type="reset"].style2.down,
 			.button.style2.down,
 			button.style2.down {
-				background-image: url("../images/buttons/arrow.svg");
+				background-image: url("../../images/buttons/arrow.svg");
 			} */
 
 			/* HR Line Break */
@@ -354,10 +359,13 @@
 
 			/* Project Header */
 			#headerbox {
-				margin: -6em 18em 3em 18em;
+				margin: -6em 18em 5em 18em;
 			}
 			#headerbox .Card{
 				padding: 1.25rem;	
+				background-color:rgba(255,255,255,.7);
+				margin-bottom: 8em;
+
 			}
 			.headerbg{
 				height: 450px;
@@ -379,6 +387,16 @@
 		height: 40vh !important;
 		width: 93vw !important;
 	}
+	.view .stripe div p{
+		font-size: 1em !important;
+		
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.view .stripe div p{
+		font-size: 0.8em !important;
+		
+	}
 }
 
 /* Medium screen : 992px. */
@@ -391,6 +409,11 @@
 		height: 35vh !important;
 		width: 93vw !important;
 	}
+	.view .stripe{
+		padding:0.2rem !important;
+		font-size: 0.8em !important;
+	}
+
 }
 
 /* Tablet :768px. */
@@ -462,13 +485,29 @@
 	.project-margins {
 		margin: -3em 1em 1em 1em !important;
 	}
-	
+
+	.view .stripe{
+		bottom:1rem !important;
+		padding:0.2rem !important;
+	}
+	.view .stripe p{
+		font-size: 1em !important;
+	}
 }
 
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
 	.headerbg{
 		height: 250px;
+	}
+	.view .stripe{
+		bottom:1rem !important;
+		padding:0.2rem !important;
+	}
+	.button.down {
+		width: 3.5em;
+		height: 3.5em;
+ 		margin-bottom: 1em;
 	}
 }
 
@@ -528,21 +567,39 @@
 	padding:1.2rem;
 }
 .view .stripe.dark{
-	background-color:rgb(64,64,64, .7)
-
-
+	background-color:rgb(64,64,64, .7);
 }
-.view .stripe.dark a p{
-	color:#eee
+.view .stripe.dark div p{
+	color:#eee;
+	font-family: "Helvetica Neue", Helvetica, Sans-serif;
+	font-size: 1.5em;
 }
 .view.stripe.light{
 	background-color:rgba(255,255,255,.7)
 }
-.view .stripe.light a p{
-	color:#424242
+.view .stripe.light div p{
+	color:#424242;
+	font-family: "Helvetica Neue", Helvetica, Sans-serif;
+	font-size: 1.5em;
 }
-.view .stripe a p{
+.view .stripe div p{
 	padding:0;
 	margin:0;
-	letter-spacing:.25rem
+	letter-spacing:.15rem
+}
+
+.cursor-pointer{
+	cursor: pointer !important;
+}
+
+.containerMarginTopFeature {
+	margin-top: -10em !important;
+}
+.containerMarginTopProjects {
+	margin-top: -6em !important;
+
+}
+
+.allprojectmargintop{
+	margin-top: -5em !important;
 }

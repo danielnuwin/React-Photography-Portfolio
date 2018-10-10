@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './App.css'
+import './css/App.css'
 
 //Import responsive gallery component 
 import ResponseiveGallery from './ResponsiveGallery';
 //import DEFAULT_IMAGES from './Images';
 import { View } from 'mdbreact'
 import ProjectHeader from './Projects/ProjectHeader'
+
 export default class GalleryContainer extends Component {
 
   constructor(props) {
@@ -15,7 +16,8 @@ export default class GalleryContainer extends Component {
       imageArray: [],
       title: "",
       desc: "",
-      showFilter: false
+      showFilter: false,
+      style: ""
     }
   }
 
@@ -24,17 +26,18 @@ export default class GalleryContainer extends Component {
       imageArray: this.props.imageArray,
       title: this.props.Title,
       desc: this.props.Desc,
-      showFilter: this.props.showFilter
+      showFilter: this.props.showFilter,
+      style: this.props.style
     });
   }
 
   render() {
     // console.log("Temp: " + JSON.stringify(DEFAULT_IMAGES));
-    const { imageArray, showFilter} = this.state;
+    const { imageArray, showFilter, style} = this.state;
     return (
       <div>
         {/* Remove Container if you want entire page gallery */}
-        <View id="GalleryContainer" className="">
+        <View id="GalleryContainer" className={ style }>
           <section id="gallery">
             <ResponseiveGallery showFilter={showFilter} images={imageArray.map(({ src, thumbnail, caption, category }) => ({
               src,

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css'
+import '../css/App.css'
 import ProjectHeader from './ProjectHeader'
 import GalleryContainer from '../GalleryContainer';
 import All_Projects from './All_Projects'
@@ -11,7 +11,8 @@ class ProjectContainer extends Component {
                 headerInfo: {},
                 imageArray: [],
                 renderType: "",
-                showFilter: false
+                showFilter: false,
+                style: ""
             }
 
         this.renderProject = this.renderProject.bind(this);
@@ -21,7 +22,8 @@ class ProjectContainer extends Component {
             headerInfo: this.props.headerInfo,
             imageArray: this.props.imageArray,
             renderType: this.props.renderType,
-            showFilter: this.props.showFilter
+            showFilter: this.props.showFilter,
+            style: this.props.style
         });
 
         // console.log("props: " + JSON.stringify(this.props));
@@ -39,9 +41,9 @@ class ProjectContainer extends Component {
     }
 
     //On Refresh
-    componentWillUpdate(){
+    componentWillUpdate() {
         console.log("ProjectContainer: window will update");
-        return ( window.scroll({
+        return (window.scroll({
             top: 350,
             behavior: "smooth"
         }));
@@ -52,7 +54,11 @@ class ProjectContainer extends Component {
         // Gallery Container
         // Projects Page
         if (renderType === "gallery" || renderType === "feature") {
-            return <GalleryContainer showFilter={this.state.showFilter} imageArray={this.state.imageArray} />
+            return <GalleryContainer
+                style={this.state.style}
+                showFilter={this.state.showFilter}
+                imageArray={this.state.imageArray}
+            />
         }
         else if (renderType === "allprojects") {
             return <All_Projects />
@@ -64,7 +70,7 @@ class ProjectContainer extends Component {
 
     render() {
         const { title, desc, bgImage, date } = this.state.headerInfo;
-        const { renderType } = this.state;
+        const { renderType, style } = this.state;
         return (
             <div id="projectcontainer" className="">
                 <ProjectHeader

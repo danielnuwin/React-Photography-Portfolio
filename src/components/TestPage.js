@@ -5,7 +5,7 @@ import { Jumbotron, Container, Card, Button, CardTitle, CardText, Row, Col } fro
 import { CardImage } from 'mdbreact';
 import { Parallax } from "react-parallax";
 
-import './App.css'
+import './css/App.css'
 const TestPage = () => {
   const image1 = require('../images/slider5.jpg');
 

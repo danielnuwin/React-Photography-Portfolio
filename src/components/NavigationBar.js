@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter, Redirect } from "react-router-dom";
 import {
     Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse, Container, FormInline,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from 'mdbreact';
-import './App.css'
+import './css/App.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // ******** Routes ******** //
 import Home from './Home'
@@ -18,23 +18,48 @@ import ProjectContainer from './Projects/ProjectContainer'
 import Routes from './Routes'
 
 // ******** Project Routes ******** //
-import proj1 from './PhotoProjects/Images.2';
 
 class NavigationBar extends React.Component {
     constructor(props) {
         super(props),
             this.state = {
-                collapse: false
+                collapse: false,
+                showFullNav: true
             }
         this.onClick = this.onClick.bind(this);
         this.handleNavbarClick = this.handleNavbarClick.bind(this);
+        this.showNav = this.showNav.bind(this);
     }
 
     onClick() {
         this.setState({
             collapse: !this.state.collapse,
         });
-        // console.log("click");
+
+        // if(this.props.location.pathname !== '/'){
+        //     console.log("redirect");
+        //     <Redirect to='/'/>
+        // }
+    }
+
+    showNav() {
+        if (this.props.location.pathname === '/') {
+            return
+            <div>
+                <NavItem active>
+                    {/* <NavLink className="brand" to="/">Home</NavLink> */}
+                    <AnchorLink onClick={this.onClick} className="nav-link " href='#section1'>Home</AnchorLink>
+                </NavItem>
+                <NavItem>
+                    {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
+                    <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link " href='#headerbox'>Portfolio</AnchorLink>
+                </NavItem>
+                <NavItem>
+                    {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
+                    <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About</AnchorLink>
+                </NavItem>
+            </div>
+        }
     }
 
     handleNavbarClick() {
@@ -42,6 +67,7 @@ class NavigationBar extends React.Component {
             collapse: false
         });
     }
+
     render() {
         const overlay = <div id="sidenav-overlay" style={{ backgroundColor: 'transparent' }} onClick={this.handleNavbarClick} />
         var image1 = require('../images/slider2.jpg');
@@ -59,41 +85,42 @@ class NavigationBar extends React.Component {
         };
         return (
             // <Router>
-                <div id="navigation">
-                    <Navbar color="white" light expand="md" fixed="top" scrolling  >
-                        {/* <Container> */}
-                        <NavbarBrand href="/">
-                            <strong className="brand">Daniel NuWin | Photo</strong>
-                        </NavbarBrand>
-                        <NavbarToggler onClick={this.onClick} />
-                        <Collapse isOpen={this.state.collapse} navbar>
-                            <NavbarNav left>
-                                <NavItem active>
-                                    {/* <NavLink className="brand" to="/">Home</NavLink> */}
-                                    <AnchorLink onClick={this.onClick} className="nav-link brand" href='#section1'>Home</AnchorLink>
-                                </NavItem>
-                                <NavItem>
-                                    {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
-                                    <AnchorLink onClick={this.onClick} className="nav-link brand" href='#section2'>Portfolio</AnchorLink>
-                                </NavItem>
-                                <NavItem>
-                                    {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
-                                    <AnchorLink onClick={this.onClick} className="nav-link brand" href='#section3'>About</AnchorLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink onClick={this.onClick} className="brand" to="/blog">Blog</NavLink>
-                                </NavItem>
-                                {/* <NavItem>
+
+            <div id="navigation">
+                <Navbar color="white" light expand="md" fixed="top" scrolling >
+                    {/* <Container> */}
+                    <NavbarBrand href="/">
+                        <strong className="brand">Daniel NuWin | Photo</strong>
+                    </NavbarBrand>
+                    <NavbarToggler onClick={this.onClick} />
+                    <Collapse isOpen={this.state.collapse} navbar>
+                        <NavbarNav left>
+                            <NavItem active>
+                                {/* <NavLink className="brand" to="/">Home</NavLink> */}
+                                <AnchorLink onClick={this.onClick} className="nav-link " href='#section1'>Home</AnchorLink>
+                            </NavItem>
+                            <NavItem>
+                                {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
+                                <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link" href='#headerbox'>Portfolio</AnchorLink>
+                            </NavItem>
+                            <NavItem>
+                                {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
+                                <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About</AnchorLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink onClick={this.onClick} className="" to="/blog">Blog</NavLink>
+                            </NavItem>
+                            {/* <NavItem>
                                     <NavLink className="brand" to="/slideshow">Slideshow</NavLink>
                                 </NavItem> */}
-                                <NavItem>
-                                    <NavLink onClick={this.onClick} className="brand" to="/projects">Projects</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink onClick={this.onClick} className="brand" to="/testpage">Test Page</NavLink>
-                                    {/* <AnchorLink className="nav-link brand" href='#section4'>WoodPage</AnchorLink> */}
-                                </NavItem>
-                                {/* <NavItem>
+                            <NavItem>
+                                <NavLink onClick={this.onClick} className="" to="/projects">Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink onClick={this.onClick} className="" to="/testpage">Test Page</NavLink>
+                                {/* <AnchorLink className="nav-link brand" href='#section4'>WoodPage</AnchorLink> */}
+                            </NavItem>
+                            {/* <NavItem>
                                     <Dropdown>
                                         <DropdownToggle className="brand" nav caret>Projects</DropdownToggle>
                                         <DropdownMenu>
@@ -108,21 +135,21 @@ class NavigationBar extends React.Component {
                                         </DropdownMenu>
                                     </Dropdown>
                                 </NavItem> */}
-                            </NavbarNav>
-                            <NavbarNav right>
-                                <NavItem >
-                                    <FormInline waves>
-                                        <div className="md-form my-0">
-                                            <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
-                                        </div>
-                                    </FormInline>
-                                </NavItem>
-                            </NavbarNav>
-                        </Collapse>
-                        {/* </Container> */}
-                    </Navbar>
-                    {/************************** Routes *************************/}
-                    {/* <Route exact path="/" component={Home} />
+                        </NavbarNav>
+                        <NavbarNav right>
+                            <NavItem >
+                                <FormInline waves>
+                                    <div className="md-form my-0">
+                                        <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                                    </div>
+                                </FormInline>
+                            </NavItem>
+                        </NavbarNav>
+                    </Collapse>
+                    {/* </Container> */}
+                </Navbar>
+                {/************************** Routes *************************/}
+                {/* <Route exact path="/" component={Home} />
                     <Route path="/template" component={GalleryContainer} />
                     <Route path="/blogpage" component={BlogPage} />
                     <Route path="/testpage" component={TestPage} />
@@ -143,13 +170,13 @@ class NavigationBar extends React.Component {
                             renderType="gallery" />
                     }
                     /> */}
-                    {/* <Routes/> */}
+                {/* <Routes/> */}
 
-                    {this.state.collapse && overlay}
-                </div>
+                {this.state.collapse && overlay}
+            </div>
             // </Router>
         );
     }
 };
 
-export default NavigationBar;
+export default withRouter(NavigationBar);

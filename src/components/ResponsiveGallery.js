@@ -1,18 +1,16 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
 import Lightbox from 'react-images';
 import PropTypes from 'prop-types';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarNav, NavItem, NavLink, Fa } from 'mdbreact';
-import './App.css'
+import './css/App.css'
 import Animated from "react-animated-css"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 
-export default class ResponsiveGallery extends Component {
+class ResponsiveGallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +34,7 @@ export default class ResponsiveGallery extends Component {
 
     this.cursorStyle = { cursor: "pointer" };
     this.renderFilter = this.renderFilter.bind(this);
+    this.showThumbnailBanner = this.showThumbnailBanner.bind(this);
 
   }
   openLightbox(index, event) {
@@ -78,6 +77,20 @@ export default class ResponsiveGallery extends Component {
     this.gotoNext();
   }
 
+  // Show Banner only if on features page
+  showThumbnailBanner(obj) { 
+    if (this.props.location.pathname === '/') {
+      return (
+      <div className="stripe dark">
+        <div>
+          <p>{obj.caption}</p>
+          <p><i className="fa fa-calendar" aria-hidden="true"> October 5th, 2018</i></p>
+        </div>
+      </div>
+      );
+    }
+  }
+
   renderGallery(images) {
     if (!images) {
       return;
@@ -95,13 +108,14 @@ export default class ResponsiveGallery extends Component {
               src={obj.thumbnail}
               style={{ width: "100%", height: "auto", display: "block" }}
             />
-            <div style={this.cursorStyle} className="mask flex-center rgba-black-light" onClick={(e) => this.openLightbox(i, e)}>
-              <div className="stripe dark">
-                <a>
-                  <p>{obj.caption}<Fa icon="angle-right"></Fa></p>
+            <div style={this.cursorStyle} className="mask flex-center" onClick={(e) => this.openLightbox(i, e)}>
+              {/* <div className="stripe dark">
+                <div>
+                  <p>{obj.caption}</p>
                   <p><i className="fa fa-calendar" aria-hidden="true"> October 5th, 2018</i></p>
-                </a>
-              </div>
+                </div>
+              </div> */}
+              {this.showThumbnailBanner(obj)}
             </div>
           </div>
         </ScrollAnimation>
@@ -150,7 +164,7 @@ export default class ResponsiveGallery extends Component {
     if (showFilter) {
       return (
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
-          <TabList className="TabList" style={{ border: 'none', margin: '2em 0 2em 0em' }}>
+          <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
             <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>All</Tab>
             <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Portraits</Tab>
             <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Weddings</Tab>
@@ -226,3 +240,5 @@ ResponsiveGallery.propTypes = {
   images: PropTypes.array,
   showThumbnails: PropTypes.bool,
 };
+
+export default withRouter(ResponsiveGallery);

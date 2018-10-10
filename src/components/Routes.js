@@ -14,26 +14,12 @@ import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
 
 // ******** Project Routes ******** //
-import proj1 from './PhotoProjects/Images.2';
+import AllProjectsConfig from './PhotoProjects/All_Projects_Config'
+import Laruen_Lychee from './PhotoProjects/08.05.18_Laruen_Lychee'
 
 const Routes = () => {
-  var image1 = require('../images/slider2.jpg');
-  var image2 = require('../images/slider7.jpg');
-  var image3 = "https://www.dropbox.com/s/lsehi9w8ff8tmre/IMG_3612.jpg?raw=1";
- 
-  const headerData = {
-    bgImage: image3,
-    title: "All Projects",
-    date: "September 10th, 2018",
-    desc: "Test Description Dawgs"
-  };
-  const headerData2 = {
-    bgImage: image2,
-    title: "Lauren and Lychee",
-    date: "October 5th, 2018",
-    desc: "A Dog's Best Friend"
-  };
 
+  // console.log("ROUTE: " + JSON.stringify(Laruen_Lychee.imageArray))
   return (
     // <BrowserRouter>
     // Switch creates issues in routes, Fixes the issue of not rendering when url changes, maybe not anymore??
@@ -48,16 +34,18 @@ const Routes = () => {
       <Route path="/projects" render={() =>
         <ProjectContainer
           // imageArray={ImageArray}
-          headerInfo={headerData}
+          headerInfo={AllProjectsConfig.projectHeader}
           renderType="allprojects" />
       }
       />
-      <Route exact path="/march" render={() =>
+      <Route exact path="/laurenlychee" render={() =>
         <ProjectContainer
           showFilter={false}
-          imageArray={proj1}
-          headerInfo={headerData2}
-          renderType="gallery" />
+          headerInfo={Laruen_Lychee.projectHeader}
+          imageArray={Laruen_Lychee.imageArray}
+          renderType="gallery" 
+          // style={"container containerMarginTopProjects"}
+          />
       }
       />
     </div>

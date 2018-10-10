@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot --hisotry-api-fallback",
-    "build": "webpack --mode production --hisotry-api-fallback"
+    "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
+    "build": "webpack --mode production --history-api-fallback"
   },
   "author": "Daniel Nguyen",
   "license": "MIT",

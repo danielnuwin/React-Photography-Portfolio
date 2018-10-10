@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 //Components
 import GalleryContainer from './GalleryContainer';
 import CarouselIntro from './CarouselIntro';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from "react-parallax";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import ImageArray from './Images';
+import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
 import ProjectContainer from './Projects/ProjectContainer'
 
 //unused
@@ -16,6 +16,7 @@ import FooterPage from './Footer';
 import Slideshow from './Slideshow';
 import BlogPage from './BlogPage'
 import Routes from './Routes'
+import All_Projects from './Projects/All_Projects'
 
 class Home extends Component {
     constructor(props) {
@@ -23,19 +24,14 @@ class Home extends Component {
         this.state = {
         }
     }
-    1
+    
     render() {
+        // Parallax Images will be local 
         const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
         const image2 = "http://www.allwhitebackground.com/images/2/2270.jpg";
         const image3 = "https://www.dropbox.com/s/hdza66lvwlk3xam/IMG_3603.jpg?raw=1";
-        const image4 =  "https://www.dropbox.com/s/s581xsjq1g453g4/IMG_8151-2.jpg?raw=1";
-        
-        const headerData = {
-            bgImage: image3,
-            title: "Featured Portfolio",
-            date: "2017-Present",
-            desc: "Ecclectic Everything"
-        };
+        const image4 = "https://www.dropbox.com/s/s581xsjq1g453g4/IMG_8151-2.jpg?raw=1";
+
         return (
             <div>
                 <div id="section1">
@@ -48,34 +44,19 @@ class Home extends Component {
 
                 {/* <hr className="my-5 container" /> */}
 
-
-                {/* <div id="section4">
-                    <Parallax bgImage={image1} strength={1000}>
-                        <div style={{ height: 1000 }}>
-                            <div>HTML inside the parallax</div>
-                        </div>
-                    </Parallax>
-                </div> */}
-
-                {/* <hr id="section2" className="" /> */}
-
-                {/* <div id="section2">
-                    <Parallax strength={500}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                            <GalleryContainer imageArray={ImageArray} title={"Featured Work"} />
-                        </ScrollAnimation>
-                    </Parallax>
-                </div> */}
-                <div >
-                    <div id="section2"></div>
-                    <Parallax strength={500}>
-                        <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-                            <ProjectContainer showFilter={true} imageArray={ImageArray} headerInfo={headerData} renderType="feature" />
-                        </ScrollAnimation>
-                    </Parallax>
+                <div id="section2">
+                    {/* <Parallax strength={500}> */}
+                    <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+                        <ProjectContainer
+                            showFilter={true}
+                            imageArray={Featured_Gallery.imageArray}
+                            headerInfo={Featured_Gallery.projectHeader}
+                            renderType="feature"
+                            style={"container containerMarginTopFeature"}
+                        />
+                    </ScrollAnimation>
+                    {/* </Parallax> */}
                 </div>
-
-                {/* <hr id="section2"className="hr-light my-4 w-75" /> */}
 
                 <div id="section4">
                     <Parallax bgImage={image3} strength={500}>
