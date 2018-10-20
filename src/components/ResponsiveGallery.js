@@ -9,6 +9,7 @@ import Animated from "react-animated-css"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
+import LazyLoad from 'react-lazy-load';
 
 class ResponsiveGallery extends Component {
   constructor(props) {
@@ -78,20 +79,21 @@ class ResponsiveGallery extends Component {
   }
 
   // Show Banner only if on features page
-  showThumbnailBanner(obj) { 
+  showThumbnailBanner(obj) {
     if (this.props.location.pathname === '/') {
       return (
-      <div className="stripe dark">
-        <div>
-          <p>{obj.caption}</p>
-          <p><i className="fa fa-calendar" aria-hidden="true"> October 5th, 2018</i></p>
+        <div className="stripe light">
+          <div>
+            <p>{obj.caption}</p>
+            <p><i className="fa fa-calendar date" aria-hidden="true"> October 5th, 2018</i></p>
+          </div>
         </div>
-      </div>
       );
     }
   }
 
   renderGallery(images) {
+    console.log("*****Lazy Load Responsive Gallery******");
     if (!images) {
       return;
     }
@@ -166,10 +168,11 @@ class ResponsiveGallery extends Component {
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
           <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
             <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>All</Tab>
-            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Portraits</Tab>
-            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Weddings</Tab>
-            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Urban</Tab>
-            <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("One")}>Single</Tab>
+            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Travel</Tab>
+            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Portraits</Tab>
+            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Weddings</Tab>
+            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Food</Tab>
+            <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("One")}>Urban & Street</Tab>
             <Tab tabFor="six">
               <Dropdown>
                 <DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
@@ -177,7 +180,7 @@ class ResponsiveGallery extends Component {
                   <NavbarNav>
                     <NavItem className="nav-format">
                       <NavLink className="brand nav-format" to="/projects">~All Projects~</NavLink>
-                      <NavLink className="brand nav-format" to="/march">March4OLives</NavLink>
+                      <NavLink className="brand nav-format" to="/laurenlychee">Lauren Lychee</NavLink>
                     </NavItem>
                   </NavbarNav>
                 </DropdownMenu>
@@ -214,9 +217,11 @@ class ResponsiveGallery extends Component {
 
     return (
       <div className="content page-section spad center">
-
+       
         {this.renderFilter(this.state.showFilter)}
-        {this.renderGallery(this.state.imageArray)}
+        <LazyLoad>
+          {this.renderGallery(this.state.imageArray)}
+        </LazyLoad>
 
         <Lightbox
           currentImage={this.state.currentImage}

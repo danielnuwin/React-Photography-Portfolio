@@ -9,9 +9,9 @@ import shuffle from '../configs/shuffle'
 {/************************** Header Data *************************/ }
 
 const headerData = {
-  bgImage: "https://www.dropbox.com/s/hdza66lvwlk3xam/IMG_3603.jpg?raw=1",
+  bgImage: "https://www.dropbox.com/s/618qitswbj0nlgt/IMG_0799.jpg?raw=1",
   title: "Featured Portfolio",
-  date: "2017-Present",
+  date: "2017 - Present",
   desc: "Ecclectic Everything"
 };
 

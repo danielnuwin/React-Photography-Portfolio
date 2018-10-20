@@ -30,6 +30,7 @@
     "react-headroom": "^2.2.4",
     "react-images": "^0.5.19",
     "react-images-zoom": "^1.0.7",
+    "react-lazy-load": "^3.0.13",
     "react-motions": "^0.3.0",
     "react-parallax": "^2.0.0",
     "react-responsive-masonry": "^2.0.0",

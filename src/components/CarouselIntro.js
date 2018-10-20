@@ -10,6 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from "react-parallax";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Bounce, Shake } from 'react-motions'
+import { BrowserRouter as Router, Route, Link, withRouter, Redirect } from "react-router-dom";
 
 class CarouselIntro extends React.Component {
     constructor(props) {
@@ -77,11 +78,16 @@ class CarouselIntro extends React.Component {
                                                 <Container className="px-md-3 px-sm-0">
                                                     <Row>
                                                         <Col md="" className="mb-4 white-text text-center  dark" style={{ border: "solid", backgroundColor: 'rgba(255,255,255,.2)' }}>
-                                                            <h3 className="display-3 font-weight-bold mb-0 pt-md-5">Daniel NuWin | Photography </h3>
+                                                            <h4 className="display-4 font-weight-bold mb-0 pt-md-5" style={{ color: '#4B515D' }}>Daniel NuWin | <span style={{ color: '#4B515D' }}>Photography</span> </h4>
                                                             <hr className="hr-light my-4 w-75" />
-                                                            <h4 className="subtext-header mt-2 mb-4">Photographer/Traveler</h4>
-                                                            <Button color="white">Portfolio</Button>
-                                                            <Button outline color="white">Projects</Button>
+                                                            {/* <h4 className="subtext-header mt-2 mb-4">Photographer</h4> */}
+                                                            <h4 className="subtext-header mt-2 mb-4" style={{fontStyle: "italic"}}>NuWin Way of Life</h4>
+                                                            <AnchorLink href='#headerbox'>
+                                                                <Button color="white">Portfolio</Button>
+                                                            </AnchorLink>
+                                                            <Link to="/projects">
+                                                                <Button outline color="white"> <Fa icon="home" /> Projects</Button>
+                                                            </Link>
                                                             {/* <Button outline rounded color="white"><Fa icon="home" /> Visit us</Button> */}
                                                         </Col>
                                                     </Row>
@@ -94,13 +100,17 @@ class CarouselIntro extends React.Component {
                                     </Container>
                                 </Mask>
                             </View>
+                           
+                           
                             <CarouselCaption>
                                 <Bounce duration={2} infinite>
                                     {/* <h3 className="h3-responsive"> Gallery</h3> */}
-                                    <footer>
-                                        {/* <a href="#one" className="buttonMore button style2 down">More</a> */}
-                                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> More</AnchorLink>
-                                    </footer>
+                                    <ScrollAnimation delay={2200} animateIn="fadeIn" animateOnce={true}>
+                                        <footer>
+                                            {/* <a href="#one" className="buttonMore button style2 down">More</a> */}
+                                            <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> More</AnchorLink>
+                                        </footer>
+                                    </ScrollAnimation>
                                 </Bounce>
                             </CarouselCaption>
                         </CarouselItem>

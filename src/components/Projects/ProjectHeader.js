@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import All_Projects from './All_Projects'
-import { Jumbotron, Container, Card, Button, CardTitle, CardText, Row, Col, Fa } from 'reactstrap';
+import { Jumbotron, Card, Button, CardTitle, CardText } from 'reactstrap';
+import { Container, Row, Col, CardBody, Mask, Fa, View, Badge } from 'mdbreact';
+
 import { CardImage } from 'mdbreact';
 import { Parallax } from "react-parallax";
 import '../css/App.css'
@@ -36,11 +38,11 @@ class ProjectHeader extends Component {
           </div>
         </Parallax>
         <div id="headerbox" className="rounded z-depth-2">
-            <Card body className="text-center Card" style={{}}>
-              <h1 className="headerTitle display-4" ><strong>{title}</strong></h1>
-              <h4 className="display-5 indigo-text headerDate ">{date}</h4>
-              <p className="grey-text headerDesc"> {desc}</p>
-            </Card>
+          <Card body className="text-center Card">
+            <h1 className="headerTitle display-4" ><strong>{title}</strong></h1>
+            <h5 className="display-6 indigo-text headerDate"><i className="fa fa-calendar date" aria-hidden="true"> {date} </i></h5>
+            <p className="grey-text headerDesc"> {desc}</p>
+          </Card>
         </div>
       </div>
 

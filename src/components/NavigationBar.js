@@ -12,7 +12,7 @@ import GalleryContainer from './GalleryContainer';
 import BlogPage from './BlogPage'
 import Slideshow from './Slideshow';
 import TestPage from './TestPage'
-import About from './About'
+import About from './AboutPage'
 import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
 import Routes from './Routes'
@@ -105,10 +105,11 @@ class NavigationBar extends React.Component {
                             </NavItem>
                             <NavItem>
                                 {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
-                                <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About</AnchorLink>
+                                {/* <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About </AnchorLink> */}
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={this.onClick} className="" to="/blog">Blog</NavLink>
+                                {/* <NavLink onClick={this.onClick} className="" to="/about">About Me</NavLink> */}
+                                <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About Me </AnchorLink>
                             </NavItem>
                             {/* <NavItem>
                                     <NavLink className="brand" to="/slideshow">Slideshow</NavLink>
@@ -117,8 +118,14 @@ class NavigationBar extends React.Component {
                                 <NavLink onClick={this.onClick} className="" to="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={this.onClick} className="" to="/testpage">Test Page</NavLink>
+                                <NavLink onClick={this.onClick} className="" to="/blog">Blog</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                {/* <NavLink onClick={this.onClick} className="" to="/about">About Me</NavLink> */}
                                 {/* <AnchorLink className="nav-link brand" href='#section4'>WoodPage</AnchorLink> */}
+                            </NavItem>
+                            <NavItem>
+                                {/* <NavLink onClick={this.onClick} className="" to="/testpage">Test Page</NavLink> */}
                             </NavItem>
                             {/* <NavItem>
                                     <Dropdown>

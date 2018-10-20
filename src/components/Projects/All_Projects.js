@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Card } from 'mdbreact';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Row } from 'mdbreact';
 import '../css/App.css'
 import ProjectTemplate from './ProjectTemplate'
 import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'

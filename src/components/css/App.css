@@ -1,3 +1,5 @@
+@import '../../../node_modules/font-awesome/css/font-awesome.css';
+
 .slider1{
 	background-image: url("/src/assets/img/slider1.jpg");
 }
@@ -123,7 +125,7 @@
     height: 100vh;
   }
   #carouselIntro .view2 {
-    background-image: url('../../images/slider6.jpg');
+    background-image: url('https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -577,16 +579,25 @@
 .view.stripe.light{
 	background-color:rgba(255,255,255,.7)
 }
+.stripe.light{
+	background-color:rgba(255,255,255,.7)
+}
 .view .stripe.light div p{
 	color:#424242;
 	font-family: "Helvetica Neue", Helvetica, Sans-serif;
 	font-size: 1.5em;
 }
+
 .view .stripe div p{
 	padding:0;
 	margin:0;
 	letter-spacing:.15rem
 }
+
+.view .stripe div .date{
+	font-size: 0.75em;
+}
+
 
 .cursor-pointer{
 	cursor: pointer !important;
@@ -602,4 +613,12 @@
 
 .allprojectmargintop{
 	margin-top: -5em !important;
+}
+
+.marginTop3 {
+	margin-top: -3em !important;
+}
+
+.display-4{
+	font-weight: 500 !important;
 }

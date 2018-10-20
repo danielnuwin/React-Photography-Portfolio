@@ -7,7 +7,6 @@ import Home from './components/Home'
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-
 import './lib/animate.min.css';
 
 ReactDOM.render(
