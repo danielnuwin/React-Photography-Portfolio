@@ -51,7 +51,7 @@ class Home extends Component {
                             imageArray={Featured_Gallery.imageArray}
                             headerInfo={Featured_Gallery.projectHeader}
                             renderType="feature"
-                            style={"container containerMarginTopFeature"}
+                            // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
                     {/* </Parallax> */}
@@ -63,9 +63,6 @@ class Home extends Component {
                         </div>
                     </Parallax>
                 </div>
-
-                <hr id="" className="my-5 " />
-
                 {/* Slow due to loading images on web */}
                 <div id="section3">
                     <LazyLoad>

@@ -1,7 +1,7 @@
 {/*********
-ProjectName: Jason and Yvonne Wedding
-Date:
-Location: Half Moon Bay
+ProjectName: 10.11.18_Wedding_AA
+Date: 10.11.18_Wedding_AA
+Location: 
 Notes:
 **********/}
 
@@ -9,10 +9,10 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-8.jpg'),
-  title: "Jason and Yvonne's Wedding",
-  date: "September 2nd, 2017",
-  desc: "When you find love in the club"
+  bgImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA-1.jpg'),
+  title: "Antoine + Ayton Wedding",
+  date: "October 11th, 2018",
+  desc: "Viva Las Vegas"
 };
 
 {/************************** Gallery Data *************************/ }
@@ -30,10 +30,10 @@ const imageArray = [
   // }
 ];
 
-for (var i = 1; i <= 17; i++) {
+for (var i = 1; i <= 29; i++) {
   const obj = {
-    src: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),
-    thumbnail: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),
+    src: require('../../images/10.11.18_Wedding_AA/Wedding_AA-' + i + '.jpg'),
+    thumbnail: require('../../images/10.11.18_Wedding_AA/Wedding_AA-' + i + '.jpg'),
     caption: '',
     category: ""
   }

@@ -3,7 +3,7 @@ import Lightbox from 'react-images';
 import PropTypes from 'prop-types';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarNav, NavItem, NavLink, Fa } from 'mdbreact';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarNav, NavItem, NavLink, Mask, View } from 'mdbreact';
 import './css/App.css'
 import Animated from "react-animated-css"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
@@ -110,13 +110,8 @@ class ResponsiveGallery extends Component {
               src={obj.thumbnail}
               style={{ width: "100%", height: "auto", display: "block" }}
             />
-            <div style={this.cursorStyle} className="mask flex-center" onClick={(e) => this.openLightbox(i, e)}>
-              {/* <div className="stripe dark">
-                <div>
-                  <p>{obj.caption}</p>
-                  <p><i className="fa fa-calendar" aria-hidden="true"> October 5th, 2018</i></p>
-                </div>
-              </div> */}
+            <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={(e) => this.openLightbox(i, e)}>
+             {/* Show Banner only on Feature Page */}
               {this.showThumbnailBanner(obj)}
             </div>
           </div>
@@ -168,10 +163,9 @@ class ResponsiveGallery extends Component {
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
           <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
             <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>All</Tab>
-            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Travel</Tab>
-            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Portraits</Tab>
+            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Travel/Landscapes</Tab>
+            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Sapiens</Tab>
             <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Weddings</Tab>
-            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Food</Tab>
             <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("One")}>Urban & Street</Tab>
             <Tab tabFor="six">
               <Dropdown>

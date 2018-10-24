@@ -81,12 +81,12 @@ class CarouselIntro extends React.Component {
                                                             <h4 className="display-4 font-weight-bold mb-0 pt-md-5" style={{ color: '#4B515D' }}>Daniel NuWin | <span style={{ color: '#4B515D' }}>Photography</span> </h4>
                                                             <hr className="hr-light my-4 w-75" />
                                                             {/* <h4 className="subtext-header mt-2 mb-4">Photographer</h4> */}
-                                                            <h4 className="subtext-header mt-2 mb-4" style={{fontStyle: "italic"}}>NuWin Way of Life</h4>
+                                                            <h4 className="subtext-header mt-2 mb-4" style={{ fontStyle: "italic" }}>NuWin Way of Life</h4>
                                                             <AnchorLink href='#headerbox'>
                                                                 <Button color="white">Portfolio</Button>
                                                             </AnchorLink>
                                                             <Link to="/projects">
-                                                                <Button outline color="white"> <Fa icon="home" /> Projects</Button>
+                                                                <Button outline color="white"> Projects</Button>
                                                             </Link>
                                                             {/* <Button outline rounded color="white"><Fa icon="home" /> Visit us</Button> */}
                                                         </Col>
@@ -100,8 +100,8 @@ class CarouselIntro extends React.Component {
                                     </Container>
                                 </Mask>
                             </View>
-                           
-                           
+
+
                             <CarouselCaption>
                                 <Bounce duration={2} infinite>
                                     {/* <h3 className="h3-responsive"> Gallery</h3> */}
@@ -128,8 +128,12 @@ class CarouselIntro extends React.Component {
                                                 <h6 className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
                                                 dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
                   iste.</h6>
-                                                <Button color="white">Download</Button>
-                                                <Button outline color="white">Learn More</Button>
+                                                <AnchorLink href='#headerbox'>
+                                                    <Button color="white">Portfolio</Button>
+                                                </AnchorLink>
+                                                <Link to="/projects">
+                                                    <Button outline color="white"> <Fa icon="home" /> Projects</Button>
+                                                </Link>
                                             </div>
                                             <Col md="6" xl="5" className="mt-xl-5">
                                                 {/* <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" className="img-fluid"/> */}
@@ -161,13 +165,17 @@ class CarouselIntro extends React.Component {
                                     <Container>
                                         <Row>
                                             <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
-                                                <h1 className="h1-responsive font-weight-bold mt-sm-5">No Limits </h1>
+                                                <h1 className="h1-responsive font-weight-bold mt-sm-5"> Daniel NuWin </h1>
+                                                <h5 className="h1-responsive" style={{ fontSize: '17px' }}> Photography</h5>
                                                 <hr className="hr-light" />
-                                                <h6 className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
-                                                dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                  iste.</h6>
-                                                <Button color="white">Download</Button>
-                                                <Button outline color="white">Learn More</Button>
+                                                <h6 className="mb-4"> Life can be Ecclectic, Life can like a box of chocolates,
+                                                But life can never be anything else, but yours.</h6>
+                                                <AnchorLink href='#headerbox'>
+                                                    <Button color="white">Portfolio</Button>
+                                                </AnchorLink>
+                                                <Link to="/projects">
+                                                    <Button outline color="white"> <Fa icon="home" /> Projects</Button>
+                                                </Link>
                                             </div>
                                             <Col md="6" xl="5" className="mt-xl-5">
                                                 {/* <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" className="img-fluid"/> */}

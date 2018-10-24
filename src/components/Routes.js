@@ -20,9 +20,13 @@ import Wedding_Wan_Chen from './PhotoProjects/09.02.17_Yvonne_Wedding'
 import Wedding_Cbass_Becca from './PhotoProjects/08.05.18_Wedding_Cbass_Becca'
 import Lauren_Night_Shoot from './PhotoProjects/05.21.18_Lauren_Night_Shoot'
 import Urban_SF from './PhotoProjects/08.18.18_Urban_SF'
+import MarchForOurLives from './PhotoProjects/03.24.18_March_4_Our_Lives'
 import Boardwalk_Kristina from './PhotoProjects/11.12.17_Boardwalk_Kristina'
 import Grad_Suzzane from './PhotoProjects/06.12.18_Gad_Suzzane'
 import Lilly_LinkedIn from './PhotoProjects/10.15.17_Lilly_LinkedIn'
+import Brille_of_Tarth from './PhotoProjects/05.01.17_Brielle_of_Tarth'
+import Wedding_AA from './PhotoProjects/10.11.18_Wedding_AA'
+import Europe_2018 from './PhotoProjects/2018_Europe'
 const Routes = () => {
 
   // console.log("ROUTE: " + JSON.stringify(Laruen_Lychee.imageArray))
@@ -114,6 +118,16 @@ const Routes = () => {
         />
       }
       />
+      <Route exact path="/march_for_our_lives" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={MarchForOurLives.projectHeader}
+          imageArray={MarchForOurLives.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
       <Route exact path="/lilly_linkedin" render={() =>
         <ProjectContainer
           showFilter={false}
@@ -124,8 +138,36 @@ const Routes = () => {
         />
       }
       />
-
-
+      <Route exact path="/brielle_of_tarth" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Brille_of_Tarth.projectHeader}
+          imageArray={Brille_of_Tarth.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+      <Route exact path="/wedding_aa" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Wedding_AA.projectHeader}
+          imageArray={Wedding_AA.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+      <Route exact path="/europe_2018" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Europe_2018.projectHeader}
+          imageArray={Europe_2018.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
     </div>
 
     // </Switch>

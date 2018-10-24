@@ -132,7 +132,7 @@
     height: 100vh;
   }
   .view3{
-    background-image: url('../../images/slider7.jpg');
+    background-image: url('https://www.dropbox.com/s/618qitswbj0nlgt/IMG_0799.jpg?raw=1');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -495,6 +495,10 @@
 	.view .stripe p{
 		font-size: 1em !important;
 	}
+	.display-4{
+		font-size: 2.75em !important;
+		padding-top: 1em !important;
+	}
 }
 
 /* small mobile :320px. */
@@ -596,6 +600,7 @@
 
 .view .stripe div .date{
 	font-size: 0.75em;
+	letter-spacing: 0.1;
 }
 
 

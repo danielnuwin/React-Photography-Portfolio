@@ -1,7 +1,7 @@
 {/*********
-ProjectName: Jason and Yvonne Wedding
-Date:
-Location: Half Moon Bay
+ProjectName: 05.01.17_Brielle_of_Tarth
+Date: 05.01.17_Brielle_of_Tarth
+Location: 
 Notes:
 **********/}
 
@@ -9,10 +9,10 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-8.jpg'),
-  title: "Jason and Yvonne's Wedding",
-  date: "September 2nd, 2017",
-  desc: "When you find love in the club"
+  bgImage: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-1.jpg'),
+  title: "Brielle of Tarth",
+  date: "May 1st, 2017",
+  desc: "Brielle and Friends"
 };
 
 {/************************** Gallery Data *************************/ }
@@ -30,10 +30,10 @@ const imageArray = [
   // }
 ];
 
-for (var i = 1; i <= 17; i++) {
+for (var i = 1; i <= 23; i++) {
   const obj = {
-    src: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),
-    thumbnail: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),
+    src: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-' + i + '.jpg'),
+    thumbnail: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-' + i + '.jpg'),
     caption: '',
     category: ""
   }

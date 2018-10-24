@@ -32,11 +32,11 @@ class ProjectContainer extends Component {
 
     componentDidMount() {
         // if (this.renderType === "allprojects") {
-            window.scroll({
-                top: 350,
-                behavior: "smooth"
-            });
-            console.log("ProjectContainer: window did mount");
+        window.scroll({
+            top: 350,
+            behavior: "smooth"
+        });
+        console.log("ProjectContainer: window did mount");
         // }
     }
 
