@@ -132,13 +132,6 @@
     height: 100vh;
   }
   .view3{
-    background-image: url('https://www.dropbox.com/s/618qitswbj0nlgt/IMG_0799.jpg?raw=1');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-  } 
-  .view4{
     background-image: url('../../images/slider4.jpg');
     background-repeat: no-repeat;
     background-size: cover;

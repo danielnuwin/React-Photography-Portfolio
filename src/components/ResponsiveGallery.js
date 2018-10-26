@@ -101,8 +101,8 @@ class ResponsiveGallery extends Component {
       return (
         //Old animation
         //<Animated key={i} animationIn="zoomIn" animationOut="fadeOut" animationInDelay={i * 40} isVisible={true} animateOnMount={true}>
-        <LazyLoad>
-          <ScrollAnimation key={i} delay={i * 20} animateIn="fadeIn" animateOnce={true} >
+        <LazyLoad key={i}>
+          <ScrollAnimation delay={i * 20} animateIn="fadeIn" animateOnce={true} >
             <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
               <img alt=""
                 className=""
