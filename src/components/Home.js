@@ -26,6 +26,7 @@ class Home extends Component {
         this.state = {
         }
     }
+   
 
     render() {
         // Parallax Images will be local 
@@ -61,11 +62,11 @@ class Home extends Component {
                     </Parallax>
                 </div>
                 {/* Slow due to loading images on web */}
-                <div id="section3">
+                {/* <div id="section3">
                     <LazyLoad>
                         <AboutPage />
                     </LazyLoad>
-                </div>
+                </div> */}
             </div>
 
         );

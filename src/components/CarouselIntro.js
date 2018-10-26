@@ -70,7 +70,7 @@ class CarouselIntro extends React.Component {
                                                             <h4 className="display-4 font-weight-bold mb-0 pt-md-5" style={{ color: '#4B515D' }}>Daniel NuWin | <span style={{ color: '#4B515D' }}>Photography</span> </h4>
                                                             <hr className="hr-light my-4 w-75" />
                                                             {/* <h4 className="subtext-header mt-2 mb-4">Photographer</h4> */}
-                                                            <h4 className="subtext-header mt-2 mb-4" style={{ fontStyle: "italic" }}>NuWin Way of Life</h4>
+                                                            <h4 className="subtext-header mt-2 mb-4" style={{ fontStyle: "italic" }}>Has anyone who had changed the world listened to what the world has told them to do? </h4>
                                                             <AnchorLink href="#headerbox">
                                                                 <Button color="white">Portfolio</Button>
                                                             </AnchorLink>

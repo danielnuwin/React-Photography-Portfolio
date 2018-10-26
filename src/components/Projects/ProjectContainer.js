@@ -36,8 +36,7 @@ class ProjectContainer extends Component {
             top: 350,
             behavior: "smooth"
         });
-        console.log("ProjectContainer: window did mount");
-        // }
+        // console.log("ProjectContainer: window did mount");
     }
 
     //On Refresh

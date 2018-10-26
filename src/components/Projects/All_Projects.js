@@ -20,10 +20,10 @@ class All_Projects extends Component {
     }
     componentDidMount() {
         window.scroll({
-            top: 350,
+            top: 0,
             behavior: "smooth"
         });
-        // console.log("ALL PROJECTS: window did mount");
+        console.log("ALL PROJECTS: didMount: scrollUp");
     }
 
     renderAllProjects() {

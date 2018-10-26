@@ -483,7 +483,7 @@
 		font-size: 1em !important;
 	}
 	.display-4{
-		font-size: 2.75em !important;
+		font-size: 2.2em !important;
 		padding-top: 1em !important;
 	}
 }
@@ -501,6 +501,15 @@
 		width: 3.5em;
 		height: 3.5em;
  		margin-bottom: 1em;
+	}
+
+	#headerbox .Card{
+		padding: 0.5em !important;	
+		margin-bottom: 6em !important;
+	}
+
+	.rwt__tab {
+		padding: 0.5rem 0.75rem !important;
 	}
 }
 
