@@ -19,7 +19,7 @@ const AboutPage = () => {
             <Row>
                 <Col lg="5">
                     <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                        <img className="img-fluid" src={require("../images/about.jpg")} alt="Sample image" />
+                        <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
                         <a><Mask overlay="white-slight" /></a>
                     </View>
                 </Col>
@@ -53,7 +53,7 @@ const AboutPage = () => {
                 </Col>
                 <Col lg="5">
                     <View className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                        <img className="img-fluid" src={require("../images/about2.jpg")} alt="Sample image" />
+                        <img className="img-fluid" src={require("../images/About_Page/about2.jpg")} alt="Sample image" />
                         <a><Mask overlay="white-slight" /></a>
                     </View>
                 </Col>
@@ -63,7 +63,7 @@ const AboutPage = () => {
             <Row>
                 <Col lg="5">
                     <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                        <img className="img-fluid" src={require("../images/about3.jpg")} alt="Sample image" />
+                        <img className="img-fluid" src={require("../images/About_Page/about3.jpg")} alt="Sample image" />
                         <a><Mask overlay="white-slight" /></a>
                     </View>
                 </Col>

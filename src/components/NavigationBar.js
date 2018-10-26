@@ -81,7 +81,6 @@ class NavigationBar extends React.Component {
 
     render() {
         const overlay = <div id="sidenav-overlay" style={{ backgroundColor: 'transparent' }} onClick={this.handleNavbarClick} />
-        var image1 = require('../images/slider2.jpg');
 
         return (
             // <Router>

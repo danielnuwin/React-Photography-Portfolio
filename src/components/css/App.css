@@ -132,7 +132,7 @@
     height: 100vh;
   }
   .view3{
-    background-image: url('../../images/slider4.jpg');
+    /* background-image: url('../../images/slider4.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -160,10 +160,7 @@
   #navigation .top-nav-collapse {
     background: white !important;
   }
-  #navigation .top-nav-collapse .brand{
-    /* color: white; */
-  }
-
+ 
 	/* Gallery Filter Project */
 	.colorBlackLink {
 		color: black;
@@ -415,9 +412,6 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	#navigation .navbar:not(.top-nav-collapse) {
 		background: white !important;
-	}
-	#navigation .brand {
-	/* color: whitesmoke; */
 	}
 	
 	#btngroup {

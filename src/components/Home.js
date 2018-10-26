@@ -6,7 +6,7 @@ import CarouselIntro from './CarouselIntro';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from "react-parallax";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
+// import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
 import ProjectContainer from './Projects/ProjectContainer'
 import LazyLoad from 'react-lazy-load';
 import Featured from './PhotoProjects/Featured_Portfolio'
@@ -29,7 +29,7 @@ class Home extends Component {
 
     render() {
         // Parallax Images will be local 
-        const image4 = require('../images/Featured_images/travel-2.jpg');
+        const image4 = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
         return (
             <div>
                 <div id="section1">

@@ -7,7 +7,7 @@ Date:        Project:
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/Project_2.jpg'),
+  bgImage: require('../../images/All_Project_Header.jpg'),
   title: "All Projects",
   date: "2017 - Present",
   desc: "Snapshots through the Years"
@@ -85,7 +85,7 @@ const imageArray = [
   }, {
     title: "Wan + Chen Wedding",
     date: "September 2nd, 2017",
-    coverImage: require('../../images/img_6.jpg'),
+    coverImage: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-8.jpg'),
     link: "/wedding_wan_chen",
     bannerStyle: "dark"
   }, {
