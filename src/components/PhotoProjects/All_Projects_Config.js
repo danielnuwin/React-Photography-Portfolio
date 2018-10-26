@@ -17,9 +17,15 @@ const headerData = {
 
 const imageArray = [
   {
+    title: "Ginger's 1st Halloween",
+    date: "October 24th, 2018",
+    coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-25.jpg'),
+    link: "/baby_ginger",
+    bannerStyle: "light"
+  },{
     title: "Antoine + Ayton Wedding",
     date: "October 11th, 2018",
-    coverImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA-12.jpg'),
+    coverImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA_Cover.jpg'),
     link: "/wedding_aa",
     bannerStyle: "dark"
   }, {
@@ -31,7 +37,7 @@ const imageArray = [
   }, {
     title: "Urban San Francisco",
     date: "August 8th, 2018",
-    coverImage: require('../../images/08.18.18_Urban_SF/SF-17.jpg'),
+    coverImage: require('../../images/08.18.18_Urban_SF/SF-25.jpg'),
     link: "/urban_sf",
     bannerStyle: "dark"
   }, {
@@ -55,7 +61,7 @@ const imageArray = [
   }, {
     title: "Europe 2018",
     date: "April/May, 2018",
-    coverImage: require('../../images/2018_Europe/Europe-27.jpg'),
+    coverImage: require('../../images/2018_Europe/Europe-38.jpg'),
     link: "/europe_2018",
     bannerStyle: "dark"
   }, {

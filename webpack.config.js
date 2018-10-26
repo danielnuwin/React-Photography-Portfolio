@@ -29,7 +29,6 @@ module.exports = {
             options: {
               limit: 8192
             },
-            publicPath: '/images/'
           }
         ]
       }, {
@@ -42,15 +41,15 @@ module.exports = {
           }
         }
       },
-      {
-        test: /\.(jpg|jpeg|gif|png)$/,
-        exclude: /node_modules/,
-        loader: 'url-loader?limit=2048&name=/images/[hash].[ext]'
-      },
-      {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'url-loader?limit=1024&name=/fonts/[hash].[ext]'
-      }
+      // {
+      //   test: /\.(jpg|jpeg|gif|png)$/,
+      //   exclude: /node_modules/,
+      //   loader: 'url-loader?limit=2048&name=/images/[hash].[ext]'
+      // },
+      // {
+      //   test: /\.(eot|svg|ttf|woff|woff2)(\?.*$|$)/,
+      //   loader: 'url-loader?limit=1024&name=/fonts/[hash].[ext]'
+      // }
     ]
   },
   devServer: {

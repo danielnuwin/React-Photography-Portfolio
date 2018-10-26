@@ -16,21 +16,9 @@ const headerData = {
 };
 
 {/************************** Gallery Data *************************/ }
-const imageArray = [
-  // {
-  //   src: require('../../images/slider6.jpg'),
-  //   thumbnail: require('../../images/slider6.jpg'),
-  //   caption: 'Lauren',
-  //   category: "Port"
-  // }, {
-  //   src: require('../../images/slider7.jpg'),
-  //   thumbnail: require('../../images/slider7.jpg'),
-  //   caption: 'Lychee ',
-  //   category: "Wed"
-  // }
-];
+const imageArray = [];
 
-for (var i = 1; i <= 29; i++) {
+for (var i = 1; i <= 30; i++) {
   const obj = {
     src: require('../../images/08.18.18_Urban_SF/SF-' + i + '.jpg'),
     thumbnail: require('../../images/08.18.18_Urban_SF/SF-' + i + '.jpg'),
@@ -42,7 +30,7 @@ for (var i = 1; i <= 29; i++) {
 {/*********************** Return Object Data ***********************/ }
 
 const projectData = {
-  imageArray: shuffle(imageArray),
+  imageArray: (imageArray),
   projectHeader: headerData
 }
 

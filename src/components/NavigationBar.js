@@ -29,6 +29,7 @@ class NavigationBar extends React.Component {
         this.onClick = this.onClick.bind(this);
         this.handleNavbarClick = this.handleNavbarClick.bind(this);
         this.showNav = this.showNav.bind(this);
+        this.scrollHome = this.scrollHome.bind(this);
     }
 
     onClick() {
@@ -36,10 +37,20 @@ class NavigationBar extends React.Component {
             collapse: !this.state.collapse,
         });
 
+        // if (this.props.location.pathname === '/') {
+        //     window.scroll({
+        //         top: 0,
+        //         behavior: "smooth"
+        //     });
+        // }
         // if(this.props.location.pathname !== '/'){
         //     console.log("redirect");
         //     <Redirect to='/'/>
         // }
+    }
+
+    scrollHome() {
+        window.scrollTo(0, 0);
     }
 
     showNav() {
@@ -71,34 +82,25 @@ class NavigationBar extends React.Component {
     render() {
         const overlay = <div id="sidenav-overlay" style={{ backgroundColor: 'transparent' }} onClick={this.handleNavbarClick} />
         var image1 = require('../images/slider2.jpg');
-        const headerData = {
-            bgImage: image1,
-            title: "All Projects",
-            date: "September 10th, 2018",
-            desc: "Test Description Dawgs"
-        };
-        const headerData2 = {
-            bgImage: image1,
-            title: "March For Our Livs",
-            date: "March 29th, 2018",
-            desc: "Protest Against Gun Violence in San Francisco"
-        };
+
         return (
             // <Router>
-
             <div id="navigation">
                 <Navbar color="white" light expand="md" fixed="top" scrolling >
                     {/* <Container> */}
                     <NavbarBrand href="/">
-                        <strong className="brand">Daniel NuWin | Photo</strong>
+                        <strong className="brand">Daniel NuWin | Photos</strong>
                     </NavbarBrand>
                     <NavbarToggler onClick={this.onClick} />
                     <Collapse isOpen={this.state.collapse} navbar>
                         <NavbarNav left>
-                            <NavItem active>
+                            <NavItem>
                                 {/* <NavLink className="brand" to="/">Home</NavLink> */}
-                                <AnchorLink onClick={this.onClick} className="nav-link " href='#section1'>Home</AnchorLink>
+                                <NavLink onClick={() => {this.onClick; this.scrollHome}} className="" to="/">Home</NavLink>
                             </NavItem>
+                            {/* <NavItem >
+                                <AnchorLink onClick={this.onClick} className="nav-link" href='#section1'>Intro</AnchorLink>
+                            </NavItem> */}
                             <NavItem>
                                 {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
                                 <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link" href='#headerbox'>Portfolio</AnchorLink>
@@ -155,29 +157,6 @@ class NavigationBar extends React.Component {
                     </Collapse>
                     {/* </Container> */}
                 </Navbar>
-                {/************************** Routes *************************/}
-                {/* <Route exact path="/" component={Home} />
-                    <Route path="/template" component={GalleryContainer} />
-                    <Route path="/blogpage" component={BlogPage} />
-                    <Route path="/testpage" component={TestPage} />
-                    <Route path="/slideshow" component={Slideshow} />
-                    <Route path="/about" component={About} />
-                    <Route path="/projects" render={() =>
-                        <ProjectContainer
-                            // imageArray={ImageArray}
-                            headerInfo={headerData}
-                            renderType="allprojects" />
-                    }
-                    />
-                     <Route path="/march" render={() =>
-                        <ProjectContainer
-                            showFilter={false}
-                            imageArray={proj1}
-                            headerInfo={headerData2}
-                            renderType="gallery" />
-                    }
-                    /> */}
-                {/* <Routes/> */}
 
                 {this.state.collapse && overlay}
             </div>

@@ -9,28 +9,16 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/2018_Europe/Europe-24.jpg'),
+  bgImage: require('../../images/2018_Europe/Europe-38.jpg'),
   title: "Europe 2018",
   date: "April 10 - May 7, 2018",
-  desc: "Norway -- Germany -- Czech Republic -- Italy -- Croatia"
+  desc: "Norway -> Germany -> Czech Republic -> Italy -> Croatia"
 };
 
 {/************************** Gallery Data *************************/ }
-const imageArray = [
-  // {
-  //   src: require('../../images/slider6.jpg'),
-  //   thumbnail: require('../../images/slider6.jpg'),
-  //   caption: 'Lauren',
-  //   category: "Port"
-  // }, {
-  //   src: require('../../images/slider7.jpg'),
-  //   thumbnail: require('../../images/slider7.jpg'),
-  //   caption: 'Lychee ',
-  //   category: "Wed"
-  // }
-];
+const imageArray = [];
 
-for (var i = 1; i <= 35; i++) {
+for (var i = 1; i <= 44; i++) {
   const obj = {
     src: require('../../images/2018_Europe/Europe-' + i + '.jpg'),
     thumbnail: require('../../images/2018_Europe/Europe-' + i + '.jpg'),
@@ -42,7 +30,7 @@ for (var i = 1; i <= 35; i++) {
 {/*********************** Return Object Data ***********************/ }
 
 const projectData = {
-  imageArray: shuffle(imageArray),
+  imageArray: (imageArray),
   projectHeader: headerData
 }
 

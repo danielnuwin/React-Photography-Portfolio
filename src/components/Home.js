@@ -9,6 +9,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
 import ProjectContainer from './Projects/ProjectContainer'
 import LazyLoad from 'react-lazy-load';
+import Featured from './PhotoProjects/Featured_Portfolio'
 
 //unused
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -28,11 +29,7 @@ class Home extends Component {
 
     render() {
         // Parallax Images will be local 
-        const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
-        const image2 = "http://www.allwhitebackground.com/images/2/2270.jpg";
-        const image3 = "https://www.dropbox.com/s/hdza66lvwlk3xam/IMG_3603.jpg?raw=1";
-        const image4 = "https://www.dropbox.com/s/2oi3f58nfb1jb78/FullSizeRender%204%20copy.jpg?raw=1";
-        const portland = "https://www.dropbox.com/s/618qitswbj0nlgt/IMG_0799.jpg?raw=1";
+        const image4 = require('../images/Featured_images/travel-2.jpg');
         return (
             <div>
                 <div id="section1">
@@ -48,8 +45,8 @@ class Home extends Component {
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                         <ProjectContainer
                             showFilter={true}
-                            imageArray={Featured_Gallery.imageArray}
-                            headerInfo={Featured_Gallery.projectHeader}
+                            imageArray={Featured.imageArray}
+                            headerInfo={Featured.projectHeader}
                             renderType="feature"
                             // style={"container containerMarginTopFeature"}
                         />

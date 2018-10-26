@@ -27,6 +27,7 @@ import Lilly_LinkedIn from './PhotoProjects/10.15.17_Lilly_LinkedIn'
 import Brille_of_Tarth from './PhotoProjects/05.01.17_Brielle_of_Tarth'
 import Wedding_AA from './PhotoProjects/10.11.18_Wedding_AA'
 import Europe_2018 from './PhotoProjects/2018_Europe'
+import Baby_Ginger from './PhotoProjects/10.24.18_Baby_Ginger'
 const Routes = () => {
 
   // console.log("ROUTE: " + JSON.stringify(Laruen_Lychee.imageArray))
@@ -168,6 +169,17 @@ const Routes = () => {
         />
       }
       />
+      <Route exact path="/baby_ginger" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Baby_Ginger.projectHeader}
+          imageArray={Baby_Ginger.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+
     </div>
 
     // </Switch>

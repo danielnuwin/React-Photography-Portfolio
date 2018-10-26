@@ -101,21 +101,22 @@ class ResponsiveGallery extends Component {
       return (
         //Old animation
         //<Animated key={i} animationIn="zoomIn" animationOut="fadeOut" animationInDelay={i * 40} isVisible={true} animateOnMount={true}>
-
-        <ScrollAnimation key={i} delay={i * 20} animateIn="fadeIn" animateOnce={true} >
-          <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
-            <img alt=""
-              className=""
-              // onClick={(e) => this.openLightbox(i, e)}
-              src={obj.thumbnail}
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
-            <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={(e) => this.openLightbox(i, e)}>
-             {/* Show Banner only on Feature Page */}
-              {this.showThumbnailBanner(obj)}
+        <LazyLoad>
+          <ScrollAnimation key={i} delay={i * 20} animateIn="fadeIn" animateOnce={true} >
+            <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
+              <img alt=""
+                className=""
+                // onClick={(e) => this.openLightbox(i, e)}
+                src={obj.thumbnail}
+                style={{ width: "100%", height: "auto", display: "block" }}
+              />
+              <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={(e) => this.openLightbox(i, e)}>
+                {/* Show Banner only on Feature Page */}
+                {/* {this.showThumbnailBanner(obj)} */}
+              </div>
             </div>
-          </div>
-        </ScrollAnimation>
+          </ScrollAnimation>
+        </LazyLoad>
       );
     });
     return (
@@ -163,10 +164,10 @@ class ResponsiveGallery extends Component {
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
           <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
             <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>All</Tab>
-            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("Port")}>Travel/Landscapes</Tab>
-            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("Wed")}>Sapiens</Tab>
-            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("Urb")}>Weddings</Tab>
-            <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("One")}>Urban & Street</Tab>
+            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
+            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
+            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
+            <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
             <Tab tabFor="six">
               <Dropdown>
                 <DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
@@ -211,11 +212,11 @@ class ResponsiveGallery extends Component {
 
     return (
       <div className="content page-section spad center">
-       
+
         {this.renderFilter(this.state.showFilter)}
-        <LazyLoad>
-          {this.renderGallery(this.state.imageArray)}
-        </LazyLoad>
+        {/* <LazyLoad> */}
+        {this.renderGallery(this.state.imageArray)}
+        {/* </LazyLoad> */}
 
         <Lightbox
           currentImage={this.state.currentImage}

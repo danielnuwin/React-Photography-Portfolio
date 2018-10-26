@@ -16,19 +16,7 @@ const headerData = {
 };
 
 {/************************** Gallery Data *************************/ }
-const imageArray = [
-  // {
-  //   src: require('../../images/slider6.jpg'),
-  //   thumbnail: require('../../images/slider6.jpg'),
-  //   caption: 'Lauren',
-  //   category: "Port"
-  // }, {
-  //   src: require('../../images/slider7.jpg'),
-  //   thumbnail: require('../../images/slider7.jpg'),
-  //   caption: 'Lychee ',
-  //   category: "Wed"
-  // }
-];
+const imageArray = [];
 
 for (var i = 1; i <= 29; i++) {
   const obj = {
