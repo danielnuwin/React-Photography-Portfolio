@@ -29,7 +29,7 @@ module.exports = {
             options: {
               limit: 8192
             },
-            publicPath: 'images/'
+            publicPath: '/images/'
           }
         ]
       }, {
