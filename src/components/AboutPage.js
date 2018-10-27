@@ -3,7 +3,10 @@ import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 import './css/App.css'
 
 const AboutPage = () => {
-    // console.log("*******Lazy Load*******");
+    window.scroll({
+        top: 0,
+        behavior: "smooth"
+    });    // console.log("*******Lazy Load*******");
     return (
         <Container id="aboutpage" className="marginTop3">
             <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
@@ -20,15 +23,15 @@ const AboutPage = () => {
                 </p>
 
             <p className="text-center w-responsive mx-auto ">
-                I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8. 
+                I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses. 
                <br/>
                 Open for shoots and collaborations! Message me for more info!
                 </p>
 
             <div className="text-center">
                 <ul className="">
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram"> danielnuwin</i></a></li>
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook"> Facebook </i></a></li>
+                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram">: @danielnuwin</i></a></li>
+                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li>
                     <li className="list-inline-item">Email: danielnuwin@gmail.com</li>
                 </ul>
             </div>

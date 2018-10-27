@@ -203,7 +203,7 @@ class ResponsiveGallery extends Component {
         top: 350,
         behavior: "smooth"
       });
-      console.log("RESPONSIVE GALLERY: window did mount");
+      // console.log("RESPONSIVE GALLERY: window did mount");
     }
   }
 

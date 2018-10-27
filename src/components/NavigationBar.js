@@ -97,9 +97,9 @@ class NavigationBar extends React.Component {
                                 {/* <NavLink className="brand" to="/">Home</NavLink> */}
                                 <NavLink onClick={this.onClick} className="" to="/">Home</NavLink>
                             </NavItem>
-                            {/* <NavItem >
-                                <AnchorLink onClick={this.onClick} className="nav-link" href='#section1'>Intro</AnchorLink>
-                            </NavItem> */}
+                            <NavItem >
+                                {/* <AnchorLink onClick={this.onClick} className="nav-link" href='#section1'>Intro</AnchorLink> */}
+                            </NavItem>
                             <NavItem>
                                 {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
                                 <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link" href='#headerbox'>Portfolio</AnchorLink>

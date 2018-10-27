@@ -93,7 +93,7 @@ class CarouselIntro extends React.Component {
                             <CarouselCaption>
                                 <Bounce duration={2} infinite>
                                     {/* <h3 className="h3-responsive"> Gallery</h3> */}
-                                    <ScrollAnimation delay={2200} animateIn="fadeIn" animateOnce={true}>
+                                    <ScrollAnimation delay={2000} animateIn="fadeIn" animateOnce={true}>
                                         <footer>
                                             {/* <a href="#one" className="buttonMore button style2 down">More</a> */}
                                             <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> More</AnchorLink>

@@ -23,7 +23,6 @@ class ProjectTemplate extends Component {
             // title: this.props.title,
             // date: this.props.date,
             // bannerStyle: this.props.bannerStyle
-
             link: this.props.projectObject.link,
             coverImage: this.props.projectObject.coverImage,
             title: this.props.projectObject.title,

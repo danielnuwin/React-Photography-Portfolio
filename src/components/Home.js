@@ -26,11 +26,25 @@ class Home extends Component {
         this.state = {
         }
     }
-   
+    componentDidUpdate() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        });
+        console.log("HOME SCROLL_______");
+    }
+    componentDidMount() {
+        window.scroll({
+            top: 0.5,
+            behavior: "smooth"
+        });
+        console.log("HOME SCROLL_______Did Mount");
+    }
 
     render() {
         // Parallax Images will be local 
-        const image4 = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
+        const Oregon_Image = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
+        const SF_Image = require('../images/08.18.18_Urban_SF/SF-17.jpg');
         return (
             <div>
                 <div id="section1">
@@ -49,14 +63,14 @@ class Home extends Component {
                             imageArray={Featured.imageArray}
                             headerInfo={Featured.projectHeader}
                             renderType="feature"
-                            // style={"container containerMarginTopFeature"}
+                        // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
                     {/* </Parallax> */}
                 </div>
 
                 <div id="section4">
-                    <Parallax bgImage={image4} strength={500}>
+                    <Parallax bgImage={SF_Image} strength={500}>
                         <div style={{ height: 500 }}>
                         </div>
                     </Parallax>

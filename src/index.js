@@ -8,7 +8,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import './lib/animate.min.css';
-// document.body.style.zoom="100%";
+// document.body.style.zoom="80%";
 
 ReactDOM.render(
     <Router>
