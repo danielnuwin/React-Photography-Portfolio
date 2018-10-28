@@ -7,15 +7,15 @@ import {
 import './css/App.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // ******** Routes ******** //
-// import Home from './Home'
-// import GalleryContainer from './GalleryContainer';
-// import BlogPage from './BlogPage'
-// import Slideshow from './Slideshow';
-// import TestPage from './TestPage'
-// import About from './AboutPage'
-// import ProjectHeader from './Projects/ProjectHeader'
-// import ProjectContainer from './Projects/ProjectContainer'
-// import Routes from './Routes'
+import Home from './Home'
+import GalleryContainer from './GalleryContainer';
+import BlogPage from './BlogPage'
+import Slideshow from './Slideshow';
+import TestPage from './TestPage'
+import About from './AboutPage'
+import ProjectHeader from './Projects/ProjectHeader'
+import ProjectContainer from './Projects/ProjectContainer'
+import Routes from './Routes'
 
 // ******** Project Routes ******** //
 

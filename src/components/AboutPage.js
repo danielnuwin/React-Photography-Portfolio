@@ -11,20 +11,20 @@ const AboutPage = () => {
         <Container id="aboutpage" className="marginTop3">
             <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
             <p className="text-center w-responsive mx-auto ">
-                Welcome to my page. I'm a photogprahyer and a software engineer.
-                 Born in the Bay Area, California but spent most of my
-                  growing up in Southern California. I've occassionally
-                  bounced around the world traveling for a couple years
+                Welcome to my page. I'm a photogpraher and a software engineer.
+                     Born in the Bay Area, California but spent most of my
+                      growing up in Southern California where I graduated from UC Irvine with a B.S. in computer science. I've occassionally
+                      bounced around the world traveling for a couple years
                   here and there. </p>
 
             <p className="text-center w-responsive mx-auto ">
-                I am currently building this photogpraphy portfolio with ReactJS.... everything
-                is still a work in progress...so stay tuned for more features!
+                I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
+                is still a work in progress...so stay tuned!
                 </p>
 
             <p className="text-center w-responsive mx-auto ">
-                I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses. 
-               <br/>
+                I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses.
+               <br />
                 Open for shoots and collaborations! Message me for more info!
                 </p>
 

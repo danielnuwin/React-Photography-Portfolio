@@ -3,13 +3,14 @@ import { createHashHistory } from "history";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // ******** ComponentRoutes ******** //
-// import App from "./App";
+import App from "./App";
 import Home from './Home'
 import GalleryContainer from './GalleryContainer';
 import BlogPage from './BlogPage'
 import Slideshow from './Slideshow';
 import AboutPage from './AboutPage'
 import TestPage from './TestPage'
+import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
 
 // ******** Project Routes ******** //
@@ -27,6 +28,8 @@ import Brille_of_Tarth from './PhotoProjects/05.01.17_Brielle_of_Tarth'
 import Wedding_AA from './PhotoProjects/10.11.18_Wedding_AA'
 import Europe_2018 from './PhotoProjects/2018_Europe'
 import Baby_Ginger from './PhotoProjects/10.24.18_Baby_Ginger'
+import SEA_Backpacking from './PhotoProjects/2017_S.E.A_Backpacking'
+
 const Routes = () => {
 
   // console.log("ROUTE: " + JSON.stringify(Laruen_Lychee.imageArray))
@@ -173,6 +176,16 @@ const Routes = () => {
           showFilter={false}
           headerInfo={Baby_Ginger.projectHeader}
           imageArray={Baby_Ginger.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+      <Route exact path="/2017_Asia" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={SEA_Backpacking.projectHeader}
+          imageArray={SEA_Backpacking.imageArray}
           renderType="gallery"
         // style={"container containerMarginTopProjects"}
         />

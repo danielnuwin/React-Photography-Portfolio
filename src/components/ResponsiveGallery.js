@@ -5,10 +5,12 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarNav, NavItem, NavLink, Mask, View } from 'mdbreact';
 import './css/App.css'
+// import Animated from "react-animated-css"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import LazyLoad from 'react-lazy-load';
+// import InfiniteScroll from 'react-infinite-scroller'
 
 class ResponsiveGallery extends Component {
   constructor(props) {

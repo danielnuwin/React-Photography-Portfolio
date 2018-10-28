@@ -94,6 +94,13 @@ const imageArray = [
     coverImage: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-cover.jpg'),
     link: "/brielle_of_tarth",
     bannerStyle: "light"
+  },
+  {
+    title: "S.E.Asia Backpacking",
+    date: "Spring 2017",
+    coverImage: require('../../images/2017_S.E.A_Backpacking/Asia-Cover.jpg'),
+    link: "/2017_Asia",
+    bannerStyle: "dark"
   }
 ];
 
