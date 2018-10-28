@@ -5,7 +5,6 @@ import './css/App.css'
 import ResponseiveGallery from './ResponsiveGallery';
 //import DEFAULT_IMAGES from './Images';
 import { View } from 'mdbreact'
-import ProjectHeader from './Projects/ProjectHeader'
 
 export default class GalleryContainer extends Component {
 

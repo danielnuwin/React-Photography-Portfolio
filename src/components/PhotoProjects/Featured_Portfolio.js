@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/Featured_Portfolio/Travel/Travel-10.jpg'),
+  bgImage: require('../../images/Featured_Portfolio/Travel/Travel-2.jpg'),
   title: "Featured Portfolio",
   date: "2017 - Present",
   desc: "Ecclectic Everything"
@@ -33,7 +33,7 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 // const travelArray = [];
-for (var i = 1; i <= 10; i++) {
+for (var i = 1; i <= 15; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
@@ -44,7 +44,7 @@ for (var i = 1; i <= 10; i++) {
 }
 
 {/************************** People Data *************************/ }
-for (var i = 1; i <= 17; i++) {
+for (var i = 1; i <= 25; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
@@ -55,7 +55,7 @@ for (var i = 1; i <= 17; i++) {
 }
 {/************************** Wedding Data *************************/ }
 // const weddingArray = [];
-for (var i = 1; i <= 15; i++) {
+for (var i = 1; i <= 16; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),

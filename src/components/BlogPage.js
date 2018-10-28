@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card, CardBody, Mask, Fa, View, Badge } from 'mdbreact';
 
 const BlogPage = () => {

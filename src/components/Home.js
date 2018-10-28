@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import './css/App.css';
 //Components
-import GalleryContainer from './GalleryContainer';
 import CarouselIntro from './CarouselIntro';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from "react-parallax";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
 import ProjectContainer from './Projects/ProjectContainer'
-import LazyLoad from 'react-lazy-load';
 import Featured from './PhotoProjects/Featured_Portfolio'
 
 //unused
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import NavigationBar from './NavigationBar';
-import FooterPage from './Footer';
-import Slideshow from './Slideshow';
-import BlogPage from './BlogPage'
-import Routes from './Routes'
-import All_Projects from './Projects/All_Projects'
-import AboutPage from './AboutPage'
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import NavigationBar from './NavigationBar';
+// import FooterPage from './Footer';
+// import Slideshow from './Slideshow';
+// import BlogPage from './BlogPage'
+// import Routes from './Routes'
+// import All_Projects from './Projects/All_Projects'
+// import AboutPage from './AboutPage'
+// import Featured_Gallery from './PhotoProjects/Featured_Gallery.js'
+// import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import LazyLoad from 'react-lazy-load';
+// import GalleryContainer from './GalleryContainer';
+
 class Home extends Component {
     constructor(props) {
         super(props);

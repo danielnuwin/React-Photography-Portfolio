@@ -11,15 +11,15 @@ const AboutPage = () => {
         <Container id="aboutpage" className="marginTop3">
             <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
             <p className="text-center w-responsive mx-auto ">
-                Welcome to my page. I'm a photogprahyer and a technie.
+                Welcome to my page. I'm a photogprahyer and a software engineer.
                  Born in the Bay Area, California but spent most of my
                   growing up in Southern California. I've occassionally
                   bounced around the world traveling for a couple years
                   here and there. </p>
 
             <p className="text-center w-responsive mx-auto ">
-                I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
-                is still a work in progress...so stay tuned!
+                I am currently building this photogpraphy portfolio with ReactJS.... everything
+                is still a work in progress...so stay tuned for more features!
                 </p>
 
             <p className="text-center w-responsive mx-auto ">
@@ -31,7 +31,7 @@ const AboutPage = () => {
             <div className="text-center">
                 <ul className="">
                     <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram">: @danielnuwin</i></a></li>
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li>
+                    {/* <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li> */}
                     <li className="list-inline-item">Email: danielnuwin@gmail.com</li>
                 </ul>
             </div>

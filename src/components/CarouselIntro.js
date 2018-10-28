@@ -1,16 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import {
     Mask, Row, Col, Fa, Button, View, Container,
     Carousel, CarouselCaption, CarouselInner, CarouselItem
 } from 'mdbreact';
 import './css/App.css'
-import Slideshow from './Slideshow';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Parallax } from "react-parallax";
+// import { Parallax } from "react-parallax";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Bounce, Shake } from 'react-motions'
-import { BrowserRouter as Router, Route, Link, withRouter, Redirect } from "react-router-dom";
+import { Bounce } from 'react-motions'
+import { BrowserRouter as Link } from "react-router-dom";
 
 class CarouselIntro extends React.Component {
     constructor(props) {
@@ -33,7 +31,7 @@ class CarouselIntro extends React.Component {
             collapse: false
         });
     }
-   
+
     render() {
         const overlay = <div id="sidenav-overlay" style={{ backgroundColor: 'transparent' }} onClick={this.handleNavbarClick} />
         return (
@@ -102,7 +100,7 @@ class CarouselIntro extends React.Component {
                                 </Bounce>
                             </CarouselCaption>
                         </CarouselItem>
- 
+
                         <CarouselItem itemId="2">
                             <View>
                                 {/* <img className="d-block w-100" src={require('../images/slider3.jpg')} alt="Second slide" /> */}
@@ -145,7 +143,7 @@ class CarouselIntro extends React.Component {
                             </CarouselCaption>
                         </CarouselItem>
 
-                       
+
                     </CarouselInner>
                 </Carousel>
 

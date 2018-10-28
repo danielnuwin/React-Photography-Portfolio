@@ -3,14 +3,13 @@ import { createHashHistory } from "history";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // ******** ComponentRoutes ******** //
-import App from "./App";
+// import App from "./App";
 import Home from './Home'
 import GalleryContainer from './GalleryContainer';
 import BlogPage from './BlogPage'
 import Slideshow from './Slideshow';
 import AboutPage from './AboutPage'
 import TestPage from './TestPage'
-import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
 
 // ******** Project Routes ******** //
