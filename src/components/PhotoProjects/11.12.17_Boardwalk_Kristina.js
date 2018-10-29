@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/11.12.17_Boardwalk_Kristina/Boardwalk_Kristina-10.jpg'),
+  bgImage: require('../../images/11.12.17_Boardwalk_Kristina/Kristina-10.jpg'),
   title: "Kristina at the Boardwalk",
   date: "November 27th, 2017",
   desc: "Athleticism at its finest"
@@ -20,8 +20,8 @@ const imageArray = [];
 
 for (var i = 1; i <= 11; i++) {
   const obj = {
-    src: require('../../images/11.12.17_Boardwalk_Kristina/Boardwalk_Kristina-' + i + '.jpg'),
-    thumbnail: require('../../images/11.12.17_Boardwalk_Kristina/Boardwalk_Kristina-' + i + '.jpg'),
+    src: require('../../images/11.12.17_Boardwalk_Kristina/Kristina-' + i + '.jpg'),
+    thumbnail: require('../../images/11.12.17_Boardwalk_Kristina/Kristina-' + i + '.jpg'),
     caption: '',
     category: ""
   }

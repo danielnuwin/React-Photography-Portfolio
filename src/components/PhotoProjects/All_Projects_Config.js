@@ -19,13 +19,13 @@ const imageArray = [
   {
     title: "Ginger's 1st Halloween",
     date: "October 24th, 2018",
-    coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-25.jpg'),
+    coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-Thumb.jpg'),
     link: "/baby_ginger",
     bannerStyle: "light"
   },{
     title: "Antoine + Ayton Wedding",
     date: "October 11th, 2018",
-    coverImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA_Cover.jpg'),
+    coverImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA-Thumb.jpg'),
     link: "/wedding_aa",
     bannerStyle: "dark"
   }, {
@@ -43,7 +43,7 @@ const imageArray = [
   }, {
     title: "Cbass + Becca Wedding",
     date: "August 5th, 2018",
-    coverImage: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding-15.jpg'),
+    coverImage: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding_Cbass-15.jpg'),
     link: "/wedding_cbass_becca",
     bannerStyle: "light"
   }, {
@@ -73,13 +73,13 @@ const imageArray = [
   }, {
     title: "Kristina at the Boardwalk",
     date: "November 27th, 2017",
-    coverImage: require('../../images/11.12.17_Boardwalk_Kristina/Boardwalk_Kristina-1.jpg'),
+    coverImage: require('../../images/11.12.17_Boardwalk_Kristina/Kristina-1.jpg'),
     link: "/boardwalk_kristina",
     bannerStyle: "dark"
   }, {
     title: "Lilly's LinkedIn Headshots",
     date: "October 15th, 2017",
-    coverImage: require('../../images/10.15.17_Lilly_LinkedIn/Lilly_LinkedIn-3.jpg'),
+    coverImage: require('../../images/10.15.17_Lilly_LinkedIn/Lilly_LinkedIn-Thumb.jpg'),
     link: "/lilly_linkedin",
     bannerStyle: "light"
   }, {
@@ -98,7 +98,7 @@ const imageArray = [
   {
     title: "S.E.Asia Backpacking",
     date: "Spring 2017",
-    coverImage: require('../../images/2017_S.E.A_Backpacking/Asia-Cover.jpg'),
+    coverImage: require('../../images/2017_S.E.A_Backpacking/Asia-Thumb.jpg'),
     link: "/2017_Asia",
     bannerStyle: "dark"
   }

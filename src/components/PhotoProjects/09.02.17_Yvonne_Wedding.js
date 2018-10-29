@@ -18,7 +18,7 @@ const headerData = {
 {/************************** Gallery Data *************************/ }
 const imageArray = [];
 
-for (var i = 1; i <= 17; i++) {
+for (var i = 1; i <= 16; i++) {
   const obj = {
     src: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),
     thumbnail: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-' + i + '.jpg'),

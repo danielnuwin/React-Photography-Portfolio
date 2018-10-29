@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding-2.jpg'),
+  bgImage: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding_Cbass-2.jpg'),
   title: "Sebastian and Becca's Wedding",
   date: "August 5th, 2018",
   desc: "A Dog's Best Friend"
@@ -32,8 +32,8 @@ const imageArray = [
 
 for (var i = 1; i <= 33; i++) {
   const obj = {
-    src: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding-' + i + '.jpg'),
-    thumbnail: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding-' + i + '.jpg'),
+    src: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding_Cbass-' + i + '.jpg'),
+    thumbnail: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding_Cbass-' + i + '.jpg'),
     caption: '',
     category: ""
   }

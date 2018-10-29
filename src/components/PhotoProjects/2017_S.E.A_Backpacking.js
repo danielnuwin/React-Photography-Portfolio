@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/2017_S.E.A_Backpacking/Asia-21.jpg'),
+  bgImage: require('../../images/2017_S.E.A_Backpacking/Asia-Cover.jpg'),
   title: "South East Asia Backpacking",
   date: "Spring 2017",
   desc: "First Time Solo Backpacking through Thailand, Cambodia, Vietnam, & Hong Kong."
@@ -18,7 +18,7 @@ const headerData = {
 {/************************** Gallery Data *************************/ }
 const imageArray = [];
 
-for (var i = 1; i <= 39; i++) {
+for (var i = 1; i <= 47; i++) {
   const obj = {
     src: require('../../images/2017_S.E.A_Backpacking/Asia-' + i + '.jpg'),
     thumbnail: require('../../images/2017_S.E.A_Backpacking/Asia-' + i + '.jpg'),
