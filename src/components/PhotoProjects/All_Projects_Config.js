@@ -61,7 +61,7 @@ const imageArray = [
   }, {
     title: "Europe 2018",
     date: "April/May, 2018",
-    coverImage: require('../../images/2018_Europe/Europe-38.jpg'),
+    coverImage: require('../../images/2018_Europe/Europe-36.jpg'),
     link: "/europe_2018",
     bannerStyle: "dark"
   }, {
