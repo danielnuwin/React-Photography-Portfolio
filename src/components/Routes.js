@@ -29,6 +29,7 @@ import Wedding_AA from './PhotoProjects/10.11.18_Wedding_AA'
 import Europe_2018 from './PhotoProjects/2018_Europe'
 import Baby_Ginger from './PhotoProjects/10.24.18_Baby_Ginger'
 import SEA_Backpacking from './PhotoProjects/2017_S.E.A_Backpacking'
+import South_America from './PhotoProjects/2017_South_America'
 
 const Routes = () => {
 
@@ -190,7 +191,17 @@ const Routes = () => {
         // style={"container containerMarginTopProjects"}
         />
       }
-      />
+      /> 
+      {/* <Route exact path="/2017_South_America" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={South_America.projectHeader}
+          imageArray={South_America.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      /> */}
 
     </div>
 

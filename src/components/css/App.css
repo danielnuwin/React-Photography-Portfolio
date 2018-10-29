@@ -1,6 +1,6 @@
 /* @import '../../../node_modules/font-awesome/css/font-awesome.css'; */
 
-.slider1{
+/* .slider1{
 	background-image: url("/src/assets/img/slider1.jpg");
 }
 .slider2{
@@ -20,7 +20,7 @@
 }
 .slider7{
     background-image: url("/src/assets/img/slider7.jpg");
-}
+} */
 
 /*----------------------------------------*/
 /*  Portfolio page CSS
@@ -432,6 +432,14 @@
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+
+	#carouselIntro .view {
+		background-image: url('../../images/slider_mobile.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		/* height: 100vh; */
+	  }
 	
 	#headerbox {
 		margin: -7em 3em 5em 3em;

@@ -61,13 +61,13 @@ const imageArray = [
   }, {
     title: "Europe 2018",
     date: "April/May, 2018",
-    coverImage: require('../../images/2018_Europe/Europe-38.jpg'),
+    coverImage: require('../../images/2018_Europe/Europe-36.jpg'),
     link: "/europe_2018",
     bannerStyle: "dark"
   }, {
     title: "March 4 Our Lives SF",
     date: "March 24th, 2018",
-    coverImage: require('../../images/03.24.18_March_4_Our_Lives/M4OL-27.jpg'),
+    coverImage: require('../../images/03.24.18_March_4_Our_Lives/M4OL-18.jpg'),
     link: "/march_for_our_lives",
     bannerStyle: "light"
   }, {
@@ -95,6 +95,13 @@ const imageArray = [
     link: "/brielle_of_tarth",
     bannerStyle: "light"
   },
+  // {
+  //   title: "South American Adventures",
+  //   date: "Summer 2017",
+  //   coverImage: require('../../images/2017_South_America/South-1.jpg'),
+  //   link: "/2017_Asia",
+  //   bannerStyle: "dark"
+  // },
   {
     title: "S.E.Asia Backpacking",
     date: "Spring 2017",

@@ -12,8 +12,8 @@ const AboutPage = () => {
             <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
             <p className="text-center w-responsive mx-auto ">
                 Welcome to my page. I'm a photogpraher and a software engineer.
-                     Born in the Bay Area, California but spent most of my
-                      growing up in Southern California where I graduated from UC Irvine with a B.S. in computer science. I've occassionally
+                     Born in the Bay Area but spent most of my
+                      growing up in Southern California where I graduated from UC Irvine. I've occassionally
                       bounced around the world traveling for a couple years
                   here and there. </p>
 
