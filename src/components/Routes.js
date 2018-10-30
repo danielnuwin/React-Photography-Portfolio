@@ -192,7 +192,7 @@ const Routes = () => {
         />
       }
       /> 
-      {/* <Route exact path="/2017_South_America" render={() =>
+      <Route exact path="/2017_South_America" render={() =>
         <ProjectContainer
           showFilter={false}
           headerInfo={South_America.projectHeader}
@@ -201,7 +201,7 @@ const Routes = () => {
         // style={"container containerMarginTopProjects"}
         />
       }
-      /> */}
+      />
 
     </div>
 

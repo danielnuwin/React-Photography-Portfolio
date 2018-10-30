@@ -122,7 +122,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    height: 103vh;
   }
   #carouselIntro .view2 {
     background-image: url('https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1');
@@ -368,27 +368,46 @@
   Responsive
 ==============================*/
 @media only screen and (max-width: 1477px) {
-.view .imgFit{
-		height: 50vh !important;
+	.view .imgFit{
+		height: 57vh !important;
 		width: 93vw !important;
 	}
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 9em !important;
+		height: 77em !important;
+	}
+	.display-4{
+		padding-top: 0em !important;
+	}
+
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1400px) {
 	.view .imgFit{
-		height: 40vh !important;
+		height: 57vh !important;
 		width: 93vw !important;
 	}
 	.view .stripe div p{
-		font-size: 1em !important;
-		
+		font-size: 1.25em !important;
+	}
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 9em !important;
+		height: 77em !important;
+	}
+	.display-4{
+		padding-top: 0em !important;
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.view .stripe div p{
 		font-size: 0.8em !important;
-		
 	}
+	.display-4{
+		padding-top: 0em !important;
+	}
+	
 }
 
 /* Medium screen : 992px. */
@@ -406,6 +425,15 @@
 		font-size: 0.8em !important;
 	}
 
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 9em !important;
+		height: 79em !important;
+	}
+	
+	.display-4{
+		padding-top: 1em !important;
+	}
 }
 
 /* Tablet :768px. */
@@ -428,8 +456,28 @@
 		width: 93vw !important;
 		object-position: center !important;
 	}
-}
+	.display-4{
+		font-size: 2.25em !important;
+		padding-top: 1em !important;
+	}
 
+	.display-5{
+		font-size: 1.25em !important;
+	}
+
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 23em !important;
+		height: 40em !important;
+	}
+}
+@media only screen and (min-width: 520px) and (max-width: 766px) {
+	.card-margin{
+		width: 50% !important;
+		margin-bottom: 1em !important;
+	}
+	
+}
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
 
@@ -439,7 +487,7 @@
 		background-size: cover;
 		background-position: center center;
 		/* height: 100vh; */
-	  }
+	}
 	
 	#headerbox {
 		margin: -7em 3em 5em 3em;
@@ -488,12 +536,44 @@
 		padding:0.2rem !important;
 	}
 	.view .stripe p{
-		font-size: 1em !important;
+		font-size: 0.8em !important;
 	}
 	.display-4{
-		font-size: 2.2em !important;
+		font-size: 2em !important;
 		padding-top: 1em !important;
 	}
+
+	.display-5{
+		font-size: 1.5em !important;
+	}
+	
+	.display-6{
+		font-size: 0.75em !important;
+	}
+	.mb-5{
+		margin-bottom: 1em !important;
+	}
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 12em !important;
+		height: 38em !important;
+		/* content: url('../../images/mobile_header.jpg') !important; */
+	}
+	/* All Projects Image Cover  */
+	/* .ap-mobile-cover  {
+		content: url('../../images/mobile_header.jpg') !important;
+	} */
+
+	.featured-header-mobile img  {
+		/* content: url('../../images/mobile_header.jpg') !important; */
+		top: 14em !important;
+		height: 50em !important;
+	}
+	.col-md-6{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
 }
 
 /* small mobile :320px. */
@@ -515,7 +595,7 @@
 		padding: 0.5em !important;	
 		margin-bottom: 6em !important;
 	}
-
+	
 	.rwt__tab {
 		padding: 0.5rem 0.75rem !important;
 	}
@@ -550,7 +630,7 @@
 	letter-spacing:.25rem
 }
 .card-margin{
-	margin-bottom: 2em !important;
+	margin-bottom: 2em ;
 }
 .figureFit{
 	width: 100%;
@@ -630,5 +710,14 @@
 
 .display-4{
 	font-weight: 500 !important;
+	padding-top: 1em;
+
 }
 
+.display-5{
+	font-size: 2em;
+}
+
+.hr-light {
+    border-top: 2px solid #fff !important;
+}

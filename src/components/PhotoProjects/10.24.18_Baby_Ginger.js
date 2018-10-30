@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/10.24.18_Baby_Ginger/Ginger-16.jpg'),
+  bgImage: require('../../images/10.24.18_Baby_Ginger/Ginger-8.jpg'),
   title: "Ginger Baby",
   date: "October 24th, 2018",
   desc: "Baby Ginger's first Hallowween"

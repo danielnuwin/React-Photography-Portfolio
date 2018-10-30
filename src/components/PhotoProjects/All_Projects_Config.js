@@ -67,7 +67,7 @@ const imageArray = [
   }, {
     title: "March 4 Our Lives SF",
     date: "March 24th, 2018",
-    coverImage: require('../../images/03.24.18_March_4_Our_Lives/M4OL-18.jpg'),
+    coverImage: require('../../images/03.24.18_March_4_Our_Lives/M4OL-27.jpg'),
     link: "/march_for_our_lives",
     bannerStyle: "light"
   }, {
@@ -88,20 +88,21 @@ const imageArray = [
     coverImage: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-8.jpg'),
     link: "/wedding_wan_chen",
     bannerStyle: "dark"
-  }, {
-    title: "Brielle of Tarth",
-    date: "May 1st, 2017",
-    coverImage: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-cover.jpg'),
-    link: "/brielle_of_tarth",
+  }, 
+  // {
+  //   title: "Brielle of Tarth",
+  //   date: "May 1st, 2017",
+  //   coverImage: require('../../images/05.01.17_Brielle_of_Tarth/Brielle-cover.jpg'),
+  //   link: "/brielle_of_tarth",
+  //   bannerStyle: "light"
+  // },
+   {
+    title: "South American Adventures",
+    date: "Summer 2017",
+    coverImage: require('../../images/2017_South_America/South-29.jpg'),
+    link: "/2017_South_America",
     bannerStyle: "light"
   },
-  // {
-  //   title: "South American Adventures",
-  //   date: "Summer 2017",
-  //   coverImage: require('../../images/2017_South_America/South-1.jpg'),
-  //   link: "/2017_Asia",
-  //   bannerStyle: "dark"
-  // },
   {
     title: "S.E.Asia Backpacking",
     date: "Spring 2017",

@@ -28,12 +28,11 @@ class ProjectHeader extends Component {
   }
 
   render() {
-    // const image1 = require('../../images/slider5.jpg');
     const { bgImage, title, date, desc } = this.state;
 
     return (
       <div>
-        <Parallax bgImage={bgImage} strength={1000}>
+        <Parallax bgImage={bgImage} strength={1000} className="parallax-mobile-view featured-header-mobile">
           <div className="headerbg">
           </div>
         </Parallax>

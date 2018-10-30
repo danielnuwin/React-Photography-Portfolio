@@ -40,7 +40,7 @@ class ProjectTemplate extends Component {
                 <Card collection className="z-depth-1-half">
                     <Link className="" to={link}>
                         <div className="view zoom cursor-pointer" style={{ overflow: "hidden" }}>
-                            <img src={coverImage} className="imgFit img-fluid" alt="" />
+                            <img src={coverImage} className="imgFit img-fluid ap-mobile-cover" alt="" />
                             <div className={`stripe ` + bannerStyle}>
                                 <div>
                                     <p> {title} </p>

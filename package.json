@@ -26,6 +26,7 @@
     "react-animation-components": "^3.0.0",
     "react-background-slideshow": "^1.0.4",
     "react-dom": "^16.2.0",
+    "react-fade-in": "^0.1.6",
     "react-headroom": "^2.2.4",
     "react-images": "^0.5.19",
     "react-images-zoom": "^1.0.7",

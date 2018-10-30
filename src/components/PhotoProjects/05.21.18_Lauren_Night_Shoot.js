@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/05.21.18_Lauren_Night_Shoot/Lauren_Night-2.jpg'),
+  bgImage: require('../../images/05.21.18_Lauren_Night_Shoot/Lauren_Night-6.jpg'),
   title: "Lauren SF Night Shoot",
   date: "May 21st, 2018",
   desc: "San Francisco By Night"
