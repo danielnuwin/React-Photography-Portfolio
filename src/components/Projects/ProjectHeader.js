@@ -15,6 +15,7 @@ class ProjectHeader extends Component {
       title: "",
       date: "",
       desc: "",
+      style: ""
     }
   }
 
@@ -23,16 +24,16 @@ class ProjectHeader extends Component {
       bgImage: this.props.bgImage,
       title: this.props.title,
       date: this.props.date,
-      desc: this.props.desc
+      desc: this.props.desc,
+      style: this.props.style
     });
   }
 
   render() {
-    const { bgImage, title, date, desc } = this.state;
-
+    const { bgImage, title, date, desc, style } = this.state;
     return (
       <div>
-        <Parallax bgImage={bgImage} strength={1000} className="parallax-mobile-view featured-header-mobile">
+        <Parallax bgImage={bgImage} strength={1000} className={`parallax-mobile-view ` + style }>
           <div className="headerbg">
           </div>
         </Parallax>

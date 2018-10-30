@@ -12,7 +12,7 @@ const headerData = {
   bgImage: require('../../images/08.05.18_Wedding_Cbass_Becca/Wedding_Cbass-2.jpg'),
   title: "Sebastian and Becca's Wedding",
   date: "August 5th, 2018",
-  desc: "A Dog's Best Friend"
+  desc: "High School Sweet Hearts tie the knot in Maui, Hawaii"
 };
 
 {/************************** Gallery Data *************************/ }

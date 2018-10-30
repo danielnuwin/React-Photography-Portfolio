@@ -41,7 +41,7 @@ class ProjectContainer extends Component {
 
     //On Refresh
     componentWillUpdate() {
-        console.log("ProjectContainer: window will update");
+        // console.log("ProjectContainer: window will update");
         return (window.scroll({
             top: 350,
             behavior: "smooth"
@@ -68,8 +68,8 @@ class ProjectContainer extends Component {
     }
 
     render() {
-        const { title, desc, bgImage, date } = this.state.headerInfo;
-        const { renderType, style } = this.state;
+        const { title, desc, bgImage, date, style } = this.state.headerInfo;
+        const { renderType } = this.state;
         return (
             <div id="projectcontainer" className="">
                 <ProjectHeader
@@ -77,6 +77,7 @@ class ProjectContainer extends Component {
                     desc={desc}
                     date={date}
                     bgImage={bgImage}
+                    style={style}
                 />
                 {this.renderProject(renderType)}
             </div>

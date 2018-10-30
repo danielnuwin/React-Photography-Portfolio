@@ -125,18 +125,18 @@
     height: 103vh;
   }
   #carouselIntro .view2 {
-    background-image: url('https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1');
+    background-image: url('../../images/Featured_Portfolio/Travel/Travel-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 130vh;
+    height: 103vh;
   }
-  .view3{
-    /* background-image: url('../../images/slider4.jpg'); */
+  #carouselIntro .view3 {
+	background-image: url('../../images/03.24.18_March_4_Our_Lives/M4OL-19.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 130vh;
+    height: 103vh;
   }
 
 
@@ -311,8 +311,9 @@
 		input[type="reset"].style2,
 		.button.style2,
 		button.style2 {
-			background-color: transparent;
-			border: solid 2px #f8f9fa;
+			/* background-color: transparent; */
+			background-color: rgba(39, 21, 21, 0.12); 
+			border: solid 1px #f8f9fa; 
 			color: inherit;
 		}
 
@@ -412,9 +413,6 @@
 
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	/* #headerbox {
-		margin: -7em 6em -3em 6em;
-	} */
 
 	.view .imgFit{
 		height: 35vh !important;
@@ -423,6 +421,10 @@
 	.view .stripe{
 		padding:0.2rem !important;
 		font-size: 0.8em !important;
+	}
+
+	#headerbox {
+		margin: -6em 6em 6em 6em !important;
 	}
 
 	/* Parallax Header Image  */
@@ -523,7 +525,7 @@
 	}
 	.view .imgFit{
 		height:25vh !important;
-		width: 97vw !important;
+		width: 100vw !important;
 		object-position: center !important;
 	}
 
@@ -598,6 +600,9 @@
 	
 	.rwt__tab {
 		padding: 0.5rem 0.75rem !important;
+	}
+	.card-margin{
+		margin: 1em !important;
 	}
 }
 
@@ -711,11 +716,13 @@
 .display-4{
 	font-weight: 500 !important;
 	padding-top: 1em;
-
+	text-shadow: 2px 2px 4px #5a5051;
+	font-size: 4rem;
 }
 
 .display-5{
 	font-size: 2em;
+	text-shadow: 0px 4px 4px #5a5051;
 }
 
 .hr-light {

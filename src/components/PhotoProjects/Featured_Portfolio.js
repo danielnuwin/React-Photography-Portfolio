@@ -12,7 +12,8 @@ const headerData = {
   bgImage: require('../../images/Featured_Portfolio/Travel/Travel-2.jpg'),
   title: "Featured Portfolio",
   date: "2017 - Present",
-  desc: "Ecclectic Everything"
+  desc: "Ecclectic Everything",
+  style: "featured-header-mobile"
 };
 
 {/************************** Gallery Data *************************/ }
@@ -83,7 +84,7 @@ for (var i = 1; i <= 14; i++) {
 {/*********************** Return Object Data ***********************/ }
 
 const projectData = {
-  imageArray: shuffle(imageArray),
+  imageArray: (imageArray),
   projectHeader: headerData
 }
 

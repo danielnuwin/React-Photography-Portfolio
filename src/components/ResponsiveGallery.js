@@ -231,6 +231,7 @@ class ResponsiveGallery extends Component {
           showThumbnails={true}
           theme={this.props.theme}
           backdropClosesModal={true}
+          width={2048}
         />
       </div>
     );

@@ -69,12 +69,13 @@ class Home extends Component {
                     {/* </Parallax> */}
                 </div>
 
-                {/* Lazy Load causes the Featured Portolio Anchorlink side effects */}
                 <div id="section4">
-                    <Parallax bgImage={SF_Image} strength={500}>
-                        <div style={{ height: 500 }}>
-                        </div>
-                    </Parallax>
+                    <LazyLoad>
+                        <Parallax bgImage={SF_Image} strength={500}>
+                            <div style={{ height: 500 }}>
+                            </div>
+                        </Parallax>
+                    </LazyLoad>
                 </div>
                 {/* Slow due to loading images on web */}
                 {/* <div id="section3">
