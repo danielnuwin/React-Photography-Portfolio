@@ -12,6 +12,7 @@ import AboutPage from './AboutPage'
 import TestPage from './TestPage'
 import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
+import ContactPage from './ContactPage'
 
 // ******** Project Routes ******** //
 import AllProjectsConfig from './PhotoProjects/All_Projects_Config'
@@ -45,9 +46,10 @@ const Routes = () => {
       <Route path="/testpage" component={TestPage} />
       <Route path="/slideshow" component={Slideshow} />
       <Route path="/about" component={AboutPage} />
+      <Route path="/contact" component={ContactPage}></Route>
       <Route path="/projects" render={() =>
         <ProjectContainer
-          // imageArray={ImageArray}
+          imageArray={AllProjectsConfig.imageArray}
           headerInfo={AllProjectsConfig.projectHeader}
           renderType="allprojects" />
       }

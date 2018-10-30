@@ -52,7 +52,7 @@ class CarouselIntro extends React.Component {
                                 {/* <img id="view1" className="d-block w-100" src={require('../images/slider1.jpg')} alt="Second slide" /> */}
                                 <div className="view1"></div>
                                 <Mask className="d-flex justify-content-center align-items-center">
-                                    <Container>
+                                    <Container style={{marginBottom: "8em"}}>
                                         <div>
                                             <ScrollAnimation delay={1500} animateIn="fadeIn" animateOnce={true}>
                                                 <Container className="px-md-3 px-sm-0">
@@ -71,10 +71,9 @@ class CarouselIntro extends React.Component {
                                                     </Row> */}
                                                     <Row>
                                                         <Col md="" className="mb-4 white-text text-center  dark" style={{ border: "solid", backgroundColor: '#2715151f' }}>
-
                                                             <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
-                                                                <h4 className="display-4 " > Daniel NuWin </h4>
-                                                                <h3 className="display-5 " > Photography </h3>
+                                                                <h4 className="display-4 intro-title" > Daniel NuWin </h4>
+                                                                <h3 className="display-5 intro-title" > Photography </h3>
                                                                 <hr className="hr-light" />
                                                                 <h6 className="mb-4 display-6"> “If you want to know where your heart is, follow your mind when it wanders”</h6>
                                                                 <AnchorLink href='#headerbox'>
@@ -82,6 +81,9 @@ class CarouselIntro extends React.Component {
                                                                 </AnchorLink>
                                                                 <Link to="/projects">
                                                                     <Button outline color="white"> Projects</Button>
+                                                                </Link>
+                                                                <Link to="/contact">
+                                                                    <Button color="red"> Contact Me</Button>
                                                                 </Link>
                                                             </div>
                                                         </Col>

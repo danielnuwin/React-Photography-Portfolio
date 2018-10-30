@@ -3,6 +3,7 @@ import '../css/App.css'
 import ProjectHeader from './ProjectHeader'
 import GalleryContainer from '../GalleryContainer';
 import All_Projects from './All_Projects'
+import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
 
 class ProjectContainer extends Component {
     constructor(props) {
@@ -60,7 +61,9 @@ class ProjectContainer extends Component {
             />
         }
         else if (renderType === "allprojects") {
-            return <All_Projects />
+            return <All_Projects
+                imageArray={this.state.imageArray}
+            />
         }
         else {
             return <span>No Pictures</span>

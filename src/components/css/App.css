@@ -722,9 +722,13 @@
 
 .display-5{
 	font-size: 2em;
-	text-shadow: 0px 4px 4px #5a5051;
+	text-shadow: 0px 0px 2px #5a5051;
 }
 
 .hr-light {
     border-top: 2px solid #fff !important;
+}
+
+.intro-title {
+	text-shadow: 0px 4px 4px #5a5051;
 }

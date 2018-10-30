@@ -37,6 +37,7 @@ const AboutPage = () => {
             </div>
 
             <hr className="my-5" style={{ width: '38em' }} />
+            <hr className="my-5" style={{ width: '38em' }} />
 
             <Row>
                 <Col lg="5">
@@ -59,9 +60,9 @@ const AboutPage = () => {
                     <Button color="success" size="md" className="waves-light ">Read more</Button>
                 </Col>
             </Row>
-            <hr className="my-5" style={{ width: '38em' }} />
+            {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
-            <Row>
+            {/* <Row>
                 <Col lg="7">
                     <a className="pink-text">
                         <h6 className="font-weight-bold mb-3">
@@ -85,8 +86,8 @@ const AboutPage = () => {
                         <a><Mask overlay="white-slight" /></a>
                     </View>
                 </Col>
-            </Row>
-            <hr className="my-5" style={{ width: '38em' }} />
+            </Row> */}
+            {/* <hr className="my-5" style={{ width: '38em' }} />
 
             <Row>
                 <Col lg="5">
@@ -104,7 +105,7 @@ const AboutPage = () => {
                     <p>.... Under Construction </p>
                     <Button color="success" size="md" className="waves-light ">Read more</Button>
                 </Col>
-            </Row>
+            </Row> */}
         </Container>
     );
 }

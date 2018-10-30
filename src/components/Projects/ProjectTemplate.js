@@ -44,6 +44,7 @@ class ProjectTemplate extends Component {
                             <div className={`stripe ` + bannerStyle}>
                                 <div>
                                     <p> {title} </p>
+                                    {/* <p> Category </p> */}
                                     <p><i className="fa fa-calendar date" aria-hidden="true"> {date} </i></p>
                                 </div>
                             </div>
