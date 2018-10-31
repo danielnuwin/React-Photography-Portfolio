@@ -19,72 +19,80 @@ const headerData = {
 {/************************** Gallery Data *************************/ }
 let imageArray = [];
 
-// for (var i = 1; i <= 25; i++) {
-//   const obj = {
-//     src: require('../../images/Featured_images/feat_' + i + '.jpg'),
-//     thumbnail: require('../../images/Featured_images/feat_' + i + '.jpg'),
-//     caption: '',
-//     category: ""
-//   }
-//   imageArray.push(obj);
-// }
-
-// Split Sections up and join all arrays
-// Don't need to rename or have a copy of project images, just reference them to save space. 
 
 {/************************** Travel Data *************************/ }
-// const travelArray = [];
+const travelArray = [];
+const featTravel = [1,2,4,5,7,9,11,13,14,16,18,19,21];
+
 for (var i = 1; i <= 26; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     caption: '',
-    category: "travel"
+    category: ["travel"]
   }
-  imageArray.push(obj);
+  if(featTravel.includes(i)){
+    obj['category'].push('*')
+  }
+  travelArray.push(obj);
 }
 
 {/************************** People Data *************************/ }
+const peopleArray = [];
+const featPeople = [1,4,5,8,11,12,15];
+
 for (var i = 1; i <= 15; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     caption: '',
-    category: "ppl"
+    category: ["ppl"]
   }
-  imageArray.push(obj);
+  if(featPeople.includes(i)){
+    obj['category'].push('*')
+  }
+  peopleArray.push(obj);
 }
 {/************************** Wedding Data *************************/ }
-// const weddingArray = [];
+const weddingArray = [];
+const featWedding = [2,4,8,10];
+
 for (var i = 1; i <= 16; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     caption: '',
-    category: "wedding"
+    category: ["wed"]
   }
-  imageArray.push(obj);
+  if(featWedding.includes(i)){
+    obj['category'].push('*')
+  }
+  weddingArray.push(obj);
 }
 
 {/************************** Urban Data *************************/ }
-// const urbanArray = [];
+const urbanArray = [];
+const featUrban = [6,7,9,12,13,14,15,17];
+
 for (var i = 1; i <= 20; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     caption: '',
-    category: "urban"
+    category: ["urb"]
   }
-  imageArray.push(obj);
+  if(featUrban.includes(i)){
+    obj['category'].push('*')
+  }
+  urbanArray.push(obj);
 }
-//All Photos, concatonate all arrays
-// imageArray = [...travelArray, ...pplArray, ...weddingArray, ...urbanArray];
 
-// console.log("arrayIMages: " + JSON.stringify(imageArray))
 {/*********************** Return Object Data ***********************/ }
+imageArray = [...travelArray, ...shuffle(peopleArray), ...weddingArray, ...urbanArray];
+// console.log("arrayIMages: " + JSON.stringify(imageArray))
 
 const projectData = {
-  imageArray: shuffle(imageArray),
+  imageArray: (imageArray),
   projectHeader: headerData
 }
 

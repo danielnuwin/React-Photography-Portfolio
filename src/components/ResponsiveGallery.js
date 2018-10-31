@@ -10,6 +10,8 @@ import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import LazyLoad from 'react-lazy-load';
+import shuffle from './configs/shuffle'
+
 // import InfiniteScroll from 'react-infinite-scroller'
 
 class ResponsiveGallery extends Component {
@@ -39,6 +41,7 @@ class ResponsiveGallery extends Component {
     this.showThumbnailBanner = this.showThumbnailBanner.bind(this);
 
   }
+  //************************ LightBox *************************//
   openLightbox(index, event) {
     event.preventDefault();
     this.setState({
@@ -92,6 +95,7 @@ class ResponsiveGallery extends Component {
       );
     }
   }
+//END************************ LightBox *************************//
 
   renderGallery(images) {
     console.log("*****Lazy Load Responsive Gallery******");
@@ -131,45 +135,45 @@ class ResponsiveGallery extends Component {
   }
 
   filterImage(filter) {
-    // this.update();
     const imagesCopy = this.props.images;
+    // const newArray = imagesCopy.filter(function (img) {
+    //   let searchValue = img.category;
+    //   return searchValue.indexOf(filter) !== -1;
+    // });
+
+    //Filter Images
     const newArray = imagesCopy.filter(function (img) {
-      let searchValue = img.category;
-      return searchValue.indexOf(filter) !== -1;
+      let searchValue = img.category; //Array of Categories
+      return searchValue.includes(filter);
     });
 
-    if (filter === "*") {
-      this.setState({ imageArray: imagesCopy });
-      //this.renderGallery(imagesCopy); //Removed because setting state renders imageArrary so no need to recall this method.
-    }
-    else {
-      // console.log('before currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
-      this.setState({ imageArray: newArray });//Should rerender for animation bc it already exists in filter
-      //this.renderGallery(newArray); //Removed because setting state renders imageArrary so no need to recall this method.
-      // console.log('after currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
+    this.setState({ imageArray: newArray });
 
-    }
-  }
-
-  update() {
-    console.log('update currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
-    this.setState({ imageArray: [] });
+    // Deprecated, no longer need as featured state is set in componentWillMount
+    // if (filter === "*") {
+    //   this.setState({ imageArray: newArray });
+    //   //this.renderGallery(imagesCopy); //Removed because setting state renders imageArrary so no need to recall this method.
+    // }
+    // else {
+    //   // console.log('before currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
+    //   this.setState({ imageArray: newArray });//Should rerender for animation bc it already exists in filter
+    //   //this.renderGallery(newArray); //Removed because setting state renders imageArrary so no need to recall this method.
+    // }
   }
 
   renderFilter(showFilter) {
-    console.log("Filter: " + showFilter);
     const cursorStyle = { cursor: "pointer" };
 
     if (showFilter) {
       return (
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
           <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
-            <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>Featured</Tab>
-            <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
-            <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
-            <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
-            <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
-            {/* <Tab style={this.cursorStyle} tabFor="six" onClick={() => this.filterImage("*")}>All</Tab> */}
+            <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>Featured</Tab>
+            <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
+            <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
+            <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
+            <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
+            {/* <Tab style={this.cursorStyle} tabFor="six" onClick={() => this.filterImage("all")}>All</Tab> */}
             <Tab tabFor="sevon">
               <Dropdown>
                 <DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
@@ -191,11 +195,25 @@ class ResponsiveGallery extends Component {
 
   //Will Set State before initial Render
   componentWillMount() {
-    this.setState({
-      imageArray: this.props.images,
-      showFilter: this.props.showFilter
-    });
-    console.log("componentWillMount");
+    //For Featured Gallery
+    if (this.props.location.pathname === '/') {
+      const featArray = this.props.images.filter(function (img) {
+        let searchValue = img.category; //Array of Categories
+        return searchValue.includes('*');
+      });
+      this.setState({
+        imageArray: shuffle(featArray),
+        showFilter: this.props.showFilter
+      });
+    }
+    // For Project Galleries
+    else {
+      this.setState({
+        imageArray: this.props.images,
+        showFilter: this.props.showFilter
+      });
+    }
+
   }
 
   //Scroll To Hide Header
