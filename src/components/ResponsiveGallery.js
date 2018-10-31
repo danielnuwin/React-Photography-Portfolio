@@ -164,12 +164,13 @@ class ResponsiveGallery extends Component {
       return (
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
           <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
-            <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>All</Tab>
+            <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>Featured</Tab>
             <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
             <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
             <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
             <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
-            <Tab tabFor="six">
+            {/* <Tab style={this.cursorStyle} tabFor="six" onClick={() => this.filterImage("*")}>All</Tab> */}
+            <Tab tabFor="sevon">
               <Dropdown>
                 <DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
                 <DropdownMenu>
