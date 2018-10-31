@@ -34,7 +34,7 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 // const travelArray = [];
-for (var i = 1; i <= 15; i++) {
+for (var i = 1; i <= 26; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
@@ -45,7 +45,7 @@ for (var i = 1; i <= 15; i++) {
 }
 
 {/************************** People Data *************************/ }
-for (var i = 1; i <= 25; i++) {
+for (var i = 1; i <= 15; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
@@ -68,7 +68,7 @@ for (var i = 1; i <= 16; i++) {
 
 {/************************** Urban Data *************************/ }
 // const urbanArray = [];
-for (var i = 1; i <= 14; i++) {
+for (var i = 1; i <= 20; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
@@ -84,7 +84,7 @@ for (var i = 1; i <= 14; i++) {
 {/*********************** Return Object Data ***********************/ }
 
 const projectData = {
-  imageArray: (imageArray),
+  imageArray: shuffle(imageArray),
   projectHeader: headerData
 }
 

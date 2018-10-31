@@ -176,7 +176,7 @@ class ResponsiveGallery extends Component {
                   <NavbarNav>
                     <NavItem className="nav-format">
                       <NavLink className="brand nav-format" to="/projects">All Projects</NavLink>
-                      <NavLink className="brand nav-format" to="/laurenlychee"> > Lauren Lychee</NavLink>
+                      {/* <NavLink className="brand nav-format" to="/laurenlychee"> > Lauren Lychee</NavLink> */}
                     </NavItem>
                   </NavbarNav>
                 </DropdownMenu>

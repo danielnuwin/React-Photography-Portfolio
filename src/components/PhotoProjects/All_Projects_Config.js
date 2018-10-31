@@ -94,7 +94,7 @@ const imageArray = [
     category: "ppl",
     bannerStyle: "light"
   }, {
-    title: "Wan + Chen Wedding",
+    title: "Yvonne + Jason Wedding",
     date: "September 2nd, 2017",
     coverImage: require('../../images/09.09.17_Wedding_Wan_Chen/Wedding_WC-8.jpg'),
     link: "/wedding_wan_chen",

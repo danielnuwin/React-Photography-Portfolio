@@ -98,12 +98,12 @@ class All_Projects extends Component {
         return (
             <Tabs id="Tab" defaultTab="one" className="GalleryContainer ">
                 <TabList className="TabList" style={{ border: 'none', margin: '0em 0 2em 0em' }}>
-                    <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterProjects("travel")}>Travel </Tab>
-                    <Tab style={this.cursorStyle} tabFor="four" onClick={() => this.filterProjects("urb")}>Urban & Street </Tab>
-                    <Tab style={this.cursorStyle} tabFor="five" onClick={() => this.filterProjects("ppl")}> People </Tab>
-                    <Tab style={this.cursorStyle} tabFor="six" onClick={() => this.filterProjects("wed")}>Weddings </Tab>
+                    <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
+                    <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
+                    <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterProjects("travel")}>Travel </Tab>
+                    <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects("urb")}>Urban & Street </Tab>
+                    <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects("ppl")}> People </Tab>
+                    <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterProjects("wed")}>Weddings </Tab>
 
                     {/* <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
                     <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>

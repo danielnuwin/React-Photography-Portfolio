@@ -436,6 +436,9 @@
 	.display-4{
 		padding-top: 1em !important;
 	}
+	.btn {
+		font-size: 0.5em !important;
+	}
 }
 
 /* Tablet :768px. */
@@ -469,8 +472,11 @@
 
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 23em !important;
+		top: 18em !important;
 		height: 40em !important;
+	}
+	.btn {
+		font-size: 0.75em !important;
 	}
 }
 @media only screen and (min-width: 520px) and (max-width: 766px) {
@@ -541,7 +547,7 @@
 		font-size: 0.8em !important;
 	}
 	.display-4{
-		font-size: 2em !important;
+		font-size: 2.5em !important;
 		padding-top: 1em !important;
 	}
 
@@ -550,7 +556,7 @@
 	}
 	
 	.display-6{
-		font-size: 0.75em !important;
+		font-size: 1em !important;
 	}
 	.mb-5{
 		margin-bottom: 1em !important;
@@ -571,9 +577,15 @@
 		top: 14em !important;
 		height: 50em !important;
 	}
+
+	
 	.col-md-6{
 		padding-left: 0px !important;
 		padding-right: 0px !important;
+	}
+
+	.btn {
+		font-size: 0.5em !important;
 	}
 
 }
@@ -716,7 +728,7 @@
 .display-4{
 	font-weight: 500 !important;
 	padding-top: 1em;
-	text-shadow: 2px 2px 4px #5a5051;
+	/* text-shadow: 2px 2px 4px #5a5051; */
 	font-size: 4rem;
 }
 
@@ -730,5 +742,5 @@
 }
 
 .intro-title {
-	text-shadow: 0px 4px 4px #5a5051;
+	text-shadow: 0px 0px 4px #5a5051;
 }
