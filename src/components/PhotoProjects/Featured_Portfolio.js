@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/Featured_Portfolio/Travel/Travel-2.jpg'),
+  bgImage: require('../../images/Portfolio_Header.jpg'),
   title: "Featured Portfolio",
   date: "2017 - Present",
   desc: "Ecclectic Everything",

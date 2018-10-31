@@ -70,12 +70,13 @@ class Home extends Component {
                 </div>
 
                 <div id="section4">
-                    <LazyLoad>
+                {/* Lazy Load Will Cause Anchor Link issue */}
+                    {/* <LazyLoad> */}
                         <Parallax bgImage={SF_Image} strength={500}>
                             <div style={{ height: 500 }}>
                             </div>
                         </Parallax>
-                    </LazyLoad>
+                    {/* </LazyLoad> */}
                 </div>
                 {/* Slow due to loading images on web */}
                 {/* <div id="section3">
