@@ -13,6 +13,7 @@ import TestPage from './TestPage'
 import ProjectHeader from './Projects/ProjectHeader'
 import ProjectContainer from './Projects/ProjectContainer'
 import ContactPage from './ContactPage'
+import ContactCard from './ContactCard'
 
 // ******** Project Routes ******** //
 import AllProjectsConfig from './PhotoProjects/All_Projects_Config'
@@ -47,6 +48,7 @@ const Routes = () => {
       <Route path="/slideshow" component={Slideshow} />
       <Route path="/about" component={AboutPage} />
       <Route path="/contact" component={ContactPage}></Route>
+      <Route path="/contactcard" component={ContactCard}></Route>
       <Route path="/projects" render={() =>
         <ProjectContainer
           imageArray={AllProjectsConfig.imageArray}

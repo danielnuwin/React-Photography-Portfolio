@@ -52,7 +52,7 @@ class CarouselIntro extends React.Component {
                                 {/* <img id="view1" className="d-block w-100" src={require('../images/slider1.jpg')} alt="Second slide" /> */}
                                 <div className="view1"></div>
                                 <Mask className="d-flex justify-content-center align-items-center">
-                                    <Container style={{marginBottom: "8em"}}>
+                                    <Container style={{ marginBottom: "8em" }}>
                                         <div>
                                             <ScrollAnimation delay={1500} animateIn="fadeIn" animateOnce={true}>
                                                 <Container className="px-md-3 px-sm-0">
@@ -73,18 +73,18 @@ class CarouselIntro extends React.Component {
                                                         <Col md="" className="mb-4 white-text text-center  dark" style={{ border: "solid", backgroundColor: '#2715151f' }}>
                                                             <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
                                                                 <h4 className="display-4 intro-title" > Daniel NuWin </h4>
-                                                                <h3 className="display-5 intro-title" > Photography </h3>
+                                                                <h3 className="display-5 intro-subtitle" > Photography </h3>
                                                                 <hr className="hr-light" />
-                                                                <h6 className="mb-4 display-6"> “If you want to know where your heart is, follow your mind when it wanders”</h6>
+                                                                <h6 className="mb-4 display-6" style={{ color: 'black' }}> “Embrace the unknown for which it will eventually bring you to where you need to be”</h6>
                                                                 <AnchorLink href='#headerbox'>
                                                                     <Button color="white">Portfolio</Button>
                                                                 </AnchorLink>
                                                                 <Link to="/projects">
                                                                     <Button outline color="white"> Projects</Button>
                                                                 </Link>
-                                                                <Link to="/contact">
+                                                                <AnchorLink href='#contactcard'>
                                                                     <Button color="red"> Contact </Button>
-                                                                </Link>
+                                                                </AnchorLink>
                                                             </div>
                                                         </Col>
                                                     </Row>

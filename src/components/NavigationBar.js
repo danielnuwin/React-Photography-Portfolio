@@ -86,7 +86,6 @@ class NavigationBar extends React.Component {
             // <Router>
             <div id="navigation">
                 <Navbar color="white" light expand="md" fixed="top" scrolling >
-                    {/* <Container> */}
                     <NavbarBrand href="/">
                         <strong className="brand">Daniel NuWin | Photos</strong>
                     </NavbarBrand>
@@ -97,51 +96,22 @@ class NavigationBar extends React.Component {
                                 {/* <NavLink className="brand" to="/">Home</NavLink> */}
                                 <NavLink onClick={this.onClick} className="" to="/">Home</NavLink>
                             </NavItem>
-                            <NavItem >
-                                {/* <AnchorLink onClick={this.onClick} className="nav-link" href='#section1'>Intro</AnchorLink> */}
-                            </NavItem>
                             <NavItem>
-                                {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
                                 <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link" href='#headerbox'>Portfolio</AnchorLink>
                             </NavItem>
                             <NavItem>
-                                {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
-                                {/* <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About </AnchorLink> */}
-                            </NavItem>
-                            <NavItem>
-                                {/* <NavLink onClick={this.onClick} className="" to="/about">About Me</NavLink> */}
-                                {/* <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About Me </AnchorLink> */}
-                            </NavItem>
-                            {/* <NavItem>
-                                    <NavLink className="brand" to="/slideshow">Slideshow</NavLink>
-                                </NavItem> */}
-                            <NavItem>
                                 <NavLink onClick={this.onClick} className="" to="/projects">Projects</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                {/* <NavLink onClick={this.onClick} className="" to="/blog">Blog</NavLink> */}
                             </NavItem>
                             <NavItem>
                                 <NavLink onClick={this.onClick} className="" to="/about">About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                {/* <NavLink onClick={this.onClick} className="" to="/testpage">Test Page</NavLink> */}
+                                {/* <NavLink onClick={this.onClick} className="" to="/blog">Blog</NavLink> */}
                             </NavItem>
-                            {/* <NavItem>
-                                    <Dropdown>
-                                        <DropdownToggle className="brand" nav caret>Projects</DropdownToggle>
-                                        <DropdownMenu>
-                                            <NavbarNav>
-                                                <NavItem className="">
-                                                    <NavLink className="" to="/march">March4OLives</NavLink>
-                                                </NavItem>
-                                            </NavbarNav>
-                                            <DropdownItem href="#">San Francisco 2018</DropdownItem>
-                                            <DropdownItem href="#">Cbass Maui Wedding</DropdownItem>
-                                            <DropdownItem href="#">Suzzane Graduation</DropdownItem>
-                                        </DropdownMenu>
-                                    </Dropdown>
-                                </NavItem> */}
+                            <NavItem>
+                                {/* <NavLink onClick={this.onClick} className="" to="/testpage">Test Page</NavLink> */}
+                                {/* <NavLink onClick={this.onClick} className="" to="/contactcard">ContactCard</NavLink> */}
+                            </NavItem>
                         </NavbarNav>
                         <NavbarNav right>
                             <NavItem >
@@ -153,7 +123,6 @@ class NavigationBar extends React.Component {
                             </NavItem>
                         </NavbarNav>
                     </Collapse>
-                    {/* </Container> */}
                 </Navbar>
 
                 {this.state.collapse && overlay}

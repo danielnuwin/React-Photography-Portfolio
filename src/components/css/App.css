@@ -357,7 +357,7 @@
 			#headerbox .Card{
 				padding: 1.25rem;	
 				background-color:rgba(255,255,255,.7);
-				margin-bottom: 8em;
+				margin-bottom: 7.5em;
 
 			}
 			.headerbg{
@@ -408,7 +408,9 @@
 	.display-4{
 		padding-top: 0em !important;
 	}
-	
+	#headerbox {
+		margin: -6em 12em 5em 12em;
+	}
 }
 
 /* Medium screen : 992px. */
@@ -424,7 +426,10 @@
 	}
 
 	#headerbox {
-		margin: -6em 6em 6em 6em !important;
+		margin: -9em 6em 8em 6em !important;
+	}
+	#headerbox .Card {
+		margin-bottom: 6em !important;
 	}
 
 	/* Parallax Header Image  */
@@ -436,9 +441,12 @@
 	.display-4{
 		padding-top: 1em !important;
 	}
-	.btn {
-		font-size: 0.5em !important;
+	.contactcard_margin {
+		margin-top: -22em!important
 	}
+	/* .btn {
+		font-size: 0.5em !important;
+	} */
 }
 
 /* Tablet :768px. */
@@ -465,7 +473,6 @@
 		font-size: 2.25em !important;
 		padding-top: 1em !important;
 	}
-
 	.display-5{
 		font-size: 1.25em !important;
 	}
@@ -475,14 +482,24 @@
 		top: 18em !important;
 		height: 40em !important;
 	}
-	.btn {
-		font-size: 0.75em !important;
+	.contactcard_margin {
+		margin-top: -22em!important
 	}
+	.contactcard_width{
+		width: 50% !important;
+	}
+	/* .btn {
+		font-size: 0.75em !important;
+	} */
+
 }
 @media only screen and (min-width: 520px) and (max-width: 766px) {
 	.card-margin{
 		width: 50% !important;
 		margin-bottom: 1em !important;
+	}
+	.contactcard_width{
+		width: 50% !important;
 	}
 	
 }
@@ -496,9 +513,8 @@
 		background-position: center center;
 		/* height: 100vh; */
 	}
-	
 	#headerbox {
-		margin: -7em 3em 5em 3em;
+		margin: -7em 1em 5em 1em;
 	}
 	.headerbg{
 		height: 300px;
@@ -563,8 +579,8 @@
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 12em !important;
-		height: 38em !important;
+		top: 19em !important;
+		height: 49em !important;
 		/* content: url('../../images/mobile_header.jpg') !important; */
 	}
 	/* All Projects Image Cover  */
@@ -577,16 +593,18 @@
 		top: 14em !important;
 		height: 50em !important;
 	}
-
-	
+	.contactcard_width{
+		width: 50% !important;
+	}
 	.col-md-6{
-		padding-left: 0px !important;
-		padding-right: 0px !important;
+		padding-left: 0.5em !important;
+		padding-right: 0.5em !important;
 	}
+	
 
-	.btn {
+	/* .btn {
 		font-size: 0.5em !important;
-	}
+	} */
 
 }
 
@@ -605,6 +623,9 @@
  		margin-bottom: 1em;
 	}
 
+	#headerbox {
+		margin-top: -5em !important;
+	}
 	#headerbox .Card{
 		padding: 0.5em !important;	
 		margin-bottom: 6em !important;
@@ -615,6 +636,40 @@
 	}
 	.card-margin{
 		margin: 1em !important;
+	}
+	.display-4{
+		font-size: 1.5em !important;
+		/* padding-top: 0.5em !important; */
+	}
+	.display-5{
+		font-size: 1em !important;
+	}
+	.intro-title{
+		font-size: 2.25em !important;
+		/* padding-top: 0.5em !important; */
+	}
+	.intro-subtitle{
+		font-size: 1.5em !important;
+		/* padding-top: 0.5em !important; */
+	}
+	.col-md-6{
+		padding-left: 0em !important;
+		padding-right: 0em !important;
+	}
+	btn {
+		font-size: .75em !important;
+	}
+	.contactcard_margin {
+		margin-top: -28em!important
+	}
+	.contactcard_info {
+		font-size: 0.85em !important;
+	}
+	.contactcard_title {
+		font-size: 1.25em !important;
+	}
+	.page-footer {
+		position: sticky !important;
 	}
 }
 
@@ -743,4 +798,8 @@
 
 .intro-title {
 	text-shadow: 0px 0px 4px #5a5051;
+}
+
+.contactcard_margin {
+	margin-top: -30em;
 }

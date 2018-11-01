@@ -37,7 +37,6 @@ const AboutPage = () => {
             </div>
 
             <hr className="my-5" style={{ width: '38em' }} />
-            <hr className="my-5" style={{ width: '38em' }} />
 
             <Row>
                 <Col lg="5">

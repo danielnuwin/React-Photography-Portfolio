@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import All_Projects from './All_Projects'
 import { Jumbotron, Card, Button, CardTitle, CardText } from 'reactstrap';
-import { Container, Row, Col, CardBody, Mask, Fa, View, Badge } from 'mdbreact';
+// import { Container, Row, Col, CardBody, Mask, Fa, View, Badge } from 'mdbreact';
 
-import { CardImage } from 'mdbreact';
+// import { CardImage } from 'mdbreact';
 import { Parallax } from "react-parallax";
 import '../css/App.css'
 

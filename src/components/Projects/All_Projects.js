@@ -5,6 +5,7 @@ import ProjectTemplate from './ProjectTemplate'
 import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact'
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
+import { Parallax } from "react-parallax";
 
 class All_Projects extends Component {
     constructor(props) {
@@ -69,7 +70,7 @@ class All_Projects extends Component {
     filterProjects(filter) {
         const projCopy = this.props.imageArray;
         const reverseCopy = projCopy.reverse();
-       
+
         const filteredArray = projCopy.filter(function (proj) {
             let searchValue = proj.category;
             return searchValue.indexOf(filter) !== -1;
@@ -94,7 +95,6 @@ class All_Projects extends Component {
 
     renderFilter() {
         const cursorStyle = { cursor: "pointer" };
-
         return (
             <Tabs id="Tab" defaultTab="one" className="GalleryContainer ">
                 <TabList className="TabList" style={{ border: 'none', margin: '0em 0 2em 0em' }}>
@@ -130,20 +130,31 @@ class All_Projects extends Component {
     }
 
     render() {
+        const Oregon_Image = require('../../images/2017_S.E.A_Backpacking/Asia-6.jpg');
+
         return (
-            <section className="project-margins text-center allprojectmargintop" >
-                {/* <Row className="">
+            <div>
+
+                <section className="project-margins text-center allprojectmargintop" >
+                    {/* <Row className="">
                     {this.renderDropDown()}
                 </Row> */}
-                <Row>
-                    <Col>
-                        {this.renderFilter()}
-                    </Col>
-                </Row>
-                <Row>
-                    {this.renderAllProjects()}
-                </Row>
-            </section>
+                    <Row>
+                        <Col>
+                            {this.renderFilter()}
+                        </Col>
+                    </Row>
+                    <Row>
+                        {this.renderAllProjects()}
+                    </Row>
+                </section>
+                <Parallax bgImage={Oregon_Image} strength={500}>
+                    <div style={{ height: 500 }}>
+                    </div>
+                </Parallax>
+            </div>
+
+
         );
     };
 }

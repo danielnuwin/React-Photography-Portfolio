@@ -10,6 +10,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ProjectContainer from './Projects/ProjectContainer'
 import LazyLoad from 'react-lazy-load';
 import Featured from './PhotoProjects/Featured_Portfolio'
+import ContactCard from './ContactCard'
 
 //unused
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -43,8 +44,8 @@ class Home extends Component {
 
     render() {
         // Parallax Images will be local 
-        const Oregon_Image = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
-        const SF_Image = require('../images/08.18.18_Urban_SF/SF-17.jpg');
+        // const Oregon_Image = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
+        // const SF_Image = require('../images/08.18.18_Urban_SF/SF-17.jpg');
         return (
             <div>
                 <div id="section1">
@@ -56,7 +57,6 @@ class Home extends Component {
                 </div>
 
                 <div id="section2">
-                    {/* <Parallax strength={500}> */}
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
                         <ProjectContainer
                             showFilter={true}
@@ -66,26 +66,21 @@ class Home extends Component {
                         // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
-                    {/* </Parallax> */}
                 </div>
 
-                <div id="section4">
+                <ContactCard />
+
+                {/* Unused */}
                 {/* Lazy Load Will Cause Anchor Link issue */}
-                    {/* <LazyLoad> */}
+                {/* <div id="section4">
+                    <LazyLoad>
                         <Parallax bgImage={SF_Image} strength={500}>
                             <div style={{ height: 500 }}>
                             </div>
-                        </Parallax>
-                    {/* </LazyLoad> */}
-                </div>
-                {/* Slow due to loading images on web */}
-                {/* <div id="section3">
-                    <LazyLoad>
-                        <AboutPage />
-                    </LazyLoad>
+                        </Parallax> 
+                     </LazyLoad>
                 </div> */}
             </div>
-
         );
     }
 }
