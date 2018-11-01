@@ -4,6 +4,8 @@ import ProjectHeader from './ProjectHeader'
 import GalleryContainer from '../GalleryContainer';
 import All_Projects from './All_Projects'
 import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
+import FadeIn from 'react-fade-in';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class ProjectContainer extends Component {
     constructor(props) {
@@ -74,16 +76,22 @@ class ProjectContainer extends Component {
         const { title, desc, bgImage, date, style } = this.state.headerInfo;
         const { renderType } = this.state;
         return (
-            <div id="projectcontainer" className="">
-                <ProjectHeader
-                    title={title}
-                    desc={desc}
-                    date={date}
-                    bgImage={bgImage}
-                    style={style}
-                />
-                {this.renderProject(renderType)}
-            </div>
+            //May not need since used in responsive gallery per each image
+            <ScrollAnimation delay={1000} animateIn="fadeIn" animateOnce={true}>
+            
+             {/* <FadeIn delay={1000}> */}
+                <div id="projectcontainer" className="">
+                    <ProjectHeader
+                        title={title}
+                        desc={desc}
+                        date={date}
+                        bgImage={bgImage}
+                        style={style}
+                    />
+                    {this.renderProject(renderType)}
+                </div>
+             {/* </FadeIn> */}
+             </ScrollAnimation>
         );
     }
 };

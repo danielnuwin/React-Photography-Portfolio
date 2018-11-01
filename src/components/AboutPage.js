@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 import './css/App.css'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const AboutPage = () => {
     window.scroll({
@@ -8,60 +9,63 @@ const AboutPage = () => {
         behavior: "smooth"
     });    // console.log("*******Lazy Load*******");
     return (
-        <Container id="aboutpage" className="marginTop3">
-            <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
-            <p className="text-center w-responsive mx-auto ">
-                Welcome to my page. I'm a photogpraher and a software engineer.
-                     Born in the Bay Area but spent most of my
-                      growing up in Southern California where I graduated from UC Irvine. I've occassionally
-                      bounced around the world traveling for a couple years
-                  here and there. </p>
+        <ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 
-            <p className="text-center w-responsive mx-auto ">
-                I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
-                is still a work in progress...so stay tuned!
+            <Container id="aboutpage" className="marginTop3">
+                <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
+                <p className="text-center w-responsive mx-auto ">
+                    Welcome to my page. I'm a photographer and a software engineer.
+                         Born in the Bay Area but spent most of my
+                          growing up in Southern California where I graduated from UC Irvine. I've occassionally
+                          bounced around the world traveling for a couple years
+                  here and there....rest to be continued! </p>
+
+                <p className="text-center w-responsive mx-auto ">
+                    I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
+                    is still a work in progress...so stay tuned!
                 </p>
 
-            <p className="text-center w-responsive mx-auto ">
-                I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses.
+                <p className="text-center w-responsive mx-auto ">
+                    I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses.
                <br />
-                Open for shoots and collaborations! Message me for more info!
+                    Open for shoots and collaborations! Message me for more info!
                 </p>
+    
+                <div className="text-center">
+                    <ul className="">
+                        <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram">: @danielnuwin</i></a></li>
+                        {/* <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li> */}
+                        <li className="list-inline-item">Email: danielnuwin@gmail.com</li>
+                    </ul>
+                </div>
 
-            <div className="text-center">
-                <ul className="">
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram">: @danielnuwin</i></a></li>
-                    {/* <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li> */}
-                    <li className="list-inline-item">Email: danielnuwin@gmail.com</li>
-                </ul>
-            </div>
+                <hr />
+                <br/>
 
-            <hr className="my-5" style={{ width: '38em' }} />
-
-            <Row>
-                <Col lg="5">
-                    <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                        <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
-                        <a><Mask overlay="white-slight" /></a>
-                    </View>
-                </Col>
-                <Col lg="7">
-                    <a className="green-text"><h6 className="font-weight-bold mb-3"><Fa icon="cubes" className="pr-2"></Fa>Me</h6></a>
-                    <h3 className="font-weight-bold mb-3 p-0"><strong>I am Daniel NuWin</strong></h3>
-                    <p>"Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts,
-                         it even breaks your heart. But that’s okay. The journey changes you;
-                         it should change you. It leaves marks on your memory, on your consciousness,
-                          on your heart, and on your body. You take something with you. Hopefully, you
+                <Row>
+                    <Col lg="5">
+                        <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
+                            <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
+                            <a><Mask overlay="white-slight" /></a>
+                        </View>
+                    </Col>
+                    <Col lg="7">
+                        <a className="green-text"><h6 className="font-weight-bold mb-3"><Fa icon="cubes" className="pr-2"></Fa>Me</h6></a>
+                        <h3 className="font-weight-bold mb-3 p-0"><strong>I am Daniel NuWin</strong></h3>
+                        <p>"Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts,
+                             it even breaks your heart. But that’s okay. The journey changes you;
+                             it should change you. It leaves marks on your memory, on your consciousness,
+                              on your heart, and on your body. You take something with you. Hopefully, you
                           leave something good behind. -- Anthony Bourdain"</p>
 
-                    <p>.... Under Construction </p>
+                        <p>.... Under Construction </p>
 
-                    <Button color="success" size="md" className="waves-light ">Read more</Button>
-                </Col>
-            </Row>
-            {/* <hr className="my-5" style={{ width: '38em' }} /> */}
+                        <Button color="success" size="md" className="waves-light ">Read more</Button>
+                    </Col>
+                </Row>
+                {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
-            {/* <Row>
+                {/* <Row>
                 <Col lg="7">
                     <a className="pink-text">
                         <h6 className="font-weight-bold mb-3">
@@ -86,7 +90,7 @@ const AboutPage = () => {
                     </View>
                 </Col>
             </Row> */}
-            {/* <hr className="my-5" style={{ width: '38em' }} />
+                {/* <hr className="my-5" style={{ width: '38em' }} />
 
             <Row>
                 <Col lg="5">
@@ -105,7 +109,9 @@ const AboutPage = () => {
                     <Button color="success" size="md" className="waves-light ">Read more</Button>
                 </Col>
             </Row> */}
-        </Container>
+            </Container>
+        </ScrollAnimation>
+
     );
 }
 export default AboutPage;

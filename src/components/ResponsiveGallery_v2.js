@@ -18,19 +18,12 @@ class ResponsiveGallery extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lightboxIsOpen: false,
-      currentImage: 0,
       imageArray: [],
+      images: [],
       showFilter: false,
+      photoIndex: 0,
+      isOpen: false,
     };
-
-    //Lightbox
-    this.closeLightbox = this.closeLightbox.bind(this);
-    this.gotoNext = this.gotoNext.bind(this);
-    this.gotoPrevious = this.gotoPrevious.bind(this);
-    this.gotoImage = this.gotoImage.bind(this);
-    this.handleClickImage = this.handleClickImage.bind(this);
-    this.openLightbox = this.openLightbox.bind(this);
 
     //Image Control
     this.renderGallery = this.renderGallery.bind(this);
@@ -38,64 +31,12 @@ class ResponsiveGallery extends Component {
 
     this.cursorStyle = { cursor: "pointer" };
     this.renderFilter = this.renderFilter.bind(this);
-    this.showThumbnailBanner = this.showThumbnailBanner.bind(this);
+    this.setImages = this.setImages.bind(this);
 
   }
   //************************ LightBox *************************//
-  openLightbox(index, event) {
-    event.preventDefault();
-    this.setState({
-      currentImage: index,
-      lightboxIsOpen: true,
-    });
-  }
-  closeLightbox() {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false,
-    });
-  }
-  gotoPrevious() {
-    this.setState({
-      currentImage: this.state.currentImage - 1,
-    });
-  }
-  gotoNext() {
-    // console.log("length: " + this.state.imageArray.length)
-    // console.log("current image: " + this.state.currentImage)
-    //Stops from going to next index when reached end of array
-    if ((this.state.currentImage + 1) < this.state.imageArray.length) {
-      this.setState({
-        currentImage: this.state.currentImage + 1,
-      });
-    }
-  }
 
-  gotoImage(index) {
-    this.setState({
-      currentImage: index,
-    });
-  }
-
-  handleClickImage() {
-    if (this.state.currentImage === this.props.images.length - 1) return;
-    this.gotoNext();
-  }
-
-  // Show Banner only if on features page
-  showThumbnailBanner(obj) {
-    if (this.props.location.pathname === '/') {
-      return (
-        <div className="stripe light">
-          <div>
-            <p>{obj.caption}</p>
-            <p><i className="fa fa-calendar date" aria-hidden="true"> October 5th, 2018</i></p>
-          </div>
-        </div>
-      );
-    }
-  }
-//END************************ LightBox *************************//
+  //END************************ LightBox *************************//
 
   renderGallery(images) {
     console.log("*****Lazy Load Responsive Gallery******");
@@ -105,17 +46,16 @@ class ResponsiveGallery extends Component {
     const gallery = images.map((obj, i) => {
       return (
         //Old animation
-        //<Animated key={i} animationIn="zoomIn" animationOut="fadeOut" animationInDelay={i * 40} isVisible={true} animateOnMount={true}>
+        //<Animated key={i} animationIn="zoomIn" animationOut="fadeOut" animationInDelay={i * 40} isVisible={true} animateOnMount={true}>       
         <LazyLoad key={i}>
           <ScrollAnimation delay={i * 20} animateIn="fadeIn" animateOnce={true} >
             <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
               <img alt=""
                 className=""
-                // onClick={(e) => this.openLightbox(i, e)}
                 src={obj.src}
                 style={{ width: "100%", height: "auto", display: "block" }}
               />
-              <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={(e) => this.openLightbox(i, e)}>
+              <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={() => this.setState({ isOpen: true })}>
                 {/* Show Banner only on Feature Page */}
                 {/* {this.showThumbnailBanner(obj)} */}
               </div>
@@ -124,6 +64,7 @@ class ResponsiveGallery extends Component {
         </LazyLoad>
       );
     });
+
     return (
       //This allows grid view on mobile
       <ResponsiveMasonry columnsCountBreakPoints={{ 750: 1, 750: 2, 900: 3 }} >
@@ -214,6 +155,21 @@ class ResponsiveGallery extends Component {
       });
     }
 
+    this.setImages(this.props.images);
+  }
+
+  setImages(images) {
+    if (!images) {
+      return;
+    }
+    const lightBoxImages = []
+    for (let image = 0; image <= images.length; image++) {
+      lightBoxImages.push(image.src);
+    };
+    this.setState({
+      images: lightBoxImages
+    });
+    console.log('lightbox images: ' + JSON.stringify(lightBoxImages))
   }
 
   //Scroll To Hide Header
@@ -229,7 +185,8 @@ class ResponsiveGallery extends Component {
 
   render() {
     const cursorStyle = { cursor: "pointer" };
-
+    const { photoIndex, isOpen, images } = this.state;
+    // console.log('image array: ' + JSON.stringify(images))
     return (
       <div className="content page-section spad center">
 
@@ -238,27 +195,31 @@ class ResponsiveGallery extends Component {
         {this.renderGallery(this.state.imageArray)}
         {/* </LazyLoad> */}
 
-        <Lightbox
-          currentImage={this.state.currentImage}
-          images={this.state.imageArray}
-          isOpen={this.state.lightboxIsOpen}
-          onClickImage={this.handleClickImage}
-          onClickNext={this.gotoNext}
-          onClickPrev={this.gotoPrevious}
-          onClickThumbnail={this.gotoImage}
-          onClose={this.closeLightbox}
-          showThumbnails={true}
-          theme={this.props.theme}
-          backdropClosesModal={true}
-          width={2048}
-        />
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length
+              })
+            }
+          />
+        )}
       </div>
     );
   }
 }
 
 ResponsiveGallery.propTypes = {
-  images: PropTypes.array,
+  imageArray: PropTypes.array,
   showThumbnails: PropTypes.bool,
 };
 

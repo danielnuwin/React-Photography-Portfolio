@@ -134,11 +134,7 @@ class All_Projects extends Component {
 
         return (
             <div>
-
                 <section className="project-margins text-center allprojectmargintop" >
-                    {/* <Row className="">
-                    {this.renderDropDown()}
-                </Row> */}
                     <Row>
                         <Col>
                             {this.renderFilter()}
@@ -153,8 +149,6 @@ class All_Projects extends Component {
                     </div>
                 </Parallax>
             </div>
-
-
         );
     };
 }

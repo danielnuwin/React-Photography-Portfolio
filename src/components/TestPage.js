@@ -8,12 +8,12 @@ import Slideshow from "./Slideshow"
 import './css/App.css'
 import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 
-
 const TestPage = () => {
   const image1 = 'https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1';
 
   return (
     <div >
+          
       {/* <br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /> */}
@@ -29,7 +29,7 @@ const TestPage = () => {
         <h2>Now Click the Heart button in the bottom to support CSS3</h2>
       </div> */}
 
-      <Row>
+      {/* <Row>
         <Col>
           <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
             <img className="img-fluid" src={image1} alt="Sample image" />
@@ -37,7 +37,7 @@ const TestPage = () => {
           </View>
         </Col>
 
-      </Row>
+      </Row> */}
 
 
 

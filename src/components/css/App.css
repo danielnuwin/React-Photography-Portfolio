@@ -488,6 +488,9 @@
 	.contactcard_width{
 		width: 50% !important;
 	}
+	.contactcard_padding_mobile{
+		padding-left:0px !important;
+	}
 	/* .btn {
 		font-size: 0.75em !important;
 	} */
@@ -580,7 +583,7 @@
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 19em !important;
-		height: 49em !important;
+		height: 37em !important;
 		/* content: url('../../images/mobile_header.jpg') !important; */
 	}
 	/* All Projects Image Cover  */
@@ -607,6 +610,21 @@
 	} */
 
 }
+/* Iphone X */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+	.contactcard_margin {
+		margin-top: -37em!important;
+   		margin-bottom: 16em !important;
+	}
+	.parallax-mobile-view img{
+		top: 19em !important;
+		height: 53em !important;
+	}
+	#carouselIntro .view {
+		background-position: 72% !important;
+
+	}
+}
 
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
@@ -628,7 +646,7 @@
 	}
 	#headerbox .Card{
 		padding: 0.5em !important;	
-		margin-bottom: 6em !important;
+		/* margin-bottom: 6em !important; */
 	}
 	
 	.rwt__tab {
@@ -669,8 +687,13 @@
 		font-size: 1.25em !important;
 	}
 	.page-footer {
-		position: sticky !important;
+		margin-top: 8em !important;
 	}
+	.pagefooter-margin {
+		margin-top: -3.5rem!important;
+		padding-top: 1.5rem!important;
+	}
+
 }
 
 
@@ -803,3 +826,4 @@
 .contactcard_margin {
 	margin-top: -30em;
 }
+

@@ -4,7 +4,7 @@ import { Col, Container, Row, Footer } from 'mdbreact';
 class FooterPage extends React.Component {
     render(){
         return(
-            <Footer color="stylish-color-dark" className="page-footer font-small pt-4 mt-4">
+            <Footer color="stylish-color-dark" style={{marginTop: "-3.5em !important" }} className="page-footer font-small pagefooter-margin">
                 {/* <Container fluid className="text-center text-md-left">
                     <Row>
                     <Col md="6">
