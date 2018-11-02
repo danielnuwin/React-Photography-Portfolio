@@ -22,9 +22,9 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,2,4,5,7,9,11,13,14,16,18,19,21];
+const featTravel = [1,2,3,4,5,8,9,10,14,16,18,19,23,25,28];
 
-for (var i = 1; i <= 26; i++) {
+for (var i = 1; i <= 29; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
@@ -39,9 +39,9 @@ for (var i = 1; i <= 26; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-const featPeople = [1,4,5,8,11,12,15];
+const featPeople = [1,2,3,5,6,15,18,19,23,25];
 
-for (var i = 1; i <= 15; i++) {
+for (var i = 1; i <= 25; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
@@ -55,9 +55,9 @@ for (var i = 1; i <= 15; i++) {
 }
 {/************************** Wedding Data *************************/ }
 const weddingArray = [];
-const featWedding = [2,4,8,10];
+const featWedding = [1,4,10,12,13];
 
-for (var i = 1; i <= 16; i++) {
+for (var i = 1; i <= 19; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
@@ -72,9 +72,9 @@ for (var i = 1; i <= 16; i++) {
 
 {/************************** Urban Data *************************/ }
 const urbanArray = [];
-const featUrban = [6,7,9,12,13,14,15,17];
+const featUrban = [1,3,4,6,8,13];
 
-for (var i = 1; i <= 20; i++) {
+for (var i = 1; i <= 22; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
@@ -88,7 +88,7 @@ for (var i = 1; i <= 20; i++) {
 }
 
 {/*********************** Return Object Data ***********************/ }
-imageArray = [...travelArray, ...shuffle(peopleArray), ...weddingArray, ...urbanArray];
+imageArray = [...(travelArray), ...(peopleArray), ...weddingArray, ...(urbanArray)];
 // console.log("arrayIMages: " + JSON.stringify(imageArray))
 
 const projectData = {

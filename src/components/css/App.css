@@ -381,6 +381,9 @@
 	.display-4{
 		padding-top: 0em !important;
 	}
+	/* #headerbox{
+		margin: -6em 25em 5em 25em !important;
+	} */
 
 }
 
@@ -403,6 +406,9 @@
 	.view .mb-intro {
 		margin-bottom: 10em !important;
 	}
+	#headerbox{
+		margin: -6em 25em 5em 25em;
+	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 	.view .stripe div p{
@@ -417,7 +423,7 @@
 	.view .mb-intro {
 		margin-bottom: 10em !important;
 	}
-	
+
 }
 
 /* Medium screen : 992px. */
@@ -432,9 +438,10 @@
 		font-size: 0.8em !important;
 	}
 
-	#headerbox {
-		margin: -9em 6em 8em 6em !important;
+	#headerbox{
+		margin: -6em 15em 5em 15em !important;
 	}
+
 	#headerbox .Card {
 		margin-bottom: 6em !important;
 	}

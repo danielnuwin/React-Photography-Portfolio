@@ -19,7 +19,7 @@ const ContactCard = () => {
                     <div className="headerbg" style={{ height: 700 }}>
                     </div>
                 </Parallax>
-                <div id="headerbox" className="rounded z-depth-2 ">
+                <div id="headerbox" className="rounded z-depth-2">
                     {/* <LazyLoad>  Doesn't get picked up by anchor*/}
                     <Card className="text-left Card contactcard_margin">
                         <Row>
