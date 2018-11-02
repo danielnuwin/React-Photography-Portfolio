@@ -34,7 +34,7 @@ const ContactCard = () => {
                                 <h3 className="font-weight-bold  contactcard_title"><strong>Daniel Nguyen</strong></h3>
                                 <h5 className="contactcard_info">Email: <strong>  danielnuwin@gmail.com </strong></h5>
                                 <h5 className="contactcard_info">Handle: <strong>  @danielnuwin</strong></h5>
-                               <hr className=""/>
+                               <hr className="hr-dark"/>
                                 <div className="social-media">
                                     <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fa fa-instagram fa-instagram-contact"></i></a>
                                     <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
