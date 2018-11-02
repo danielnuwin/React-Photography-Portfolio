@@ -130,7 +130,7 @@ class All_Projects extends Component {
     }
 
     render() {
-        const Oregon_Image = require('../../images/2017_S.E.A_Backpacking/Asia-6.jpg');
+        const thailand = require('../../images/2017_S.E.A_Backpacking/Asia-6.jpg');
 
         return (
             <div>
@@ -144,7 +144,7 @@ class All_Projects extends Component {
                         {this.renderAllProjects()}
                     </Row>
                 </section>
-                <Parallax bgImage={Oregon_Image} strength={500}>
+                <Parallax bgImage={thailand} strength={500}>
                     <div style={{ height: 500 }}>
                     </div>
                 </Parallax>

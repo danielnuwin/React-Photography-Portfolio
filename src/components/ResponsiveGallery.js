@@ -12,8 +12,6 @@ import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-d
 import LazyLoad from 'react-lazy-load';
 import shuffle from './configs/shuffle'
 
-// import InfiniteScroll from 'react-infinite-scroller'
-
 class ResponsiveGallery extends Component {
   constructor(props) {
     super(props);
@@ -95,7 +93,7 @@ class ResponsiveGallery extends Component {
       );
     }
   }
-//END************************ LightBox *************************//
+  //END************************ LightBox *************************//
 
   renderGallery(images) {
     console.log("*****Lazy Load Responsive Gallery******");
@@ -106,8 +104,10 @@ class ResponsiveGallery extends Component {
       return (
         //Old animation
         //<Animated key={i} animationIn="zoomIn" animationOut="fadeOut" animationInDelay={i * 40} isVisible={true} animateOnMount={true}>
+        //Lazy Load offsetTop={2000 * i} will trigger when going to contact card anchor
+        // <LazyLoad key={i} offsetTop={2000 }>
         <LazyLoad key={i}>
-          <ScrollAnimation delay={i * 20} animateIn="fadeIn" animateOnce={true} >
+          <ScrollAnimation key={i} delay={i * 20} animateIn="fadeIn" animateOnce={true} >
             <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
               <img alt=""
                 className=""
@@ -167,7 +167,7 @@ class ResponsiveGallery extends Component {
     if (showFilter) {
       return (
         <Tabs id="Tab" defaultTab="one" className="GalleryContainer">
-          <TabList className="TabList" style={{ border: 'none', margin: '2em 0 1em 0em' }}>
+          <TabList className="TabList" style={{ border: 'none', margin: '0em 0 1em 0em' }}>
             <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterImage("*")}>Featured</Tab>
             <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterImage("travel")}>Travel</Tab>
             <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
@@ -227,14 +227,14 @@ class ResponsiveGallery extends Component {
     }
   }
 
+
   render() {
     const cursorStyle = { cursor: "pointer" };
-
     return (
       <div className="content page-section spad center">
 
         {this.renderFilter(this.state.showFilter)}
-        {/* <LazyLoad> */}
+        {/* <LazyLoad offsetTop={3000}> */}
         {this.renderGallery(this.state.imageArray)}
         {/* </LazyLoad> */}
 

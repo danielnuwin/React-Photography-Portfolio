@@ -34,7 +34,6 @@ class ProjectContainer extends Component {
     }
 
     componentDidMount() {
-        // if (this.renderType === "allprojects") {
         window.scroll({
             top: 350,
             behavior: "smooth"
@@ -42,14 +41,13 @@ class ProjectContainer extends Component {
         // console.log("ProjectContainer: window did mount");
     }
 
-    //On Refresh
-    componentWillUpdate() {
-        // console.log("ProjectContainer: window will update");
-        return (window.scroll({
-            top: 350,
-            behavior: "smooth"
-        }));
-    }
+    //Cause issue with home '/' scroll mid way"
+    // componentWillUpdate() {
+    //     return (window.scroll({
+    //         top: 350,
+    //         behavior: "smooth"
+    //     }));
+    // }
 
     renderProject(renderType) {
         // Check which project type (Gallery, Projects Page, or Ind. Project)

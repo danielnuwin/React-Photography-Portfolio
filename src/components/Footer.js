@@ -4,7 +4,7 @@ import { Col, Container, Row, Footer } from 'mdbreact';
 class FooterPage extends React.Component {
     render(){
         return(
-            <Footer color="stylish-color-dark" style={{marginTop: "-3.5em !important" }} className="page-footer font-small pagefooter-margin">
+            <Footer id="footer_anchor" color="stylish-color-dark" style={{marginTop: "-3.5em !important" }} className="page-footer font-small pt-4 mt-4 pagefooter-margin">
                 {/* <Container fluid className="text-center text-md-left">
                     <Row>
                     <Col md="6">
@@ -48,9 +48,10 @@ class FooterPage extends React.Component {
                
                 <div className="text-center">
                     <ul className="list-unstyled list-inline">
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram"> </i></a></li>
-                    <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank"><i className="fa fa-facebook"> </i></a></li>
-                        <li className="list-inline-item"><a className="btn-floating btn-sm btn-li mx-1"><i className="fa fa-linkedin"> </i></a></li>
+                    <li className="list-inline-item"><a className="btn-floating btn-lg btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram"> </i></a></li>
+                    <li className="list-inline-item"><a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-soundcloud"></i></a></li>
+                    <li className="list-inline-item"><a className="btn-floating btn-lg btn-fb mx-1" target="_blank"><i className="fa fa-facebook"> </i></a></li>
+                        <li className="list-inline-item"><a className="btn-floating btn-lg btn-li mx-1"><i className="fa fa-linkedin"> </i></a></li>
                     </ul>
                 </div>
                 <div className="footer-copyright text-center py-3">

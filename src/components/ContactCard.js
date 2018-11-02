@@ -15,14 +15,12 @@ const ContactCard = () => {
     return (
         <div id="contactcard">
             <ScrollAnimation delay={500} animateIn="fadeIn" animateOnce={true}>
-
                 <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view `}>
                     <div className="headerbg" style={{ height: 700 }}>
                     </div>
                 </Parallax>
                 <div id="headerbox" className="rounded z-depth-2 ">
-                    {/* <LazyLoad> */}
-
+                    {/* <LazyLoad>  Doesn't get picked up by anchor*/}
                     <Card className="text-left Card contactcard_margin">
                         <Row>
                             <Col lg="5" className="contactcard_width">
@@ -31,11 +29,19 @@ const ContactCard = () => {
                                     <a><Mask overlay="white-slight" /></a>
                                 </View>
                             </Col>
-                            <Col lg="7" className="contactcard_width contactcard_padding_mobile">
-                                <a className="blue-text"><h6 className="font-weight-bold mb-3"><Fa icon="hand-spock-o" className="pr-2"></Fa>Me</h6></a>
+                            <Col lg="7" className="contactcard_width contactcard_padding_mobile contactcard_padding">
+                                <a className="green-text"><h4 className="font-weight-bold "><Fa icon="hand-spock-o" className="pr-2"></Fa>Hello!</h4></a>
                                 <h3 className="font-weight-bold  contactcard_title"><strong>Daniel Nguyen</strong></h3>
-                                <h4 className="contactcard_info">Email: <strong>  danielnuwin@gmail.com </strong></h4>
-                                <h4 className="contactcard_info">Instagram: <strong>  @danielnuwin</strong></h4>
+                                <h5 className="contactcard_info">Email: <strong>  danielnuwin@gmail.com </strong></h5>
+                                <h5 className="contactcard_info">Handle: <strong>  @danielnuwin</strong></h5>
+                               <hr className=""/>
+                                <div className="social-media">
+                                    <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fa fa-instagram fa-instagram-contact"></i></a>
+                                    <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
+                                    <a className="btn-floating btn-lg btn-fb" type="button" role="button"><i className="fa fa-facebook fa-facebook-contact"></i></a>
+                                    <a className="btn-floating btn-lg btn-li" type="button" role="button"><i className="fa fa-linkedin fa-linkedin-contact"></i></a>
+                                    {/* <a className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-twitter"></i></a> */}
+                                </div>
 
                                 <Link to="/about">
                                     <Button color="danger" size="md" className="mb-lg-0 mb-4 waves-light">Read more</Button>
@@ -47,7 +53,6 @@ const ContactCard = () => {
                     {/* </LazyLoad> */}
                 </div>
             </ScrollAnimation>
-
         </div>
     );
 }

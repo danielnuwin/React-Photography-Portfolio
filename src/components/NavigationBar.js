@@ -45,8 +45,18 @@ class NavigationBar extends React.Component {
         // }
         // if(this.props.location.pathname !== '/'){
         //     console.log("redirect");
-        //     <Redirect to='/'/>
+        //     <Redirect to='/about'/>
         // }
+
+//         <BrowserRouter >
+//     <Switch>
+//       <Route path="/items/:id" component={EditPage} />
+//       <Route exact path="/items" component={MainPage} />          
+//       <Route path="/yourReactComp" component={YourReactComp} />
+//       <Route exact path="/" render={() => (<Redirect to="/items" />)} />          
+//       <Route path="*" component={NoMatch} />          
+//     </Switch>
+//   </BrowserRouter>
     }
 
     scrollHome() {
