@@ -635,8 +635,12 @@
    		margin-bottom: 16em !important;
 	}
 	.parallax-mobile-view img{
-		top: 19em !important;
-		height: 53em !important;
+		top: 15em !important;
+		height: 21em !important;
+	}
+	.parallax-mobile-view-intro img{
+		top: 30em !important;
+		height: 40em !important;
 	}
 	#carouselIntro .view {
 		background-position: 72% !important;
@@ -867,7 +871,7 @@
     border-top: 2px solid #fff !important;
 }
 .hr-dark {
-    border-top: .5px solid #5a5051 !important;
+    border-top: 1px solid #5a5051 !important;
 }
 .intro-title {
 	text-shadow: 0px 0px 4px #5a5051;

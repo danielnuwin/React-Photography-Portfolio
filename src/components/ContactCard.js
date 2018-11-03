@@ -15,7 +15,7 @@ const ContactCard = () => {
     return (
         <div id="contactcard">
             <ScrollAnimation delay={500} animateIn="fadeIn" animateOnce={true}>
-                <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view `}>
+                <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view-intro `}>
                     <div className="headerbg" style={{ height: 700 }}>
                     </div>
                 </Parallax>
@@ -32,8 +32,8 @@ const ContactCard = () => {
                             <Col lg="7" className="contactcard_width contactcard_padding_mobile contactcard_padding">
                                 <a className="green-text"><h4 className="font-weight-bold "><Fa icon="hand-spock-o" className="pr-2"></Fa>Hello!</h4></a>
                                 <h3 className="font-weight-bold  contactcard_title"><strong>Daniel Nguyen</strong></h3>
-                                <h5 className="contactcard_info">Email: <strong>  danielnuwin@gmail.com </strong></h5>
-                                <h5 className="contactcard_info">Handle: <strong>  @danielnuwin</strong></h5>
+                                <h5 className="contactcard_info"> <i className="fa fa-envelope"></i> <strong>  danielnuwin@gmail.com </strong></h5>
+                                <h5 className="contactcard_info"><i className="fa fa-at"></i> <strong> danielnuwin</strong></h5>
                                <hr className="hr-dark"/>
                                 <div className="social-media">
                                     <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fa fa-instagram fa-instagram-contact"></i></a>
