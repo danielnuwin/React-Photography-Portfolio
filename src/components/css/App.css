@@ -636,11 +636,7 @@
 	}
 	.parallax-mobile-view img{
 		top: 15em !important;
-		height: 21em !important;
-	}
-	.parallax-mobile-view-intro img{
-		top: 30em !important;
-		height: 40em !important;
+		height: 53em !important;
 	}
 	#carouselIntro .view {
 		background-position: 72% !important;

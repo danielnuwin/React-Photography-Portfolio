@@ -49,7 +49,7 @@ class FooterPage extends React.Component {
                 <div className="text-center">
                     <ul className="list-unstyled list-inline">
                     <li className="list-inline-item"><a className="btn-floating btn-lg btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram"> </i></a></li>
-                    <li className="list-inline-item"><a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-soundcloud"></i></a></li>
+                    <li className="list-inline-item"><a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw"><i className="fa fa-soundcloud"></i></a></li>
                     <li className="list-inline-item"><a className="btn-floating btn-lg btn-fb mx-1" target="_blank"><i className="fa fa-facebook"> </i></a></li>
                         <li className="list-inline-item"><a className="btn-floating btn-lg btn-li mx-1"><i className="fa fa-linkedin"> </i></a></li>
                     </ul>

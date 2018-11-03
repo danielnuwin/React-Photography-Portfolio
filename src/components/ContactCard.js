@@ -15,7 +15,7 @@ const ContactCard = () => {
     return (
         <div id="contactcard">
             <ScrollAnimation delay={500} animateIn="fadeIn" animateOnce={true}>
-                <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view-intro `}>
+                <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view `}>
                     <div className="headerbg" style={{ height: 700 }}>
                     </div>
                 </Parallax>
@@ -36,10 +36,10 @@ const ContactCard = () => {
                                 <h5 className="contactcard_info"><i className="fa fa-at"></i> <strong> danielnuwin</strong></h5>
                                <hr className="hr-dark"/>
                                 <div className="social-media">
-                                    <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fa fa-instagram fa-instagram-contact"></i></a>
-                                    <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
-                                    <a className="btn-floating btn-lg btn-fb" type="button" role="button"><i className="fa fa-facebook fa-facebook-contact"></i></a>
-                                    <a className="btn-floating btn-lg btn-li" type="button" role="button"><i className="fa fa-linkedin fa-linkedin-contact"></i></a>
+                                    <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins"><i className="fa fa-instagram fa-instagram-contact"></i></a>
+                                    <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
+                                    <a className="btn-floating btn-lg btn-fb" ><i className="fa fa-facebook fa-facebook-contact"></i></a>
+                                    <a className="btn-floating btn-lg btn-li" ><i className="fa fa-linkedin fa-linkedin-contact"></i></a>
                                     {/* <a className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-twitter"></i></a> */}
                                 </div>
 
