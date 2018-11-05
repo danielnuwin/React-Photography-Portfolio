@@ -107,7 +107,7 @@ class ResponsiveGallery extends Component {
         //Lazy Load offsetTop={2000 * i} will trigger when going to contact card anchor
         // <LazyLoad key={i} offsetTop={2000 }>
         <LazyLoad key={i}>
-          <ScrollAnimation key={i} delay={i * 20} animateIn="fadeIn" animateOnce={true} >
+          <ScrollAnimation key={i} delay={i * 10} animateIn="fadeIn" animateOnce={true} >
             <div className={`view overlay zoom ` + obj.category} data-category={obj.category}>
               <img alt=""
                 className=""
@@ -223,7 +223,7 @@ class ResponsiveGallery extends Component {
   componentDidMount() {
     if (!this.state.showFilter) {
       window.scroll({
-        top: 350,
+        top: 0,
         behavior: "smooth"
       });
       // console.log("RESPONSIVE GALLERY: window did mount");

@@ -38,8 +38,9 @@ const ContactCard = () => {
                                 <div className="social-media">
                                     <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins"><i className="fa fa-instagram fa-instagram-contact"></i></a>
                                     <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
-                                    <a className="btn-floating btn-lg btn-fb" ><i className="fa fa-facebook fa-facebook-contact"></i></a>
+                                    {/* <a className="btn-floating btn-lg btn-fb" ><i className="fa fa-facebook-official fa-facebook-contact"></i></a> */}
                                     <a className="btn-floating btn-lg btn-li" ><i className="fa fa-linkedin fa-linkedin-contact"></i></a>
+                                    <a href="https://github.com/danielnuwin" className="btn-floating btn-lg btn-gh" ><i className="fa fa-github fa-github-contact"></i></a>
                                     {/* <a className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-twitter"></i></a> */}
                                 </div>
 

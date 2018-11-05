@@ -85,7 +85,8 @@ class CarouselIntro extends React.Component {
                                                                 <Link to="/projects">
                                                                     <Button outline color="white"> Projects</Button>
                                                                 </Link>
-                                                                <AnchorLink href='#contactcard'>
+                                                                {/* <AnchorLink href='#contactcard'> */}
+                                                                <AnchorLink href='#footer_anchor'>
                                                                     <Button color="red"> Contact </Button>
                                                                 </AnchorLink>
                                                             </div>

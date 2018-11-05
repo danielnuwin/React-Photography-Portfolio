@@ -63,7 +63,7 @@ class Home extends Component {
                             imageArray={Featured.imageArray}
                             headerInfo={Featured.projectHeader}
                             renderType="feature"
-                        // style={"container containerMarginTopFeature"}
+                            // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
                 </div>
