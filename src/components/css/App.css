@@ -867,7 +867,7 @@
     border-top: 2px solid #fff !important;
 }
 .hr-dark {
-    border-top: 1px solid #5a5051 !important;
+    border-top: 2px solid #5a5051 !important;
 }
 .intro-title {
 	text-shadow: 0px 0px 4px #5a5051;
@@ -943,3 +943,32 @@
   
  
 
+.tech-info{
+    font-size: 1.875rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 8px;
+    letter-spacing: -0.8px;
+    letter-spacing: -.05rem;
+}
+.tech-info-list {
+	font-size: 18px;
+    color: #cb3837;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.tech-info .margin-left-1 {
+	margin-left: 1em;
+}
+
+.camera-info-list {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	margin: 2em;
+	padding: 2em
+}

@@ -135,18 +135,21 @@ class ResponsiveGallery extends Component {
   }
 
   filterImage(filter) {
-    const imagesCopy = this.props.images;
+    let imagesCopy = this.props.images;
     // const newArray = imagesCopy.filter(function (img) {
     //   let searchValue = img.category;
     //   return searchValue.indexOf(filter) !== -1;
     // });
 
     //Filter Images
-    const newArray = imagesCopy.filter(function (img) {
+    let newArray = imagesCopy.filter(function (img) {
       let searchValue = img.category; //Array of Categories
       return searchValue.includes(filter);
     });
-
+    
+    if(filter === "*"){
+      newArray = shuffle(newArray);
+    }
     this.setState({ imageArray: newArray });
 
     // Deprecated, no longer need as featured state is set in componentWillMount

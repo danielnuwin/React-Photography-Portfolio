@@ -25,24 +25,7 @@ const AboutPage = () => {
                     is still a work in progress...so stay tuned!
                 </p>
 
-                <p className="text-center w-responsive mx-auto ">
-                    I shoot with a Canon 6D and mainly use my Sigma 35mm f1.4 and Tamron 24-70 f2.8 Lenses.
-               <br />
-                    Open for shoots and collaborations! Message me for more info!
-                </p>
-    
-                <div className="text-center">
-                    <ul className="">
-                        <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.instagram.com/danielnuwin"><i className="fa fa-instagram">: @danielnuwin</i></a></li>
-                        {/* <li className="list-inline-item"><a className="btn-floating btn-sm btn-fb mx-1" target="_blank" href="https://www.facebook.com/danielnuwinn"><i className="fa fa-facebook">:  Facebook </i></a></li> */}
-                        <li className="list-inline-item">Email: danielnuwin@gmail.com</li>
-                    </ul>
-                </div>
-
-                <hr />
-                <br/>
-
-                <Row>
+                <Row className="border-bottom">
                     <Col lg="5">
                         <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
                             <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
@@ -50,7 +33,7 @@ const AboutPage = () => {
                         </View>
                     </Col>
                     <Col lg="7">
-                        <a className="green-text"><h6 className="font-weight-bold mb-3"><Fa icon="cubes" className="pr-2"></Fa>Me</h6></a>
+                        {/* <a className="green-text"><h6 className="font-weight-bold mb-3"><Fa icon="cubes" className="pr-2"></Fa>Me</h6></a>
                         <h3 className="font-weight-bold mb-3 p-0"><strong>I am Daniel NuWin</strong></h3>
                         <p>"Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts,
                              it even breaks your heart. But that’s okay. The journey changes you;
@@ -58,57 +41,61 @@ const AboutPage = () => {
                               on your heart, and on your body. You take something with you. Hopefully, you
                           leave something good behind. -- Anthony Bourdain"</p>
 
-                        <p>.... Under Construction </p>
+                        <p>.... Under Construction </p> */}
 
-                        <Button color="success" size="md" className="waves-light ">Read more</Button>
+                        <h2 className="tech-info"> My Camera Gear</h2>
+                        <ul style={{ marginLeft: '1em' }}>
+                            <li className="camera-info-list"> Canon 6D</li>
+                            <li className="camera-info-list"> Sigma 35mm f/1.4</li>
+                            <li className="camera-info-list"> Tamron 24-70mm f/2.8</li>
+                            <li className="camera-info-list"> Canon 50mm f/1.8</li>
+                            <li className="camera-info-list"> Canon Flash 430ex ii</li>
+                        </ul>
+                        <p className="">
+                            Open for shoots and collaborations! Message me for more info!
+                </p>
                     </Col>
                 </Row>
                 {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
-                {/* <Row>
-                <Col lg="7">
-                    <a className="pink-text">
-                        <h6 className="font-weight-bold mb-3">
-                            <Fa icon="image" className="pr-2"></Fa>Lifestyle
-            </h6>
-                    </a>
-                    <h3 className="font-weight-bold mb-3 p-0"><strong>Life as a Clueless Wanderer</strong></h3>
-                    <p style={{ fontStyle: "italic" }}>“Travel changes you. As you move through this life and this world you change things slightly,
-                        you leave marks behind, however small. And in return, life—and travel—leaves marks on you.
-                         Most of the time, those marks – on your body or on your heart – are beautiful. Often,
-                          though, they hurt. -- Anthony Bourdain”</p>
+                <Row className="border-bottom">
+                    <Col lg="7">
+                        <a className="pink-text">
+                            <h6 className="font-weight-bold mb-3">
+                                <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
+                        </a>
+                        <h3 className="font-weight-bold mb-3 p-0"><strong>Traveler</strong></h3>
 
-                    <p>.... Under Construction </p>
+                        To Be Continued...
 
-                    <p>by <a><strong>The one and only</strong></a> Present Day</p>
-                    <Button color="pink" size="md" className="mb-lg-0 mb-4 waves-light">Read more</Button>
-                </Col>
-                <Col lg="5">
-                    <View className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-                        <img className="img-fluid" src={require("../images/About_Page/about2.jpg")} alt="Sample image" />
-                        <a><Mask overlay="white-slight" /></a>
-                    </View>
-                </Col>
-            </Row> */}
-                {/* <hr className="my-5" style={{ width: '38em' }} />
+                    </Col>
+                    <Col lg="5">
+                        <View className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+                            <img className="img-fluid" src={require("../images/About_Page/about2.jpg")} alt="Sample image" />
+                            <a><Mask overlay="white-slight" /></a>
+                        </View>
+                    </Col>
+                </Row>
+                {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
-            <Row>
-                <Col lg="5">
-                    <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                        <img className="img-fluid" src={require("../images/About_Page/about3.jpg")} alt="Sample image" />
-                        <a><Mask overlay="white-slight" /></a>
-                    </View>
-                </Col>
-                <Col lg="7">
-                    <a className="blue-text"><h6 className="font-weight-bold mb-3"><Fa icon="hand-spock-o" className="pr-2"></Fa>Me</h6></a>
-                    <h3 className="font-weight-bold mb-3 p-0"><strong>I am Daniel NuWin</strong></h3>
-                    <p>I like to take photos and I like sports</p>
-                    <p>I like to travel</p>
-                    <p>I like tech</p>
-                    <p>.... Under Construction </p>
-                    <Button color="success" size="md" className="waves-light ">Read more</Button>
-                </Col>
-            </Row> */}
+                <Row>
+                    <Col lg="5">
+                        <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
+                            <img className="img-fluid" src={require("../images/About_Page/about3.jpg")} alt="Sample image" />
+                            <a><Mask overlay="white-slight" /></a>
+                        </View>
+                    </Col>
+                    <Col lg="7">
+                        <a className="blue-text"><h6 className="font-weight-bold mb-3"><Fa icon="hand-spock-o" className="pr-2"></Fa>Me</h6></a>
+                        <h3 className="font-weight-bold mb-3 p-0"><strong>Software Engineer</strong></h3>
+                        <h2 className="tech-info"> Portfolio Built With</h2>
+                        <ul style={{ marginLeft: '1em' }}>
+                            <li><a className="tech-info-list" href="https://reactjs.org/" rel="nofollow">Reactjs</a> - A JavaScript framework for building user interfaces</li>
+                            <li><a className="tech-info-list" href="https://webpack.js.org/" rel="nofollow">Webpack</a> - JavaScript module bundler</li>
+                            <li><a className="tech-info-list" href="http://babeljs.io/" rel="nofollow">Babel</a> - JavaScript transpiler/compiler</li>
+                        </ul>
+                    </Col>
+                </Row>
             </Container>
         </ScrollAnimation>
 
