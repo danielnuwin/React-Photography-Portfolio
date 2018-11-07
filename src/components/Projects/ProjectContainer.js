@@ -72,7 +72,6 @@ class ProjectContainer extends Component {
 
     render() {
         const { title, desc, bgImage, date, style } = this.state.headerInfo;
-        console.log("style on header: " + style);
         const { renderType } = this.state;
         return (
             //May not need since used in responsive gallery per each image

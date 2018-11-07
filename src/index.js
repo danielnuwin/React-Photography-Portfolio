@@ -11,7 +11,7 @@ import './lib/animate.min.css';
 // document.body.style.zoom="80%";
 
 ReactDOM.render(
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <Route component={App} />
     </Router>,
     document.getElementById('app'));
