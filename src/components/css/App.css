@@ -407,7 +407,7 @@
 		margin-bottom: 10em !important;
 	}
 	#headerbox{
-		margin: -6em 25em 5em 25em;
+		margin: -6em 23em 5em 23em;
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -439,7 +439,7 @@
 	}
 
 	#headerbox{
-		margin: -6em 15em 5em 15em !important;
+		margin: -6em 8em 5em 8em !important;
 	}
 
 	#headerbox .Card {
@@ -714,7 +714,7 @@
 		font-size: .75em !important;
 	}
 	.contactcard_margin {
-		margin-top: -24em!important
+		margin-top: -23em!important
 	}
 	.contactcard_info {
 		font-size: 0.85em !important;
@@ -874,7 +874,7 @@
 }
 
 .contactcard_margin {
-	margin-top: -30em;
+	margin-top: -22em;
 }
 
 .view1 .container {

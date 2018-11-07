@@ -74,7 +74,7 @@ for (var i = 1; i <= 19; i++) {
 const urbanArray = [];
 const featUrban = [1,3,4,6,8,13,14,21,22];
 
-for (var i = 1; i <= 26; i++) {
+for (var i = 1; i <= 27; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
