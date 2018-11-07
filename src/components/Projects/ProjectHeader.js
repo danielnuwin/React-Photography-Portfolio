@@ -41,7 +41,8 @@ class ProjectHeader extends Component {
           <Card body className="text-center Card">
             <h1 className="headerTitle display-4" ><strong>{title}</strong></h1>
             {/* <hr className="" style={{border: "1px solid grey "}} /> */}
-            <h5 className="blue-text headerDate"><i className="fa fa-calendar date" aria-hidden="true"> {date} </i></h5>
+            {/* <h5 className="blue-text headerDate"><i className="fa fa-calendar date" aria-hidden="true"> {date} </i></h5> */}
+            <h5 className="blue-text headerDate">{date} </h5>
             <p className="grey-text headerDesc"> {desc}</p>
           </Card>
         </div>

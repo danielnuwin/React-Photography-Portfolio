@@ -27,9 +27,6 @@ class NavigationBar extends React.Component {
                 showFullNav: true
             }
         this.onClick = this.onClick.bind(this);
-        this.handleNavbarClick = this.handleNavbarClick.bind(this);
-        this.showNav = this.showNav.bind(this);
-        this.scrollHome = this.scrollHome.bind(this);
     }
 
     onClick() {
@@ -57,36 +54,6 @@ class NavigationBar extends React.Component {
 //       <Route path="*" component={NoMatch} />          
 //     </Switch>
 //   </BrowserRouter>
-    }
-
-    scrollHome() {
-        window.scrollTo(0, 0);
-    }
-
-    showNav() {
-        if (this.props.location.pathname === '/') {
-            return
-            <div>
-                <NavItem active>
-                    {/* <NavLink className="brand" to="/">Home</NavLink> */}
-                    <AnchorLink onClick={this.onClick} className="nav-link " href='#section1'>Home</AnchorLink>
-                </NavItem>
-                <NavItem>
-                    {/* <NavLink className="brand" to="/template">GalleryContainer</NavLink> */}
-                    <AnchorLink offset={() => 0} onClick={this.onClick} className="nav-link " href='#headerbox'>Portfolio</AnchorLink>
-                </NavItem>
-                <NavItem>
-                    {/* <NavLink className="brand" to="/blogpage">Blog Page</NavLink> */}
-                    <AnchorLink onClick={this.onClick} className="nav-link " href='#section3'>About</AnchorLink>
-                </NavItem>
-            </div>
-        }
-    }
-
-    handleNavbarClick() {
-        this.setState({
-            collapse: false
-        });
     }
 
     render() {

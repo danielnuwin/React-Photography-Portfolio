@@ -12,7 +12,7 @@ const AboutPage = () => {
         <ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 
             <Container id="aboutpage" className="marginTop3">
-                <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2>
+                {/* <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2> */}
                 <p className="text-center w-responsive mx-auto ">
                     Welcome to my page. I'm a photographer and a software engineer.
                          Born in the Bay Area but spent most of my
@@ -42,8 +42,11 @@ const AboutPage = () => {
                           leave something good behind. -- Anthony Bourdain"</p>
 
                         <p>.... Under Construction </p> */}
-
-                        <h2 className="tech-info"> My Camera Gear</h2>
+                        <h2 className="font-weight-bold mb-3 p-0"> <Fa icon="image" className="pr-2 fa-camera-retro"></Fa><strong>Photographer</strong></h2>
+                        <p className="">
+                            Open for shoots and collaborations! Message me for more info!
+                        </p>
+                        <h4 className="tech-info"> My Camera Gear</h4>
                         <ul style={{ marginLeft: '1em' }}>
                             <li className="camera-info-list"> Canon 6D</li>
                             <li className="camera-info-list"> Sigma 35mm f/1.4</li>
@@ -51,20 +54,17 @@ const AboutPage = () => {
                             <li className="camera-info-list"> Canon 50mm f/1.8</li>
                             <li className="camera-info-list"> Canon Flash 430ex ii</li>
                         </ul>
-                        <p className="">
-                            Open for shoots and collaborations! Message me for more info!
-                </p>
+
                     </Col>
                 </Row>
-                {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
                 <Row className="border-bottom">
                     <Col lg="7">
-                        <a className="pink-text">
+                        {/* <a className="pink-text">
                             <h6 className="font-weight-bold mb-3">
                                 <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
-                        </a>
-                        <h3 className="font-weight-bold mb-3 p-0"><strong>Traveler</strong></h3>
+                        </a> */}
+                        <h3 className="font-weight-bold mb-3 p-0">  <Fa icon="image" className="pr-2"></Fa><strong>Traveler</strong></h3>
 
                         To Be Continued...
 
@@ -76,7 +76,6 @@ const AboutPage = () => {
                         </View>
                     </Col>
                 </Row>
-                {/* <hr className="my-5" style={{ width: '38em' }} /> */}
 
                 <Row>
                     <Col lg="5">
@@ -86,9 +85,8 @@ const AboutPage = () => {
                         </View>
                     </Col>
                     <Col lg="7">
-                        <a className="blue-text"><h6 className="font-weight-bold mb-3"><Fa icon="hand-spock-o" className="pr-2"></Fa>Me</h6></a>
-                        <h3 className="font-weight-bold mb-3 p-0"><strong>Software Engineer</strong></h3>
-                        <h2 className="tech-info"> Portfolio Built With</h2>
+                        <h3 className="font-weight-bold mb-3 p-0"><Fa icon="hand-spock-o" className=""></Fa> <strong>Software Engineer</strong></h3>
+                        <h4 className="tech-info"> Portfolio Built With</h4>
                         <ul style={{ marginLeft: '1em' }}>
                             <li><a className="tech-info-list" href="https://reactjs.org/" rel="nofollow">Reactjs</a> - A JavaScript framework for building user interfaces</li>
                             <li><a className="tech-info-list" href="https://webpack.js.org/" rel="nofollow">Webpack</a> - JavaScript module bundler</li>

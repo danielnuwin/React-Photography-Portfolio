@@ -118,14 +118,17 @@
   }
 
 #carouselIntro .view {
-    background-image: url('../../images/slider1.jpg');
+	/* background-image: url('../../images/About_Page/about_header.jpg'); */
+	/* background-image: url('../../images/About_Page/home1.jpg'); */
+	/* background-image: url('../../images/About_Page/home2.jpg'); */
+	background-image: url('../../images/slider1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 103vh;
   }
   #carouselIntro .view2 {
-    background-image: url('../../images/Featured_Portfolio/Travel/Travel-2.jpg');
+	background-image: url('../../images/About_Page/about_header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -846,7 +849,7 @@
 }
 
 .marginTop3 {
-	margin-top: -3em !important;
+	margin-top: -10em !important;
 }
 
 .display-4{

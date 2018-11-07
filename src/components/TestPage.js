@@ -9,7 +9,7 @@ import './css/App.css'
 import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 
 const TestPage = () => {
-  const image1 = 'https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1';
+  // const image1 = 'https://www.dropbox.com/s/05znwgdjf1haqo8/IMG_3732.jpg?raw=1';
 
   return (
     <div >
