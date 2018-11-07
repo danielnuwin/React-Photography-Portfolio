@@ -21,7 +21,7 @@ const imageArray = [
     title: "Ginger's 1st Halloween",
     date: "October 2018",
     coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-Thumb.jpg'),
-    link: "/baby_ginger",
+    link: "/baby_ginger", 
     category: "ppl",
     bannerStyle: "light"
   },{

@@ -6,6 +6,7 @@ import All_Projects from './All_Projects'
 import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
 import FadeIn from 'react-fade-in';
 import ScrollAnimation from 'react-animate-on-scroll';
+import AboutPage from '../AboutPage'
 
 class ProjectContainer extends Component {
     constructor(props) {
@@ -64,6 +65,9 @@ class ProjectContainer extends Component {
             return <All_Projects
                 imageArray={this.state.imageArray}
             />
+        }
+        else if(renderType === "aboutme"){
+            return <AboutPage/>;
         }
         else {
             return <span>No Pictures</span>

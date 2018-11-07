@@ -17,6 +17,7 @@ import ContactCard from './ContactCard'
 
 // ******** Project Routes ******** //
 import AllProjectsConfig from './PhotoProjects/All_Projects_Config'
+import AboutMeConfig from './PhotoProjects/About_Me_Config'
 import Laruen_Lychee from './PhotoProjects/10.04.18_Laruen_Lychee'
 import Wedding_Wan_Chen from './PhotoProjects/09.02.17_Yvonne_Wedding'
 import Wedding_Cbass_Becca from './PhotoProjects/08.05.18_Wedding_Cbass_Becca'
@@ -42,13 +43,19 @@ const Routes = () => {
     // <Switch>
     <div>
       <Route exact path="/" component={Home} />
-      <Route path="/template" component={GalleryContainer} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/testpage" component={TestPage} />
-      <Route path="/slideshow" component={Slideshow} />
-      <Route path="/about" component={AboutPage} />
+      {/* <Route path="/slideshow" component={Slideshow} /> */}
       <Route path="/contact" component={ContactPage}></Route>
       <Route path="/contactcard" component={ContactCard}></Route>
+      {/* <Route path="/about" component={AboutPage} /> */}
+      <Route path="/about" render={() =>
+        <ProjectContainer
+          imageArray={AboutMeConfig.imageArray}
+          headerInfo={AboutMeConfig.projectHeader}
+          renderType="aboutme" />
+      }
+      />
       <Route path="/projects" render={() =>
         <ProjectContainer
           imageArray={AllProjectsConfig.imageArray}

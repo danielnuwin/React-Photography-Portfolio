@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+//For getting individual routes to work. 
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Router, Route, Link } from "react-router-dom";
+
 import Home from './components/Home'
 //Material Design Bootstrap
 import 'font-awesome/css/font-awesome.min.css';
@@ -9,9 +13,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import './lib/animate.min.css';
 // document.body.style.zoom="80%";
+import createHashHistory from 'history/createHashHistory';
+
+const hashHistory = createHashHistory({ basename: process.env.PUBLIC_URL });
 
 ReactDOM.render(
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router history={hashHistory}>
         <Route component={App} />
     </Router>,
     document.getElementById('app'));

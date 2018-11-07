@@ -45,7 +45,7 @@ class Home extends Component {
     render() {
         // Parallax Images will be local 
         // const Oregon_Image = require('../images/Featured_Portfolio/Travel/Travel-10.jpg');
-        const SF_Image = require('../images/08.18.18_Urban_SF/SF-17.jpg');
+        // const SF_Image = require('../images/08.18.18_Urban_SF/SF-17.jpg');
         return (
             <div>
                 <div id="section1">
