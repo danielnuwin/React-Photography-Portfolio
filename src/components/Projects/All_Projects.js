@@ -144,10 +144,10 @@ class All_Projects extends Component {
                         {this.renderAllProjects()}
                     </Row>
                 </section>
-                <Parallax bgImage={thailand} strength={500}>
+                {/* <Parallax bgImage={thailand} strength={500}>
                     <div style={{ height: 500 }}>
                     </div>
-                </Parallax>
+                </Parallax> */}
             </div>
         );
     };

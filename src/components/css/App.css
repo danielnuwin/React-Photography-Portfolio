@@ -563,7 +563,8 @@
 		margin: 1em !important;
 	}
 	.view .imgFit{
-		height:25vh !important;
+		/* height:25vh !important; */
+		height:30vh !important;
 		width: 100vw !important;
 		object-position: center !important;
 	}
