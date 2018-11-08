@@ -41,7 +41,7 @@ class CarouselIntro extends React.Component {
             <div id="carouselIntro" className="">
                 <Carousel
                     activeItem={1}
-                    length={2}
+                    length={1}
                     showControls={true}
                     showIndicators={true}
                     className="z-depth-1"

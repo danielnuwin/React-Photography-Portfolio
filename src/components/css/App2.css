@@ -25,14 +25,6 @@
 /*----------------------------------------*/
 /*  Portfolio page CSS
 /*----------------------------------------*/
-html {
-	font-size: 80%;
-}
-.container {
-	width: 80% !important;
-}
-
-
 .portfolio-filter {
 	list-style: none;
 }
@@ -157,7 +149,7 @@ html {
   }
 
   #navigation strong {
-    font-size: 1.25em;
+    font-size: 25px;
     font-weight: 500;
   }
   #navigation .navbar {
@@ -394,9 +386,6 @@ html {
 } */
 
 @media only screen and (max-width: 1477px) {
-	/* .container {
-		width: 100% !important;
-	} */
 	.view .imgFit{
 		height: 57vh !important;
 		width: 93vw !important;
@@ -409,13 +398,12 @@ html {
 	/* #headerbox{
 		margin: -6em 25em 5em 25em !important;
 	} */
-	/* .container {
+	.container {
 		max-width: 1200px !important;
-	} */
+	}
 }
 
 @media only screen and (min-width: 1400px) {
-	
 	.view .imgFit{
 		height: 57vh !important;
 		width: 93vw !important;
@@ -439,9 +427,6 @@ html {
 	}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-	.container {
-		width: 100% !important;
-	}
 	.view .stripe div p{
 		font-size: 0.8em !important;
 	}
@@ -459,12 +444,7 @@ html {
 
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-	/* html {
-		font-size: 80% !important;
-	} */
-	.container {
-		width: 100% !important;
-	}
+
 	.view .imgFit{
 		height: 35vh !important;
 		width: 93vw !important;
@@ -494,9 +474,6 @@ html {
 	.contactcard_margin {
 		margin-top: -22em!important
 	}
-	.view .mb-intro {
-		margin-bottom: 10em !important;
-	}
 	/* .btn {
 		font-size: 0.5em !important;
 	} */
@@ -504,12 +481,6 @@ html {
 
 /* Tablet :768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	html {
-		font-size: 80% !important;
-	}
-	.container {
-		width: 100% !important;
-	}
 	#navigation .navbar:not(.top-nav-collapse) {
 		background: white !important;
 	}
@@ -550,16 +521,12 @@ html {
 	.contactcard_padding_mobile{
 		padding-left:0px !important;
 	}
-	.view .mb-intro {
-		margin-bottom: 3em !important;
-	}
 	/* .btn {
 		font-size: 0.75em !important;
 	} */
 
 }
 @media only screen and (min-width: 520px) and (max-width: 766px) {
-	
 	.card-margin{
 		width: 50% !important;
 		margin-bottom: 1em !important;
@@ -571,13 +538,7 @@ html {
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
-	/* html {
-		font-size: 100% !important;
-	} */
-	.container {
-		width: 100% !important;
-	}
-	
+
 	#carouselIntro .view {
 		background-image: url('../../images/slider_mobile.jpg');
 		background-repeat: no-repeat;
@@ -686,9 +647,6 @@ html {
 }
 /* Iphone X */
 @media only screen and (max-width: 375px) and (max-height: 812px) {
-	.container {
-		width: 100% !important;
-	}
 	.contactcard_margin {
 		margin-top: -37em!important;
    		/* margin-bottom: 16em !important; */
@@ -723,9 +681,6 @@ html {
 
 /* small mobile :320px. */
 @media only screen and (max-width: 479px) {
-	html {
-		font-size: 100% !important;
-	}
 	.headerbg{
 		height: 250px;
 	}
@@ -1018,7 +973,7 @@ html {
     letter-spacing: -.05rem;
 }
 .tech-info-list {
-	font-size: 1.15em;
+	font-size: 18px;
     color: #cb3837;
     text-decoration: none;
     font-weight: 400;
@@ -1030,7 +985,7 @@ html {
 }
 
 .camera-info-list {
-	font-size: 1.1em;
+	font-size: 18px;
 	font-weight: 400;
 }
 
