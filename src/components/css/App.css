@@ -371,16 +371,29 @@
 /* ===========================
   Responsive
 ==============================*/
+/* Large Display */
+@media only screen and (min-width: 1600px) {
+	.view .mb-intro {
+		margin-bottom: 12em !important;
+	}
+ 	.container {
+		max-width: 1400px !important;
+	}
+
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 0em !important;
+		height: 85em !important;
+	}
+}
+
 @media only screen and (max-width: 1477px) {
 	.view .imgFit{
 		height: 57vh !important;
 		width: 93vw !important;
 	}
 	/* Parallax Header Image  */
-	.parallax-mobile-view img {
-		top: 9em !important;
-		height: 77em !important;
-	}
+	 
 	.display-4{
 		padding-top: 0em !important;
 	}
@@ -400,14 +413,14 @@
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 9em !important;
-		height: 77em !important;
+		top: 9em;
+		height: 77em;
 	}
 	.display-4{
 		padding-top: 0em !important;
 	}
 	.view .mb-intro {
-		margin-bottom: 10em !important;
+		margin-bottom: 10em;
 	}
 	#headerbox{
 		margin: -6em 23em 5em 23em;
@@ -791,7 +804,9 @@
 .project-margins{
 	margin: 3em;
 }
-
+.mb-10{
+	margin-bottom: 10em;
+}
 /* For Responsive Gallery Info */
 .view .stripe{
 	position:absolute;
