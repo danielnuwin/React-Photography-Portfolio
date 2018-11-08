@@ -30,7 +30,7 @@ for (var i = 1; i <= 29; i++) {
 {/*********************** Return Object Data ***********************/ }
 
 const projectData = {
-  imageArray: shuffle(imageArray),
+  imageArray: (imageArray),
   projectHeader: headerData
 }
 

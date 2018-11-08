@@ -55,7 +55,7 @@ const imageArray = [
   }, {
     title: "Suzzane's Graduation",
     date: "June 2018",
-    coverImage: require('../../images/06.12.18_Gad_Suzzane/Grad-8.jpg'),
+    coverImage: require('../../images/06.12.18_Gad_Suzzane/Grad-21.jpg'),
     link: "/grad_suzzane",
     category: "ppl",
     bannerStyle: "dark"

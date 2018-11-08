@@ -25,14 +25,11 @@ class App extends Component {
       top: 70,
       behavior: "smooth"
     });
-    // console.log("APPPPP: window did mount");
-
   }
+  
   render() {
     return (
       <div>
-        {/* <NavigationBar /> */}
-
         <Headroom >
           <NavigationBar />
           <div>

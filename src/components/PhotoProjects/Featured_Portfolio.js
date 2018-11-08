@@ -22,9 +22,9 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,2,3,4,7,8,9,13,14,16,18,19,24,26];
+const featTravel = [1,2,3,4,7,8,9,13,14,16,18,19,24,26, 30];
 
-for (var i = 1; i <= 29; i++) {
+for (var i = 1; i <= 30; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
