@@ -101,7 +101,7 @@ class CarouselIntro extends React.Component {
                             <CarouselCaption>
                                 <FadeIn delay={2000}>
                                     <Bounce duration={2} infinite>
-                                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> More</AnchorLink>
+                                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> </AnchorLink>
                                     </Bounce>
                                 </FadeIn>
                             </CarouselCaption>
@@ -148,7 +148,7 @@ class CarouselIntro extends React.Component {
                             <CarouselCaption>
                                 <FadeIn delay={2000}>
                                     <Bounce duration={2} infinite>
-                                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> More</AnchorLink>
+                                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> </AnchorLink>
                                     </Bounce>
                                 </FadeIn>
                             </CarouselCaption>

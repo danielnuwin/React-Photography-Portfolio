@@ -16,7 +16,7 @@ const ContactCard = () => {
         <div id="contactcard">
             <ScrollAnimation delay={500} animateIn="fadeIn" animateOnce={true}>
                 <Parallax bgImage={SF_Image} strength={1000} className={`parallax-mobile-view `}>
-                    <div className="headerbg" style={{ height: 700 }}>
+                    <div className="headerbg headerbg-contact" >
                     </div>
                 </Parallax>
                 <div id="headerbox" className="rounded z-depth-2">

@@ -49,11 +49,11 @@ class Home extends Component {
         return (
             <div>
                 <div id="section1">
-                    <Parallax strength={500}>
+                    {/* <Parallax strength={500}> */}
                         <ScrollAnimation delay={700} animateIn="fadeIn" animateOnce={true}>
                             <CarouselIntro />
                         </ScrollAnimation>
-                    </Parallax>
+                    {/* </Parallax> */}
                 </div>
 
                 <div id="section2">
