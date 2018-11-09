@@ -291,16 +291,15 @@
   Responsive
 ==============================*/
 /* Large Display */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1600px) {
 	html{
-		font-size: 80% !important;
+		font-size: 100% !important;
 	}
 	.container {
 		width: 100% !important;
-		margin-bottom: 7em!important;
 	}
 	#headerbox{
-		margin: -6em 35em 5em 35em !important;
+		margin: -6em 30em 5em 23em !important;
 	}
 		/* Parallax Header Image  */
 	/* .parallax-mobile-view img {
@@ -310,6 +309,7 @@
 	.display-4{
 		padding-top: 0em !important;
 	}
+	
 	
 }
 
@@ -334,7 +334,7 @@
 
 @media only screen and (min-width: 1400px)  and (max-width: 1476px) {
 	html {
-		font-size: 78%;
+		font-size: 80%;
 	}
 	.container {
 		max-width: 80%!important;
@@ -348,8 +348,8 @@
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 12em !important;
-    	height: 78em !important;
+		top: 11em !important;
+    	height: 84em !important;
 	}
 	.display-4{
 		padding-top: 0em !important;
@@ -383,13 +383,13 @@
 	.view .mb-intro {
 		margin-bottom: 10em !important;
 	}
-	.headerbg-contact{
-		height: 40em !important;
-	}
+	/* .headerbg-contact{
+		height: 33em !important;
+	} */
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 8em !important;
-    	height: 70em !important;
+    	/* height: 70em !important; */
 	}
 
 }
@@ -397,7 +397,7 @@
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	html {
-		font-size: 78%;
+		font-size: 100% !important;
 	}
 	.container {
 		width: 95% !important;
@@ -412,7 +412,7 @@
 	}
 
 	#headerbox{
-		margin: -6em 18em 5em 18em !important;
+		margin: -6em 8em 5em 8em !important;
 	}
 
 	#headerbox .Card {
@@ -474,10 +474,10 @@
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 18em !important;
-		height: 43em !important;
+		height: 40em !important;
 	}
 	.contactcard_margin {
-		margin-top: -33em!important
+		margin-top: -22em!important
 	}
 	.contactcard_width{
 		width: 50% !important;
@@ -491,22 +491,10 @@
 	/* .btn {
 		font-size: 0.75em !important;
 	} */
-	.headerbg-contact{
-		height: 50em;
-	}
-	.parallax-mobile-view img {
-		top: 23em !important;
-		height: 50em !important;
-	}
 
 }
 @media only screen and (min-width: 520px) and (max-width: 766px) {
-	html {
-		font-size: 80% !important;
-	}
-	#headerbox {
-		margin: -7em 5em 5em 5em !important;
-	}
+	
 	.card-margin{
 		width: 50% !important;
 		margin-bottom: 1em !important;
@@ -515,13 +503,6 @@
 		width: 50% !important;
 	}
 	
-	.headerbg-contact {
-		height: 24em !important;
-	}
-	.parallax-mobile-view img {
-		top: 50em !important;
-		height: 40em !important;
-	}
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
@@ -608,10 +589,11 @@
 		margin-bottom: 1em !important;
 	}
 	/* Parallax Header Image  */
-	/* .parallax-mobile-view img {
+	.parallax-mobile-view img {
 		top: 19em !important;
 		height: 37em !important;
-	} */
+		/* content: url('../../images/mobile_header.jpg') !important; */
+	}
 	/* All Projects Image Cover  */
 	/* .ap-mobile-cover  {
 		content: url('../../images/mobile_header.jpg') !important;
@@ -696,7 +678,7 @@
 	}
 
 	#headerbox {
-		margin-top: -5em !important;
+		margin: -4em 1em 1em 1em;
 	}
 	#headerbox .Card{
 		padding: 0.5em !important;	
@@ -751,10 +733,13 @@
 		padding-top: 1.5rem!important;
 	}
 	.social-media .fa {
-		font-size: 1.25em !important;
+		font-size: 1.20em !important;
 	}
 	.btn-lg {
 		padding: .25rem 0px .5rem 1em !important;
+	}
+	.headerbg-contact {
+		height: 44em !important;
 	}
 
 }
