@@ -9,7 +9,11 @@
 	width: 80% !important;
 } */
 
-
+.mb-intro .intro-container {
+	padding: 2em 0 3em 1em;
+	/* border: "solid" !important;
+	background-color: '#2715151f' !important; */
+}
 .portfolio-filter {
 	list-style: none;
 }
@@ -89,6 +93,9 @@
 
 .portfolio-warp .grid-sizer {
 	width: 20%;
+}
+#section1{
+	margin-top: -0.5em;
 }
 
 /*----------------------------------------*/
@@ -220,7 +227,7 @@
 
 	}
 	.headerbg{
-		height: 450px;
+		height: 47em;
 	}
 
 
@@ -306,9 +313,9 @@
 		top: -4em !important;
 		height: 102em !important;
 	} */
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	
 	
 }
@@ -323,9 +330,9 @@
 	}
 	/* Parallax Header Image  */
 	 
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	/* #headerbox{
 		margin: -6em 25em 5em 25em !important;
 	} */
@@ -351,9 +358,9 @@
 		top: 11em !important;
     	height: 84em !important;
 	}
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	.view .mb-intro {
 		margin-bottom: 10em;
 	}
@@ -374,9 +381,9 @@
 	.view .stripe div p{
 		font-size: 0.8em !important;
 	}
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	#headerbox {
 		margin: -6em 23em 5em 23em;
 	}
@@ -388,8 +395,8 @@
 	} */
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 8em !important;
-    	/* height: 70em !important; */
+		top: 14em !important;
+    	height: 70em !important;
 	}
 
 }
@@ -425,9 +432,9 @@
 		height: 79em !important;
 	}
 	
-	.display-4{
+	/* .display-4{
 		padding-top: 1em !important;
-	}
+	} */
 	.contactcard_margin {
 		margin-top: -11em!important
 	}
@@ -457,7 +464,7 @@
 		vertical-align: middle;
 	}
 	#headerbox {
-		margin: -7em 15em 5em 15em;
+		margin: -7em 12em 5em 12em;
 	}
 	.view .imgFit{
 		height:38vh !important;
@@ -466,15 +473,15 @@
 	}
 	.display-4{
 		font-size: 2.25em !important;
-		padding-top: 1em !important;
+		/* padding-top: 1em !important; */
 	}
 	.display-5{
 		font-size: 1.25em !important;
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 18em !important;
-		height: 40em !important;
+		top: 12em !important;
+		height: 79em !important;
 	}
 	.contactcard_margin {
 		margin-top: -22em!important
@@ -502,6 +509,17 @@
 	.contactcard_width{
 		width: 50% !important;
 	}
+	/* Parallax Header Image  */
+	/* .parallax-mobile-view img {
+		top: 1em !important;
+		height: 79em !important;
+	}
+	html {
+		font-size: 80% !important;
+	}
+	.container {
+		width: 100% !important;
+	} */
 	
 }
 /* Large Mobile :480px. */
@@ -575,7 +593,7 @@
 	}
 	.display-4{
 		font-size: 2.5em !important;
-		padding-top: 1em !important;
+		/* padding-top: 1em !important; */
 	}
 
 	.display-5{
@@ -855,7 +873,7 @@
 
 .display-4{
 	font-weight: 500 !important;
-	padding-top: 1em;
+	/* padding-top: 1em; */
 	/* text-shadow: 2px 2px 4px #5a5051; */
 	font-size: 4rem;
 }

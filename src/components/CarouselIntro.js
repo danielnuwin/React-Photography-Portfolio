@@ -70,8 +70,8 @@ class CarouselIntro extends React.Component {
                                                         </Col>
                                                     </Row> */}
                                                     <Row>
-                                                        <Col md="" className="mb-4 white-text text-center dark" style={{ border: "solid", backgroundColor: '#2715151f', padding: "0 1em 0 1em" }}>
-                                                            <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
+                                                        <Col md="" className="mb-4 white-text text-center dark intro-container" style={{ border: "solid", backgroundColor: '#2715151f'}}>
+                                                            <div className="white-text text-center text-md-left col-md-6">
                                                                 <div>
                                                                     <h4 className="display-4 intro-title" > Daniel NuWin </h4>
                                                                     {/* <h3 className="display-5 intro-subtitle" > Photography </h3> */}

@@ -36,7 +36,7 @@ class ProjectContainer extends Component {
 
     componentDidMount() {
         window.scroll({
-            top: 350,
+            top: 0,
             behavior: "smooth"
         });
         // console.log("ProjectContainer: window did mount");
