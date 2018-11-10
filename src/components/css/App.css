@@ -27,7 +27,7 @@
 /*----------------------------------------*/
 
 .mb-intro .intro-container {
-	padding: 2em 0 3em 1em;
+	padding: 2em 0 2em 1em;
 	/* border: "solid" !important;
 	background-color: '#2715151f' !important; */
 }
@@ -601,7 +601,7 @@
 		/* height: 100vh; */
 	}
 	#headerbox {
-		margin: -7em 1em 5em 1em;
+		margin: -7em 2em 5em 2em;
 	}
 	.headerbg{
 		height: 300px;
