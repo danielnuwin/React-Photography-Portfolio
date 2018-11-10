@@ -1,30 +1,13 @@
-/* @import '../../../node_modules/font-awesome/css/font-awesome.css'; */
-
-/* .slider1{
-	background-image: url("/src/assets/img/slider1.jpg");
-}
-.slider2{
-    background-image: url("/src/assets/img/slider2.jpg");
-}
-.slider3{
-    background-image: url("/src/assets/img/slider3.jpg");
-}
-.slider4{
-    background-image: url("/src/assets/img/slider4.jpg");
-}
-.slider5{
-    background-image: url("/src/assets/img/slider5.jpg");
-}
-.slider6{
-    background-image: url("/src/assets/img/slider6.jpg");
-}
-.slider7{
-    background-image: url("/src/assets/img/slider7.jpg");
-} */
 
 /*----------------------------------------*/
 /*  Portfolio page CSS
 /*----------------------------------------*/
+/* html {
+	font-size: 80%;
+}
+.container {
+	width: 80% !important;
+} */
 
 .mb-intro .intro-container {
 	padding: 2em 0 3em 1em;
@@ -110,6 +93,9 @@
 
 .portfolio-warp .grid-sizer {
 	width: 20%;
+}
+#section1{
+	margin-top: -0.5em;
 }
 
 /*----------------------------------------*/
@@ -230,14 +216,24 @@
     padding-left: 24px;
     color: black;
   }
+	/* Project Header */
+	#headerbox {
+		margin: -6em 18em 5em 18em;
+	}
+	#headerbox .Card{
+		padding: 1.25rem;	
+		background-color:rgba(255,255,255,.7);
+		margin-bottom: 7.5em;
 
-  /* Button */
+	}
+	.headerbg{
+		height: 450px;
+	}
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	.button,
-	buttonMore {
+
+  /* Intro Arrow Button */
+
+	.button, buttonMore {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -260,10 +256,7 @@
 		text-align: center;
 		text-decoration: none;
 	}
-
-		input[type="button"].down,
-		input[type="submit"].down,
-		input[type="reset"].down,
+	input[type="button"].down,
 		.button.down,
 		button.down {
 			width: 5em;
@@ -274,50 +267,16 @@
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
-      overflow: hidden;
-      margin-bottom: 5em;
+     		overflow: hidden;
+     		margin-bottom: 5em;
 		}
-
-			input[type="button"].down.anchored,
-			input[type="submit"].down.anchored,
-			input[type="reset"].down.anchored,
-			.button.down.anchored,
-			button.down.anchored {
-				bottom: 0;
-				border-bottom: 0;
-				border-radius: 3em 3em 0 0;
-				height: 4.5em;
-				margin-left: -2.5em;
-			}
-
-		input[type="button"].anchored,
-		input[type="submit"].anchored,
-		input[type="reset"].anchored,
-		.button.anchored,
-		button.anchored {
-			position: absolute;
-			left: 50%;
-		}
-
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		.button:hover,
 		button:hover {
 			background-color: rgba(229, 230, 231, 0.375);
 		}
-
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
 		.button:active,
 		button:active {
 			background-color: rgba(229, 230, 231, 0.375);
 		}
-
-		input[type="button"].style2,
-		input[type="submit"].style2,
-		input[type="reset"].style2,
 		.button.style2,
 		button.style2 {
 			/* background-color: transparent; */
@@ -325,53 +284,14 @@
 			border: solid 1px #f8f9fa; 
 			color: inherit;
 		}
-
-			input[type="button"].style2:hover,
-			input[type="submit"].style2:hover,
-			input[type="reset"].style2:hover,
-			.button.style2:hover,
-			button.style2:hover {
-				background-color: rgba(229, 230, 231, 0.375);
-			}
-
-			input[type="button"].style2:active,
-			input[type="submit"].style2:active,
-			input[type="reset"].style2:active,
-			.button.style2:active,
-			button.style2:active {
-				background-color: rgba(229, 230, 231, 0.375);
-			}
-
-			/* input[type="button"].style2.down,
-			input[type="submit"].style2.down,
-			input[type="reset"].style2.down,
-			.button.style2.down,
-			button.style2.down {
-				background-image: url("../../images/buttons/arrow.svg");
-			} */
-
-			/* HR Line Break */
-			/* #section2 {
-				margin-top: 3rem;
-				margin-bottom: 4rem;
-				border: 0;
-				width: 75em;
-				border-top: 1px solid rgba(0,0,0,.1);
-			} */
-
-			/* Project Header */
-			#headerbox {
-				margin: -6em 18em 5em 18em;
-			}
-			#headerbox .Card{
-				padding: 1.25rem;	
-				background-color:rgba(255,255,255,.7);
-				margin-bottom: 7.5em;
-
-			}
-			.headerbg{
-				height: 450px;
-			}
+		.button.style2:hover,
+		button.style2:hover {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
+		.button.style2:active,
+		button.style2:active {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
 
 
 /* ===========================
@@ -396,24 +316,27 @@
 	/* .display-4{
 		padding-top: 0em !important;
 	} */
+	
+	
 }
 
 @media only screen and (max-width: 1477px) {
+	/* .container {
+		width: 100% !important;
+	} */
 	.view .imgFit{
 		height: 57vh !important;
 		width: 93vw !important;
 	}
 	/* Parallax Header Image  */
 	 
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	/* #headerbox{
 		margin: -6em 25em 5em 25em !important;
 	} */
-	.container {
-		max-width: 1200px !important;
-	}
+
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1476px) {
@@ -432,12 +355,12 @@
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 9em;
-		height: 77em !important;
+		top: 11em !important;
+    	height: 84em !important;
 	}
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	.view .mb-intro {
 		margin-bottom: 10em;
 	}
@@ -458,15 +381,18 @@
 	.view .stripe div p{
 		font-size: 0.8em !important;
 	}
-	.display-4{
+	/* .display-4{
 		padding-top: 0em !important;
-	}
+	} */
 	#headerbox {
-		margin: -6em 12em 5em 12em;
+		margin: -6em 23em 5em 23em;
 	}
 	.view .mb-intro {
 		margin-bottom: 10em !important;
 	}
+	/* .headerbg-contact{
+		height: 33em !important;
+	} */
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 14em !important;
@@ -505,17 +431,18 @@
 
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 15em !important;
-		height: 58em !important;
+		top: 9em !important;
+		height: 79em !important;
 	}
-	.headerbg-contact{
-		height: 62em!important;
-	}
-	.display-4{
+	
+	/* .display-4{
 		padding-top: 1em !important;
-	}
+	} */
 	.contactcard_margin {
-		margin-top: -22em!important
+		margin-top: -11em!important
+	}
+	.view .mb-intro {
+		margin-bottom: 10em !important;
 	}
 	/* .btn {
 		font-size: 0.5em !important;
@@ -540,9 +467,8 @@
 		vertical-align: middle;
 	}
 	#headerbox {
-		margin: -7em 3em 5em 3em;
+		margin: -7em 12em 5em 12em;
 	}
-
 	.view .imgFit{
 		height:38vh !important;
 		width: 93vw !important;
@@ -550,16 +476,15 @@
 	}
 	.display-4{
 		font-size: 2.25em !important;
-		padding-top: 1em !important;
+		/* padding-top: 1em !important; */
 	}
 	.display-5{
 		font-size: 1.25em !important;
 	}
-
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 18em !important;
-		height: 40em !important;
+		top: 12em !important;
+		height: 79em !important;
 	}
 	.contactcard_margin {
 		margin-top: -22em!important
@@ -570,8 +495,8 @@
 	.contactcard_padding_mobile{
 		padding-left:0px !important;
 	}
-	.headerbg-contact{
-		height: 42em;
+	.view .mb-intro {
+		margin-bottom: 10em !important;
 	}
 	/* .btn {
 		font-size: 0.75em !important;
@@ -579,6 +504,7 @@
 
 }
 @media only screen and (min-width: 520px) and (max-width: 766px) {
+	
 	.card-margin{
 		width: 50% !important;
 		margin-bottom: 1em !important;
@@ -586,13 +512,28 @@
 	.contactcard_width{
 		width: 50% !important;
 	}
+	/* Parallax Header Image  */
+	/* .parallax-mobile-view img {
+		top: 1em !important;
+		height: 79em !important;
+	}
+	html {
+		font-size: 80% !important;
+	}
+	.container {
+		width: 100% !important;
+	} */
 	
 }
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+	/* html {
+		font-size: 100% !important;
+	} */
 	.container {
 		width: 100% !important;
 	}
+	
 	#carouselIntro .view {
 		background-image: url('../../images/slider_mobile.jpg');
 		background-repeat: no-repeat;
@@ -601,10 +542,13 @@
 		/* height: 100vh; */
 	}
 	#headerbox {
-		margin: -7em 1em 5em 1em;
+		margin: 11em 5em 5em 5em;
 	}
 	.headerbg{
 		height: 300px;
+	}
+	.headerbg-contact{
+		height: 80em !important;
 	}
 	.headerTitle{
 		font-size: 2.5em !important;
@@ -652,7 +596,7 @@
 	}
 	.display-4{
 		font-size: 2.5em !important;
-		padding-top: 1em !important;
+		/* padding-top: 1em !important; */
 	}
 
 	.display-5{
@@ -692,9 +636,7 @@
 	.view .mb-intro {
 		margin-bottom: 12em !important;
 	}
-	.headerbg-contact{
-		height: 39em!important;
-	}
+	
 
 	/* .btn {
 		font-size: 0.5em !important;
@@ -711,8 +653,8 @@
    		/* margin-bottom: 16em !important; */
 	}
 	.parallax-mobile-view img{
-		top: 8em !important;
-		height: 48em !important;
+		top: 7em !important;
+		height: 53em !important;
 	}
 	#carouselIntro .view {
 		background-position: 72% !important;
@@ -723,9 +665,6 @@
 	}
 	.social-media {
 		margin-left: -1.25em !important;
-	}
-	.headerbg-contact{
-		height: 39em!important;
 	}
 	/* .fa {
 	padding: .5rem;
@@ -760,7 +699,7 @@
 	}
 
 	#headerbox {
-		margin-top: -5em !important;
+		margin: -4em 1em 1em 1em;
 	}
 	#headerbox .Card{
 		padding: 0.5em !important;	
@@ -815,10 +754,13 @@
 		padding-top: 1.5rem!important;
 	}
 	.social-media .fa {
-		font-size: 1.25em !important;
+		font-size: 1.20em !important;
 	}
 	.btn-lg {
 		padding: .25rem 0px .5rem 1em !important;
+	}
+	.headerbg-contact {
+		height: 44em !important;
 	}
 
 }
@@ -869,9 +811,10 @@
 .project-margins{
 	margin: 3em;
 }
-.mb-10{
+/* Gallery Margin contact card */
+/* .mb-10{
 	margin-bottom: 10em;
-}
+} */
 /* For Responsive Gallery Info */
 .view .stripe{
 	position:absolute;
@@ -934,7 +877,7 @@
 
 .display-4{
 	font-weight: 500 !important;
-	padding-top: 1em;
+	/* padding-top: 1em; */
 	/* text-shadow: 2px 2px 4px #5a5051; */
 	font-size: 4rem;
 }
@@ -1038,7 +981,7 @@
     letter-spacing: -.05rem;
 }
 .tech-info-list {
-	font-size: 18px;
+	font-size: 1.15em;
     color: #cb3837;
     text-decoration: none;
     font-weight: 400;
@@ -1050,7 +993,7 @@
 }
 
 .camera-info-list {
-	font-size: 18px;
+	font-size: 1.1em;
 	font-weight: 400;
 }
 

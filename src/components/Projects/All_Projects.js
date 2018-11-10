@@ -28,7 +28,7 @@ class All_Projects extends Component {
     }
     componentDidMount() {
         window.scroll({
-            top: 0,
+            top: 350,
             behavior: "smooth"
         });
         // console.log("ALL PROJECTS: didMount: scrollUp");

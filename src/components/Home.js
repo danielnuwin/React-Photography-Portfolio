@@ -32,14 +32,14 @@ class Home extends Component {
             top: 0,
             behavior: "smooth"
         });
-        console.log("HOME SCROLL_______");
+        // console.log("HOME SCROLL_______");
     }
     componentDidMount() {
         window.scroll({
             top: 0.5,
             behavior: "smooth"
         });
-        console.log("HOME SCROLL_______Did Mount");
+        // console.log("HOME SCROLL_______Did Mount");
     }
 
     render() {
