@@ -1,27 +1,3 @@
-/* @import '../../../node_modules/font-awesome/css/font-awesome.css'; */
-
-/* .slider1{
-	background-image: url("/src/assets/img/slider1.jpg");
-}
-.slider2{
-    background-image: url("/src/assets/img/slider2.jpg");
-}
-.slider3{
-    background-image: url("/src/assets/img/slider3.jpg");
-}
-.slider4{
-    background-image: url("/src/assets/img/slider4.jpg");
-}
-.slider5{
-    background-image: url("/src/assets/img/slider5.jpg");
-}
-.slider6{
-    background-image: url("/src/assets/img/slider6.jpg");
-}
-.slider7{
-    background-image: url("/src/assets/img/slider7.jpg");
-} */
-
 /*----------------------------------------*/
 /*  Portfolio page CSS
 /*----------------------------------------*/
@@ -148,7 +124,6 @@
     height: 103vh;
   }
 
-
   /* Navbar CSS */
   #navigation h6 {
     line-height: 1.7;
@@ -231,13 +206,21 @@
     color: black;
   }
 
-  /* Button */
+	/* Project Header */
+	#headerbox {
+		margin: -6em 18em 5em 18em;
+	}
+	#headerbox .Card{
+		padding: 1.25rem;	
+		background-color:rgba(255,255,255,.7);
+		margin-bottom: 7.5em;
+	}
+	.headerbg{
+		height: 450px;
+	}
 
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	.button,
-	buttonMore {
+  /* Intro Arrow Button */
+	.button, buttonMore {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -260,10 +243,7 @@
 		text-align: center;
 		text-decoration: none;
 	}
-
-		input[type="button"].down,
-		input[type="submit"].down,
-		input[type="reset"].down,
+	input[type="button"].down,
 		.button.down,
 		button.down {
 			width: 5em;
@@ -274,50 +254,16 @@
 			background-position: center center;
 			background-repeat: no-repeat;
 			text-indent: -10em;
-      overflow: hidden;
-      margin-bottom: 5em;
+     		overflow: hidden;
+     		margin-bottom: 5em;
 		}
-
-			input[type="button"].down.anchored,
-			input[type="submit"].down.anchored,
-			input[type="reset"].down.anchored,
-			.button.down.anchored,
-			button.down.anchored {
-				bottom: 0;
-				border-bottom: 0;
-				border-radius: 3em 3em 0 0;
-				height: 4.5em;
-				margin-left: -2.5em;
-			}
-
-		input[type="button"].anchored,
-		input[type="submit"].anchored,
-		input[type="reset"].anchored,
-		.button.anchored,
-		button.anchored {
-			position: absolute;
-			left: 50%;
-		}
-
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		.button:hover,
 		button:hover {
 			background-color: rgba(229, 230, 231, 0.375);
 		}
-
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
 		.button:active,
 		button:active {
 			background-color: rgba(229, 230, 231, 0.375);
 		}
-
-		input[type="button"].style2,
-		input[type="submit"].style2,
-		input[type="reset"].style2,
 		.button.style2,
 		button.style2 {
 			/* background-color: transparent; */
@@ -325,54 +271,14 @@
 			border: solid 1px #f8f9fa; 
 			color: inherit;
 		}
-
-			input[type="button"].style2:hover,
-			input[type="submit"].style2:hover,
-			input[type="reset"].style2:hover,
-			.button.style2:hover,
-			button.style2:hover {
-				background-color: rgba(229, 230, 231, 0.375);
-			}
-
-			input[type="button"].style2:active,
-			input[type="submit"].style2:active,
-			input[type="reset"].style2:active,
-			.button.style2:active,
-			button.style2:active {
-				background-color: rgba(229, 230, 231, 0.375);
-			}
-
-			/* input[type="button"].style2.down,
-			input[type="submit"].style2.down,
-			input[type="reset"].style2.down,
-			.button.style2.down,
-			button.style2.down {
-				background-image: url("../../images/buttons/arrow.svg");
-			} */
-
-			/* HR Line Break */
-			/* #section2 {
-				margin-top: 3rem;
-				margin-bottom: 4rem;
-				border: 0;
-				width: 75em;
-				border-top: 1px solid rgba(0,0,0,.1);
-			} */
-
-			/* Project Header */
-			#headerbox {
-				margin: -6em 18em 5em 18em;
-			}
-			#headerbox .Card{
-				padding: 1.25rem;	
-				background-color:rgba(255,255,255,.7);
-				margin-bottom: 7.5em;
-
-			}
-			.headerbg{
-				height: 450px;
-			}
-
+		.button.style2:hover,
+		button.style2:hover {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
+		.button.style2:active,
+		button.style2:active {
+			background-color: rgba(229, 230, 231, 0.375);
+		}
 
 /* ===========================
   Responsive
@@ -380,13 +286,19 @@
 /* Large Display */
 @media only screen and (min-width: 1600px) {
 	html{
-		font-size: 100% !important;
+		font-size: 80% !important;
 	}
 	.container {
 		width: 100% !important;
 	}
 	#headerbox{
-		margin: -6em 30em 5em 23em !important;
+		margin: -6em 40em 5em 40em !important;
+	}
+	.mb-intro {
+		margin-bottom: 17em!important;
+	}
+	.display-4{
+		padding-top: 0.5em !important;
 	}
 		/* Parallax Header Image  */
 	/* .parallax-mobile-view img {
@@ -406,7 +318,7 @@
 	/* Parallax Header Image  */
 	 
 	.display-4{
-		padding-top: 0em !important;
+		padding-top: 0.5em !important;
 	}
 	/* #headerbox{
 		margin: -6em 25em 5em 25em !important;
@@ -436,7 +348,7 @@
 		height: 77em !important;
 	}
 	.display-4{
-		padding-top: 0em !important;
+		padding-top: 0.5em !important;
 	}
 	.view .mb-intro {
 		margin-bottom: 10em;
@@ -478,7 +390,7 @@
 
 }
 
-/* Medium screen : 992px. */
+/* Medium screen : 992px. Ipad Pro */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	html {
 		font-size: 100% !important;
@@ -502,7 +414,12 @@
 	#headerbox .Card {
 		margin-bottom: 6em !important;
 	}
-
+	.mb-intro .intro-container {
+		padding: 0em 0 2em 1em;
+	}
+	.mb-intro {
+		margin-bottom: 11em!important;
+	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 15em !important;
@@ -522,7 +439,7 @@
 	} */
 }
 
-/* Tablet :768px. */
+/* Tablet :768px. Ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	html {
 		font-size: 80% !important;
@@ -554,6 +471,13 @@
 	}
 	.display-5{
 		font-size: 1.25em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 0em 0 1em 0em;
+		margin: 0 2em 0 2em;
+	}
+	.mb-intro {
+		margin-bottom: 11em!important;
 	}
 
 	/* Parallax Header Image  */
@@ -781,12 +705,15 @@
 		font-size: 1em !important;
 	}
 	.intro-title{
-		font-size: 2.25em !important;
+		font-size: 3em !important;
 		/* padding-top: 0.5em !important; */
 	}
 	.intro-subtitle{
 		font-size: 1em !important;
 		/* padding-top: 0.5em !important; */
+	}
+	.mb-intro .intro-container {
+		padding: 0em 0 2em 0em;
 	}
 	.col-md-6{
 		padding-left: 0em !important;

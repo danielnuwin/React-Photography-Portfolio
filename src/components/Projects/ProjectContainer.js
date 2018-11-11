@@ -33,10 +33,10 @@ class ProjectContainer extends Component {
         // console.log("props: " + JSON.stringify(this.props));
         // console.log("state: " + JSON.stringify(this.state));
     }
-
+    //Main Scroll, will scroll on most pages, interchange 350, 100 to not show nav
     componentDidMount() {
         window.scroll({
-            top: 350,
+            top: 100,
             behavior: "smooth"
         });
         // console.log("ProjectContainer: window did mount");
