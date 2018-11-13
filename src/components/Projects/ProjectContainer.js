@@ -82,7 +82,7 @@ class ProjectContainer extends Component {
             <ScrollAnimation delay={1000} animateIn="fadeIn" animateOnce={true}>
             
              {/* <FadeIn delay={1000}> */}
-                <div id="projectcontainer" className="mb-10">
+                <div id="projectcontainer" className="">
                     <ProjectHeader
                         title={title}
                         desc={desc}

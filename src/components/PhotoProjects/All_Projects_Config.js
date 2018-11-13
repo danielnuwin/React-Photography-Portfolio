@@ -37,7 +37,8 @@ const imageArray = [
     coverImage: require('../../images/10.04.18_Lauren_Lychee/Lauren_Lychee-21.jpg'),
     link: "/laurenlychee",
     category: "ppl",
-    bannerStyle: "light"
+    bannerStyle: "light",
+    style: "ap-mobile-cover-Lauren_Lychee"
   }, {
     title: "Urban San Francisco",
     date: "August 2018",
@@ -93,7 +94,8 @@ const imageArray = [
     coverImage: require('../../images/10.15.17_Lilly_LinkedIn/Lilly_LinkedIn-Thumb.jpg'),
     link: "/lilly_linkedin",
     category: "ppl",
-    bannerStyle: "light"
+    bannerStyle: "light",
+    style: "ap-mobile-cover-Lilly_Linkedin"
   }, {
     title: "Yvonne + Jason Wedding",
     date: "September 2017",
@@ -112,7 +114,7 @@ const imageArray = [
    {
     title: "South American Adventures",
     date: "Summer 2017",
-    coverImage: require('../../images/2017_South_America/South-29.jpg'),
+    coverImage: require('../../images/2017_South_America/South-18.jpg'),
     link: "/2017_South_America",
     category: "travel",
     bannerStyle: "light"

@@ -383,7 +383,7 @@
 		width: 85% !important;
 	}
 	.view .stripe div p{
-		font-size: 0.8em !important;
+		font-size: 1.25em !important;
 	}
 	.display-4{
 		padding-top: 0em !important;
@@ -610,10 +610,16 @@
 		height: 37em !important;
 		/* content: url('../../images/mobile_header.jpg') !important; */
 	}
-	/* All Projects Image Cover  */
+	/* All Projects Image Cover for mobile */
 	/* .ap-mobile-cover  {
-		content: url('../../images/mobile_header.jpg') !important;
+		content: url('../../images/About_Page/about.jpg') !important;
 	} */
+	.ap-mobile-cover-Lauren_Lychee  {
+		content: url('../../images/10.04.18_Lauren_Lychee/Lauren_Lychee-11.jpg') !important;
+	}
+	.ap-mobile-cover-Lilly_Linkedin  {
+		content: url('../../images/10.15.17_Lilly_LinkedIn/Lilly_LinkedIn-11.jpg') !important;
+	}
 
 	.featured-header-mobile img  {
 		/* content: url('../../images/mobile_header.jpg') !important; */

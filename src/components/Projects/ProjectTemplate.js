@@ -12,7 +12,8 @@ class ProjectTemplate extends Component {
             coverImage: "",
             link: "",
             bannerStyle: "",
-            projectObject: {}
+            projectObject: {},
+            style: ""
         }
     }
 
@@ -27,20 +28,21 @@ class ProjectTemplate extends Component {
             coverImage: this.props.projectObject.coverImage,
             title: this.props.projectObject.title,
             date: this.props.projectObject.date,
-            bannerStyle: this.props.projectObject.bannerStyle
+            bannerStyle: this.props.projectObject.bannerStyle,
+            style: this.props.projectObject.style
         });
     }
 
     render() {
         // const image1 = require('../../images/slider5.jpg');
-        const { link, coverImage, title, date, bannerStyle } = this.state;
+        const { link, coverImage, title, date, bannerStyle, style } = this.state;
 
         return (
             <Col lg="3" md="6" className="card-margin">
                 <Card collection className="z-depth-1-half">
                     <Link className="" to={link}>
                         <div className="view zoom cursor-pointer" style={{ overflow: "hidden" }}>
-                            <img src={coverImage} className="imgFit img-fluid ap-mobile-cover" alt="" />
+                            <img src={coverImage} className={`imgFit img-fluid ` + style} alt="" />
                             <div className={`stripe ` + bannerStyle}>
                                 <div>
                                     <p> {title} </p>
