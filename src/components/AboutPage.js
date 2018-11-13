@@ -14,21 +14,22 @@ const AboutPage = () => {
             <Container id="aboutpage" className="marginTop3">
                 {/* <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2> */}
                 <p className="text-center w-responsive mx-auto ">
-                    Welcome to my page. I'm a photographer and a software engineer.
-                         Born in the Bay Area but spent most of my
-                          growing up in Southern California where I graduated from UC Irvine. I've occassionally
-                          bounced around the world traveling for a couple years
-                  here and there....rest to be continued! </p>
+                    Welcome to my portfolio! It is currently under contruction so stay tuned for the final version.
+                     I'm a photographer, avid wanderer, and a software engineer.
+                        I was born in the Bay Area but spent most of my
+                          growing up in Southern California where I went to college. I've occassionally
+                          bounced around the world traveling for a couple years here and there....rest to be continued!
+                   </p>
 
-                <p className="text-center w-responsive mx-auto ">
+                {/* <p className="text-center w-responsive mx-auto ">
                     I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
                     is still a work in progress...so stay tuned!
-                </p>
+                </p> */}
 
                 <Row className="border-bottom">
                     <Col lg="5">
                         <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                            <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
+                            <img className="img-fluid" src={require("../images/About_Page/about4.jpg")} alt="Sample image" />
                             <a><Mask overlay="white-slight" /></a>
                         </View>
                     </Col>
@@ -44,8 +45,16 @@ const AboutPage = () => {
                         <p>.... Under Construction </p> */}
                         <h2 className="font-weight-bold mb-3 p-0"> <Fa icon="image" className="pr-2 fa-camera-retro"></Fa><strong>Photographer</strong></h2>
                         <p className="">
-                            Open for shoots and collaborations! Message me for more info!
+                            What kind of photography do I do? Well, I do all types. Anywhere from travel, landscapes, lifestyle to wedddings, portraits, and events. Well
+                            pretty much whatever you need me to do I can do for you! I've even dabbled in food and product photography.
                         </p>
+                        <p>
+                            I found my inspiration initially came from traveling around the world seeing differnt kind of people, places, and things. As you can tell from my photos, I love colors!
+                        </p>
+                        <p>
+                            Open for shoots and collaborations! Feel free to email me for rates and more info at <strong> danielnuwin@gmail.com.</strong> 
+                         </p>
+
                         <h4 className="tech-info"> My Camera Gear</h4>
                         <ul style={{ marginLeft: '1em' }}>
                             <li className="camera-info-list"> Canon 6D</li>
@@ -65,8 +74,9 @@ const AboutPage = () => {
                                 <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
                         </a> */}
                         <h3 className="font-weight-bold mb-3 p-0">  <Fa icon="image" className="pr-2"></Fa><strong>Traveler</strong></h3>
-
-                        To Be Continued...
+                            <span> 24 Countries --- 75+ Cities ---- 1million stories</span>
+                            <br/>
+                            Rest To Be Continued...
 
                     </Col>
                     <Col lg="5">
@@ -80,12 +90,20 @@ const AboutPage = () => {
                 <Row>
                     <Col lg="5">
                         <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                            <img className="img-fluid" src={require("../images/About_Page/about3.jpg")} alt="Sample image" />
+                            <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
                             <a><Mask overlay="white-slight" /></a>
                         </View>
                     </Col>
                     <Col lg="7">
                         <h3 className="font-weight-bold mb-3 p-0"><Fa icon="hand-spock-o" className=""></Fa> <strong>Software Engineer</strong></h3>
+                        <span>
+                            I'm a software engineer with 5 years experience in the industry. I graduated with a B.S. in Computer Science at the University of California, Irvine. 
+                            My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance. 
+                            <br/>
+                            <br/>
+                            My Technical<a href="https://docs.google.com/document/d/1fWvQrlHgSMOsUIUqXjOUtteXV_PT1lOFvwwcLS2yYH0/edit?usp=sharing" target="_blank"> Resume</a>
+                        </span>
+
                         <h4 className="tech-info"> Portfolio Built With</h4>
                         <ul style={{ marginLeft: '1em' }}>
                             <li><a className="tech-info-list" href="https://reactjs.org/" rel="nofollow">Reactjs</a> - A JavaScript framework for building user interfaces</li>

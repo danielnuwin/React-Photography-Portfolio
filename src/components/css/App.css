@@ -295,10 +295,25 @@
 		margin: -6em 40em 5em 40em !important;
 	}
 	.mb-intro {
-		margin-bottom: 17em!important;
+		margin-bottom: 19em!important;
 	}
 	.display-4{
 		padding-top: 0.5em !important;
+		font-size: 4.5em !important;
+	}
+	.headerbg{
+		height: 45em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 2em 0 4em 1em;
+	}
+	/* Parallax Header Image  */
+	.parallax-mobile-view img {
+		top: 11em;
+		height: 100em !important;
+	}
+	.col-md-6 {
+		max-width: 48%!important;
 	}
 		/* Parallax Header Image  */
 	/* .parallax-mobile-view img {

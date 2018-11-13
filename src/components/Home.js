@@ -50,11 +50,13 @@ class Home extends Component {
             <div>
                 <div id="section1">
                     {/* <Parallax strength={500}> */}
-                        <ScrollAnimation delay={700} animateIn="fadeIn" animateOnce={true}>
-                            <CarouselIntro />
-                        </ScrollAnimation>
+                    <ScrollAnimation delay={700} animateIn="fadeIn" animateOnce={true}>
+                        <CarouselIntro />
+                    </ScrollAnimation>
                     {/* </Parallax> */}
                 </div>
+
+                {/* <ContactCard /> */}
 
                 <div id="section2">
                     <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
@@ -63,7 +65,7 @@ class Home extends Component {
                             imageArray={Featured.imageArray}
                             headerInfo={Featured.projectHeader}
                             renderType="feature"
-                            // style={"container containerMarginTopFeature"}
+                        // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
                 </div>

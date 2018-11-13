@@ -19,7 +19,7 @@ const TestPage = () => {
       <br /><br /><br /><br /><br /><br /> */}
       {/* <Slideshow /> */}
 
-      {/* <input type="checkbox" name="toggle" id="toggle" />
+      <input type="checkbox" name="toggle" id="toggle" />
       <label htmlFor="toggle"></label>
       <div className="container">
         <h1>Pure CSS3 Slide Down Toggle Demo</h1>
@@ -27,7 +27,7 @@ const TestPage = () => {
       </div>
       <div className="message"><h1> hello, I'm a hidden message. You found it.</h1>
         <h2>Now Click the Heart button in the bottom to support CSS3</h2>
-      </div> */}
+      </div>
 
       {/* <Row>
         <Col>
