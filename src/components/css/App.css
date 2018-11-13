@@ -383,7 +383,7 @@
 		width: 85% !important;
 	}
 	.view .stripe div p{
-		font-size: 1.25em !important;
+		font-size: 0.8em !important;
 	}
 	.display-4{
 		padding-top: 0em !important;
@@ -460,7 +460,7 @@
 		font-size: 80% !important;
 	}
 	.container {
-		width: 100% !important;
+		width: 85% !important;
 	}
 	#navigation .navbar:not(.top-nav-collapse) {
 		background: white !important;
@@ -472,7 +472,7 @@
 		vertical-align: middle;
 	}
 	#headerbox {
-		margin: -7em 3em 5em 3em;
+		margin: -7em 9em 5em 9em;
 	}
 
 	.view .imgFit{
@@ -498,7 +498,7 @@
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
 		top: 18em !important;
-		height: 40em !important;
+		height: 50em !important;
 	}
 	.contactcard_margin {
 		margin-top: -22em!important
