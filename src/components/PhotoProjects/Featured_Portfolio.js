@@ -22,7 +22,7 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,2,3,6,7,8,9,12,13,16,17,18,19,21,23,27,31];
+const featTravel = [1,3,6,7,8,9,12,13,16,17,18,19,21,23,27,31];
 
 for (var i = 1; i <= 32; i++) {
   const obj = {

@@ -63,8 +63,9 @@ class NavigationBar extends React.Component {
             // <Router>
             <div id="navigation">
                 <Navbar color="white" light expand="md" fixed="top" scrolling >
-                    <NavbarBrand href="/">
-                        <strong className="brand">Daniel NuWin | Photos</strong>
+                    <NavbarBrand href="/" >
+                        <strong className="brand">Daniel NuWin | Portfolio</strong>
+                       {/* <div><img style={{width:'10%', marginRight:" -11em"}} src={require('../images/logo.png')}/> </div>  */}
                     </NavbarBrand>
                     <NavbarToggler onClick={this.onClick} />
                     <Collapse isOpen={this.state.collapse} navbar>

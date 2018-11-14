@@ -405,7 +405,7 @@
 		font-size: 0.8em !important;
 	}
 	.display-4{
-		padding-top: 0em !important;
+		padding-top: 0.5em !important;
 	}
 	#headerbox {
 		margin: -6em 20em 5em 20em;
@@ -500,7 +500,7 @@
 		object-position: center !important;
 	}
 	.display-4{
-		font-size: 2.25em !important;
+		font-size: 3.25em !important;
 		padding-top: 1em !important;
 	}
 	.display-5{
@@ -623,7 +623,7 @@
 	}
 	.display-4{
 		font-size: 4em !important;
-		padding-top: 1em !important;
+		padding-top: 0em !important;
 	}
 
 	.display-5{
@@ -752,7 +752,7 @@
 	}
 	.display-4{
 		font-size: 1.5em !important;
-		/* padding-top: 0.5em !important; */
+		padding-top: 1em !important;
 	}
 	.display-5{
 		font-size: 1em !important;

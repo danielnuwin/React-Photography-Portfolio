@@ -44,7 +44,7 @@ const AboutPage = () => {
 
                         <p>.... Under Construction </p> */}
                         <h2 className="font-weight-bold mb-3 p-0"> <Fa icon="image" className="pr-2 fa-camera-retro"></Fa><strong>Photographer</strong></h2>
-                        <span className="">
+                        <p className="">
                             What kind of photography do I do? Well, I do all types. Anywhere from travel, landscapes, lifestyle to wedddings, portraits, and events. Well
                             pretty much whatever you need me to do I can do for you! I've even dabbled in food and product photography.
                         
@@ -53,7 +53,7 @@ const AboutPage = () => {
                             <br/>
                              Open for shoots and collaborations! Feel free to email me for rates and more info at <strong> danielnuwin@gmail.com.</strong> 
 
-                        </span>
+                        </p>
 
                         <h4 className="tech-info"> My Camera Gear</h4>
                         <ul style={{ marginLeft: '1em' }}>
@@ -96,13 +96,13 @@ const AboutPage = () => {
                     </Col>
                     <Col lg="7">
                         <h3 className="font-weight-bold mb-3 p-0"><Fa icon="hand-spock-o" className=""></Fa> <strong>Software Engineer</strong></h3>
-                        <span>
+                        <p>
                             I'm a software engineer with 5 years experience in the industry. I graduated with a B.S. in Computer Science at the University of California, Irvine. 
                             My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance. 
                             <br/>
                             <br/>
                             My Technical<a href="https://docs.google.com/document/d/1fWvQrlHgSMOsUIUqXjOUtteXV_PT1lOFvwwcLS2yYH0/edit?usp=sharing" target="_blank"> Resume</a>
-                        </span>
+                        </p>
                         
                         <h4 className="tech-info"> This Portfolio was built with</h4>
                         <ul style={{ marginLeft: '1em' }}>
