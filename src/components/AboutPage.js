@@ -74,9 +74,9 @@ const AboutPage = () => {
                                 <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
                         </a> */}
                         <h3 className="font-weight-bold mb-3 p-0">  <Fa icon="image" className="pr-2"></Fa><strong>Traveler</strong></h3>
-                            <span> 24 Countries --- 75+ Cities ---- 1million stories</span>
+                            <p> 24 Countries --- 75+ Cities ---- Million of stories</p>
                             <br/>
-                            Rest To Be Continued...
+                            Travel Blog Under Construction...
 
                     </Col>
                     <Col lg="5">
@@ -102,6 +102,8 @@ const AboutPage = () => {
                             <br/>
                             <br/>
                             My Technical<a href="https://www.dropbox.com/s/gasb11asmkahvyx/Daniel%20Nguyen%20Resume%2007.18%20--%20Portfolio.pdf?dl=0" target="_blank"> Resume</a>
+                            <br/>
+                            Github <a href="https://github.com/danielnuwin" target="_blank"> Repo </a>
                         </p>
                         
                         <h4 className="tech-info"> This Portfolio was built with</h4>

@@ -234,7 +234,7 @@
 		text-indent: 5em;
 	}
 	.email {
-		color: blue;
+		color: #cb3837;
 		font-size: 1.25em;
 	}
 
@@ -1052,7 +1052,7 @@
 }
 
 .camera-info-list {
-	font-size: 18px;
+	font-size: 1.25em;
 	font-weight: 400;
 }
 
