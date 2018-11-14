@@ -49,9 +49,9 @@ const AboutPage = () => {
                             pretty much whatever you need me to do I can do for you! I've even dabbled in food and product photography.
                         
                             <br/>
-                            I found my inspiration initially came from traveling around the world seeing differnt kind of people, places, and things. As you can tell from my photos, I love colors.
+                            I found my inspiration initially came from traveling around the world seeing different kind of people, places, and things. As you can tell from my photos, I love colors.
                             <br/>
-                             Open for shoots and collaborations! Feel free to email me for rates and more info at <strong> danielnuwin@gmail.com.</strong> 
+                             Open for shoots and collaborations! Feel free to email me for rates and more info at <strong className="email"> danielnuwin@gmail.com</strong> 
 
                         </p>
 
@@ -101,7 +101,7 @@ const AboutPage = () => {
                             My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance. 
                             <br/>
                             <br/>
-                            My Technical<a href="https://docs.google.com/document/d/1fWvQrlHgSMOsUIUqXjOUtteXV_PT1lOFvwwcLS2yYH0/edit?usp=sharing" target="_blank"> Resume</a>
+                            My Technical<a href="https://www.dropbox.com/s/gasb11asmkahvyx/Daniel%20Nguyen%20Resume%2007.18%20--%20Portfolio.pdf?dl=0" target="_blank"> Resume</a>
                         </p>
                         
                         <h4 className="tech-info"> This Portfolio was built with</h4>

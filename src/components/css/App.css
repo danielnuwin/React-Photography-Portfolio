@@ -224,6 +224,19 @@
 	.headerbg{
 		height: 450px;
 	}
+	.headerTitle{
+		letter-spacing: 2px;
+	}
+	p, h3 {
+		letter-spacing: 1px;
+	}
+	.container p {
+		text-indent: 5em;
+	}
+	.email {
+		color: blue;
+		font-size: 1.25em;
+	}
 
   /* Intro Arrow Button */
 	.button, buttonMore {
@@ -579,16 +592,19 @@
 	}
 	.headerTitle{
 		font-size: 2.5em !important;
-		letter-spacing: 2px;
+		/* letter-spacing: 2px; */
 	}
-	p, h3 {
+	/* p, h3 {
 		letter-spacing: 1px;
-	}
+	} */
 	.headerDate{
 		font-size: 1em !important;
 	}
 	.headerDesc{
 		font-size: 1em !important;
+	}
+	.container p {
+		text-indent: 0em;
 	}
 	.display-3 {
 		font-size: 1.5em !important;
@@ -887,7 +903,7 @@
 .view .stripe div p{
 	padding:0;
 	margin:0;
-	letter-spacing:.15rem
+	letter-spacing: .15rem;
 }
 
 .view .stripe div .date{
