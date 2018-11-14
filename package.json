@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --history-api-fallback",
-    "build": "webpack --mode production --history-api-fallback"
+    "build": "webpack --mode production --history-api-fallback",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "homepage": "https://github.com/danielnuwin/React_Photography_Portfolio",
   "author": "Daniel Nguyen",
