@@ -9,7 +9,7 @@ import shuffle from '../configs/shuffle'
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/Portfolio_Header.jpg'),
+  bgImage: require('../../images/Backgrounds/Portfolio_Header.jpg'),
   title: "Featured Portfolio",
   date: "2017 - Present",
   desc: "Ecclectic Everything",
@@ -22,9 +22,9 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,2,3,4,7,8,9,13,14,16,18,19,24,26, 30];
+const featTravel = [1,2,3,6,7,8,9,12,13,16,17,18,19,21,23,27,31];
 
-for (var i = 1; i <= 30; i++) {
+for (var i = 1; i <= 32; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),

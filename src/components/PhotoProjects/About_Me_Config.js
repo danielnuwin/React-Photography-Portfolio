@@ -7,7 +7,7 @@ Date:        Project:
 {/************************** Header Data *************************/ }
 const headerData = {
   bgImage: require('../../images/About_Page/about_header.jpg'),
-  title: "Who is Daniel NuWin?",
+  title: "About Me",
   date: "",
   desc: "",
   // style: "TEST"

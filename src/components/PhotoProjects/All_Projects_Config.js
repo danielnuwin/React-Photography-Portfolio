@@ -7,7 +7,7 @@ Date:        Project:
 
 {/************************** Header Data *************************/ }
 const headerData = {
-  bgImage: require('../../images/All_Project_Header.jpg'),
+  bgImage: require('../../images/Backgrounds/All_Project_Header.jpg'),
   title: "All Projects",
   date: "2017 - Present",
   desc: "Snapshots through the Years",

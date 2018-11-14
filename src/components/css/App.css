@@ -103,27 +103,33 @@
 	/* background-image: url('../../images/About_Page/about_header.jpg'); */
 	/* background-image: url('../../images/About_Page/home1.jpg'); */
 	/* background-image: url('../../images/About_Page/home2.jpg'); */
-	background-image: url('../../images/slider1.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 103vh;
   }
   #carouselIntro .view2 {
-	background-image: url('../../images/About_Page/about_header.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 103vh;
   }
   #carouselIntro .view3 {
-	background-image: url('../../images/03.24.18_March_4_Our_Lives/M4OL-19.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-3-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 103vh;
   }
-
+  #carouselIntro .view4 {
+	background-image: url('../../images/Backgrounds/Carousel-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 103vh;
+  } 
   /* Navbar CSS */
   #navigation h6 {
     line-height: 1.7;
@@ -315,6 +321,10 @@
 	.col-md-6 {
 		max-width: 48%!important;
 	}
+	span {
+		word-spacing: 2px;
+		/* text-indent: 3em; */
+	}
 		/* Parallax Header Image  */
 	/* .parallax-mobile-view img {
 		top: -4em !important;
@@ -325,7 +335,16 @@
 	} */
 }
 
-@media only screen and (max-width: 1477px) {
+@media only screen and (min-width: 1477px) and (max-width: 1599px) {
+	html {
+		font-size: 80%;
+	}
+	.container {
+		max-width: 80%!important;
+	}
+	.view .mb-intro {
+		margin-bottom: 12em;
+	}
 	.view .imgFit{
 		height: 57vh !important;
 		width: 93vw !important;
@@ -338,9 +357,9 @@
 	/* #headerbox{
 		margin: -6em 25em 5em 25em !important;
 	} */
-	.container {
+	/* .container {
 		max-width: 1200px !important;
-	}
+	} */
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1476px) {
@@ -389,7 +408,7 @@
 		padding-top: 0em !important;
 	}
 	#headerbox {
-		margin: -6em 12em 5em 12em;
+		margin: -6em 20em 5em 20em;
 	}
 	.view .mb-intro {
 		margin-bottom: 10em !important;
@@ -408,13 +427,13 @@
 /* Medium screen : 992px. Ipad Pro */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 	html {
-		font-size: 100% !important;
+		font-size: 80% !important;
 	}
 	.container {
 		width: 95% !important;
 	}
 	.view .imgFit{
-		height: 35vh !important;
+		height: 22vh !important;
 		width: 93vw !important;
 	}
 	.view .stripe{
@@ -430,7 +449,7 @@
 		margin-bottom: 6em !important;
 	}
 	.mb-intro .intro-container {
-		padding: 0em 0 2em 1em;
+		padding: 0em 0 2em 0em;
 	}
 	.mb-intro {
 		margin-bottom: 11em!important;
@@ -460,7 +479,7 @@
 		font-size: 80% !important;
 	}
 	.container {
-		width: 85% !important;
+		width: 100% !important;
 	}
 	#navigation .navbar:not(.top-nav-collapse) {
 		background: white !important;
@@ -517,7 +536,20 @@
 	} */
 
 }
-@media only screen and (min-width: 520px) and (max-width: 766px) {
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+	html {
+		font-size: 80% !important;
+	}
+	.container {
+		width: 100% !important;
+	}
+	.display-4 {
+		font-size: 4em !important;
+		padding-top: 0em !important;
+	}
+	.mb-intro .intro-container {
+		padding: 2em 0 2em 0em;
+	}
 	.card-margin{
 		width: 50% !important;
 		margin-bottom: 1em !important;
@@ -533,7 +565,7 @@
 		width: 100% !important;
 	}
 	#carouselIntro .view {
-		background-image: url('../../images/slider_mobile.jpg');
+		background-image: url('../../images/Backgrounds/Carousel-1-mobile.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -590,7 +622,7 @@
 		font-size: 0.8em !important;
 	}
 	.display-4{
-		font-size: 2.5em !important;
+		font-size: 4em !important;
 		padding-top: 1em !important;
 	}
 
@@ -606,7 +638,7 @@
 	}
 	/* Parallax Header Image  */
 	.parallax-mobile-view img {
-		top: 19em !important;
+		top: 10em !important;
 		height: 37em !important;
 		/* content: url('../../images/mobile_header.jpg') !important; */
 	}
@@ -744,7 +776,7 @@
 		font-size: .75em !important;
 	}
 	.contactcard_margin {
-		margin-top: -23em!important
+		margin-top: -20em!important
 	}
 	.contactcard_info {
 		font-size: 0.85em !important;
@@ -893,6 +925,8 @@
 	padding-left: 4px;
 	/* Diff Occupation desc */
 	font-size: 1.25em; 
+	word-spacing: 0.1em !important;
+
 }
 
 .hr-light {
