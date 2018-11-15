@@ -35,14 +35,14 @@ const ContactCard = () => {
                                 <h5 className="contactcard_info"> <i className="fa fa-envelope"></i> <strong>  danielnuwin@gmail.com </strong></h5>
                                 <h5 className="contactcard_info"><i className="fa fa-at"></i> <strong> danielnuwin</strong></h5>
                                <hr className="hr-dark"/>
-                                <div className="social-media">
+                                {/* <div className="social-media">
                                     <a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-ins"><i className="fa fa-instagram fa-instagram-contact"></i></a>
                                     <a href="https://soundcloud.com/danielnuwin" className="btn-floating btn-lg btn-tw"><i className="fa fa-soundcloud fa-soundcloud-contact"></i></a>
-                                    {/* <a className="btn-floating btn-lg btn-fb" ><i className="fa fa-facebook-official fa-facebook-contact"></i></a> */}
+                                    <a className="btn-floating btn-lg btn-fb" ><i className="fa fa-facebook-official fa-facebook-contact"></i></a>
                                     <a className="btn-floating btn-lg btn-li" ><i className="fa fa-linkedin fa-linkedin-contact"></i></a>
                                     <a href="https://github.com/danielnuwin" className="btn-floating btn-lg btn-gh" ><i className="fa fa-github fa-github-contact"></i></a>
-                                    {/* <a className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-twitter"></i></a> */}
-                                </div>
+                                    <a className="btn-floating btn-lg btn-tw" type="button" role="button"><i className="fa fa-twitter"></i></a>
+                                </div> */}
 
                                 <Link to="/about">
                                     <Button color="danger" size="md" className="mb-lg-0 mb-4 waves-light">Read more</Button>

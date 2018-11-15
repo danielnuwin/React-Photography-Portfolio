@@ -45,7 +45,6 @@ class FooterPage extends React.Component {
                     </Row>
                 </Container>
                 <hr/> */}
-
                 <div className="text-center">
                     <ul className="list-unstyled list-inline">
                         <li className="list-inline-item"><a href="https://www.instagram.com/danielnuwin" className="btn-floating btn-lg btn-fb mx-1" target="_blank"><i className="fa fa-instagram"> </i></a></li>
@@ -53,11 +52,10 @@ class FooterPage extends React.Component {
                         {/* <li className="list-inline-item"><a className="btn-floating btn-lg btn-fb mx-1" target="_blank"><i className="fa fa-facebook-official"> </i></a></li> */}
                         <li className="list-inline-item"><a className="btn-floating btn-lg btn-li mx-1"><i className="fa fa-linkedin"> </i></a></li>
                         <li className="list-inline-item"><a href="https://github.com/danielnuwin" className="btn-floating btn-lg btn-gh mx-1"><i className="fa fa-github"> </i></a></li>
-
                     </ul>
                 </div>
                 <div className="footer-copyright text-center py-3">
-
+                        <p> Portfolio built with ReactJS</p>
                 </div>
             </Footer>
         );
