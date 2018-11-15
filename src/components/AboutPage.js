@@ -17,7 +17,7 @@ const AboutPage = () => {
                     Welcome to my portfolio! It is currently under contruction so stay tuned for the final version.
                      I'm a photographer, avid wanderer, and a software engineer.
                         I was born in the Bay Area but spent most of my
-                          growing up in Southern California where I went to college. I've occassionally
+                          growing up days in Southern California where I attended to college. I've occassionally
                           bounced around the world traveling for a couple years here and there....rest to be continued!
                    </p>
 
@@ -49,7 +49,7 @@ const AboutPage = () => {
                             pretty much whatever you need me to do I can do for you! I've even dabbled in food and product photography.
                         
                             <br/>
-                            I found my inspiration initially came from traveling around the world seeing different kind of people, places, and things. As you can tell from my photos, I love colors.
+                            Initially, I found my inspiration came from traveling around the world seeing different kinds of people, places, and things. As you can tell from my photos, I love colors.
                             <br/>
                              Open for shoots and collaborations! Feel free to email me for rates and more info at <strong className="email"> danielnuwin@gmail.com</strong> 
 
@@ -74,7 +74,7 @@ const AboutPage = () => {
                                 <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
                         </a> */}
                         <h3 className="font-weight-bold mb-3 p-0">  <Fa icon="image" className="pr-2"></Fa><strong>Traveler</strong></h3>
-                            <p> 24 Countries --- 75+ Cities ---- Million of stories</p>
+                            <p> 24 Countries --- 75+ Cities ---- Millions of stories</p>
                             <br/>
                             Travel Blog Under Construction...
 

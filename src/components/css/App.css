@@ -237,6 +237,9 @@
 		color: #cb3837;
 		font-size: 1.25em;
 	}
+	.padding-top-3{
+		padding-top: 0.5em;
+	}
 
   /* Intro Arrow Button */
 	.button, buttonMore {
@@ -753,7 +756,7 @@
 	.button.down {
 		width: 3.5em;
 		height: 3.5em;
- 		margin-bottom: 4em;
+ 		margin-bottom: 3em;
 	}
 
 	#headerbox {

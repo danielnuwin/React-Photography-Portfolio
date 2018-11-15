@@ -54,8 +54,8 @@ class FooterPage extends React.Component {
                         <li className="list-inline-item"><a href="https://github.com/danielnuwin" className="btn-floating btn-lg btn-gh mx-1"><i className="fa fa-github"> </i></a></li>
                     </ul>
                 </div>
-                <div className="footer-copyright text-center py-3">
-                        <p> Portfolio built with ReactJS</p>
+                <div className="footer-copyright text-center padding-top-3">
+                        <p> Built with ReactJS</p>
                 </div>
             </Footer>
         );
