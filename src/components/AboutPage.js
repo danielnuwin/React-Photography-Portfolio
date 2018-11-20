@@ -14,17 +14,14 @@ const AboutPage = () => {
             <Container id="aboutpage" className="marginTop3">
                 {/* <h2 className="h1-responsive font-weight-bold text-center">Who am I?</h2> */}
                 <p className="text-center w-responsive mx-auto ">
-                    Welcome to my portfolio! It is currently under contruction so stay tuned for the final version.
-                     I'm a photographer, avid wanderer, and a software engineer.
-                        I was born in the Bay Area but spent most of my
-                          growing up days in Southern California where I attended to college. I've occassionally
-                          bounced around the world traveling for a couple years here and there....rest to be continued!
+                    Welcome to my portfolio!
+                    <br />
+                    I'm a photographer, avid wanderer, and a software engineer.
+                       I was born in the Bay Area but spent most of my
+                         growing up days in Southern California where I attended college. I've occassionally
+                         bounced around the world traveling for a couple years here and there....rest to be continued!
                    </p>
-
-                {/* <p className="text-center w-responsive mx-auto ">
-                    I am currently building this photogpraphy portfolio with ReactJS with Webpack and Babel and everything
-                    is still a work in progress...so stay tuned!
-                </p> */}
+                   <hr style={{width: "50%"}}/>
 
                 <Row className="border-bottom">
                     <Col lg="5">
@@ -47,11 +44,12 @@ const AboutPage = () => {
                         <p className="">
                             What kind of photography do I do? Well, I do all types. Anywhere from travel, landscapes, lifestyle to wedddings, portraits, and events. Well
                             pretty much whatever you need me to do I can do for you! I've even dabbled in food and product photography.
-                        
-                            <br/>
+                        </p>
+                        <p>
                             Initially, I found my inspiration came from traveling around the world seeing different kinds of people, places, and things. As you can tell from my photos, I love colors.
-                            <br/>
-                             Open for shoots and collaborations! Feel free to email me for rates and more info at <strong className="email"> danielnuwin@gmail.com</strong> 
+                            <br />
+                            <br />
+                            -- Open for shoots and collaborations! Feel free to email me for rates and more info at <strong className="email"> danielnuwin@gmail.com</strong>
 
                         </p>
 
@@ -74,9 +72,9 @@ const AboutPage = () => {
                                 <Fa icon="image" className="pr-2"></Fa>Lifestyle </h6>
                         </a> */}
                         <h3 className="font-weight-bold mb-3 p-0">  <Fa icon="image" className="pr-2"></Fa><strong>Traveler</strong></h3>
-                            <p> 24 Countries --- 75+ Cities ---- Millions of stories</p>
-                            <br/>
-                            Travel Blog Under Construction...
+                        <p> 24 Countries --- 75+ Cities ---- Millions of stories</p>
+                        <br />
+                        Travel Blog Under Construction...
 
                     </Col>
                     <Col lg="5">
@@ -87,25 +85,25 @@ const AboutPage = () => {
                     </Col>
                 </Row>
 
-                <Row>
+                <Row className="border-bottom-tech">
                     <Col lg="5">
                         <View className="rounded z-depth-4 mb-lg-0 mb-4 " hover waves>
-                            <img className="img-fluid" src={require("../images/About_Page/about.jpg")} alt="Sample image" />
+                            <img className="img-fluid"  src={require("../images/About_Page/about.jpg")} alt="Sample image" />
                             <a><Mask overlay="white-slight" /></a>
                         </View>
                     </Col>
                     <Col lg="7">
-                        <h3 className="font-weight-bold mb-3 p-0"><Fa icon="hand-spock-o" className=""></Fa> <strong>Software Engineer</strong></h3>
+                        <h3 className="font-weight-bold mb-3 p-0 tech-title"><Fa icon="hand-spock-o" className=""></Fa> <strong>Software Engineer</strong></h3>
                         <p>
-                            I'm a software engineer with 5 years experience in the industry. I graduated with a B.S. in Computer Science at the University of California, Irvine. 
-                            My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance. 
-                            <br/>
-                            <br/>
+                            I'm a software engineer with 5 years experience in the industry. I graduated with a B.S. in Computer Science at the University of California, Irvine.
+                            My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance.
+                            <br />
+                            <br />
                             My Technical<a href="https://www.dropbox.com/s/gasb11asmkahvyx/Daniel%20Nguyen%20Resume%2007.18%20--%20Portfolio.pdf?dl=0" target="_blank"> Resume</a>
-                            <br/>
+                            <br />
                             Github <a href="https://github.com/danielnuwin" target="_blank"> Repo </a>
                         </p>
-                        
+
                         <h4 className="tech-info"> This Portfolio was built with</h4>
                         <ul style={{ marginLeft: '1em' }}>
                             <li><a className="tech-info-list" href="https://reactjs.org/" rel="nofollow">Reactjs</a> - A JavaScript framework for building user interfaces</li>

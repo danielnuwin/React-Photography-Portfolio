@@ -101,8 +101,8 @@ class All_Projects extends Component {
                     <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
                     <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
                     <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterProjects("travel")}>Travel </Tab>
-                    <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects("urb")}>Urban & Street </Tab>
-                    <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects("ppl")}> People </Tab>
+                    <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects("ppl")}> People </Tab>
+                    <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects("urb")}>Urban & Street </Tab>
                     <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterProjects("wed")}>Weddings </Tab>
 
                     {/* <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>

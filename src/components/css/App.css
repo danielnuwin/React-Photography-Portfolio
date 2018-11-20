@@ -117,7 +117,7 @@
     height: 103vh;
   }
   #carouselIntro .view3 {
-	background-image: url('../../images/Backgrounds/Carousel-3-2.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -125,6 +125,13 @@
   }
   #carouselIntro .view4 {
 	background-image: url('../../images/Backgrounds/Carousel-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 103vh;
+  }  
+   #carouselIntro .view5 {
+	background-image: url('../../images/Backgrounds/Carousel-6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -231,7 +238,7 @@
 		letter-spacing: 1px;
 	}
 	.container p {
-		text-indent: 5em;
+		text-indent: 3em;
 	}
 	.email {
 		color: #cb3837;
@@ -727,6 +734,10 @@
 	.headerbg-contact{
 		height: 39em!important;
 	}
+	.tech-info{
+		font-size: 1.5rem !important;
+	}
+
 	/* .fa {
 	padding: .5rem;
     font-size: 1em !important;
@@ -756,7 +767,7 @@
 	.button.down {
 		width: 3.5em;
 		height: 3.5em;
- 		margin-bottom: 3em;
+ 		margin-bottom: 3.5em;
 	}
 
 	#headerbox {
@@ -932,7 +943,7 @@
 }
 
 .marginTop3 {
-	margin-top: -10em !important;
+	margin-top: -9em !important;
 }
 
 .display-4{
@@ -1061,6 +1072,12 @@
 
 .border-bottom {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
-	margin: 2em;
-	padding: 2em
+	margin: 2em 1em 2em 1em;
+	padding: 2em 1em 2em 1em;
+}
+
+.border-bottom-tech{
+	/* border-bottom: 1px solid rgba(0, 0, 0, .1); */
+	margin: 2em 1em 0 1em;
+	padding: 2em 1em 0 1em;
 }
