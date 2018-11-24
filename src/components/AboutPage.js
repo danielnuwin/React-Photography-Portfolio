@@ -49,8 +49,7 @@ const AboutPage = () => {
                             Initially, I found my inspiration came from traveling around the world seeing different kinds of people, places, and things. As you can tell from my photos, I love colors.
                             <br />
                             <br />
-                            -- Open for shoots and collaborations! Feel free to email me for rates and more info at <strong className="email"> danielnuwin@gmail.com</strong>
-
+                            -- Open for shoots and collaborations! Feel free to email me for rates and more info at <strong><a className="email" href="mailto:danielnuwin@gmail.com"> danielnuwin@gmail.com</a></strong>
                         </p>
 
                         <h4 className="tech-info"> My Camera Gear</h4>
