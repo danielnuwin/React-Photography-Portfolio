@@ -88,7 +88,7 @@ for (var i = 1; i <= 27; i++) {
 }
 
 {/*********************** Return Object Data ***********************/ }
-imageArray = [...(travelArray), ...(peopleArray), ...weddingArray, ...(urbanArray)];
+imageArray = [...travelArray, ...peopleArray, ...weddingArray, ...urbanArray];
 // console.log("arrayIMages: " + JSON.stringify(imageArray))
 
 const projectData = {

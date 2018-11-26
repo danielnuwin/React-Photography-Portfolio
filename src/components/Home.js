@@ -16,7 +16,6 @@ import ContactCard from './ContactCard'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavigationBar from './NavigationBar';
 import FooterPage from './Footer';
-import Slideshow from './Slideshow';
 import BlogPage from './BlogPage'
 import Routes from './Routes'
 import All_Projects from './Projects/All_Projects'

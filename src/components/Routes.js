@@ -7,7 +7,6 @@ import App from "./App";
 import Home from './Home'
 import GalleryContainer from './GalleryContainer';
 import BlogPage from './BlogPage'
-import Slideshow from './Slideshow';
 import AboutPage from './AboutPage'
 import TestPage from './TestPage'
 import ProjectHeader from './Projects/ProjectHeader'
@@ -45,7 +44,6 @@ const Routes = () => {
       <Route exact path="/" component={Home} />
       <Route path="/blog" component={BlogPage} />
       <Route path="/testpage" component={TestPage} />
-      {/* <Route path="/slideshow" component={Slideshow} /> */}
       <Route path="/contact" component={ContactPage}></Route>
       <Route path="/contactcard" component={ContactCard}></Route>
       {/* <Route path="/about" component={AboutPage} /> */}

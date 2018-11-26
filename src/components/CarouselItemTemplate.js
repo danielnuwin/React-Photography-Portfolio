@@ -5,7 +5,6 @@ import {
     Carousel, CarouselCaption, CarouselInner, CarouselItem
 } from 'mdbreact';
 import './css/App.css'
-import Slideshow from './Slideshow';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Parallax } from "react-parallax";
 import AnchorLink from 'react-anchor-link-smooth-scroll'

@@ -10,7 +10,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Home from './Home'
 import GalleryContainer from './GalleryContainer';
 import BlogPage from './BlogPage'
-import Slideshow from './Slideshow';
 import TestPage from './TestPage'
 import About from './AboutPage'
 import ProjectHeader from './Projects/ProjectHeader'

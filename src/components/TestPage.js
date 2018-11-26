@@ -4,7 +4,6 @@ import ProjectPageTest from './Projects/All_Projects'
 // import { Jumbotron, Container, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import { CardImage } from 'mdbreact';
 import { Parallax } from "react-parallax";
-import Slideshow from "./Slideshow"
 import './css/App.css'
 import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 
@@ -17,7 +16,6 @@ const TestPage = () => {
       {/* <br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /> */}
-      {/* <Slideshow /> */}
 
       <input type="checkbox" name="toggle" id="toggle" />
       <label htmlFor="toggle"></label>
