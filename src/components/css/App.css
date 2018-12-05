@@ -87,6 +87,9 @@
 .portfolio-warp .grid-sizer {
 	width: 20%;
 }
+.headroom-wrapper {
+	height: 4em !important;
+}
 
 /*----------------------------------------*/
 /* Carousel Intro CSS
