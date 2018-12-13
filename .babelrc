@@ -1,10 +1,11 @@
 {
     "presets": ["react", "stage-0"],
-    "plugins": [
-      "babel-preset-stage-0",
-      "transform-object-rest-spread",
-      "transform-es2015-destructuring"
-    ],
+    //Can't compile for some reason
+    // "plugins": [
+    //   "babel-preset-stage-0",
+    //   "transform-object-rest-spread",
+    //   "transform-es2015-destructuring"
+    // ],
     "env": {
       "debug": true
     }

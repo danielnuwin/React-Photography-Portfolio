@@ -15,7 +15,7 @@ import './lib/animate.min.css';
 //Redux
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './components/Reducers/Reducer';
+import rootReducer from './components/Store/Reducer';
 const store = createStore(rootReducer);
 
 // document.body.style.zoom="80%";
