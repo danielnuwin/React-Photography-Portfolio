@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Route, Link, withRouter, Redirect } from "reac
 import FadeIn from 'react-fade-in';
 
 const CarouselItemTemplate = (props) => {
-    const {view } = props;
+    const {view} = props;
     return (
         <CarouselItem itemId={view}>
             <View>

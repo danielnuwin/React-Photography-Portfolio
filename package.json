@@ -32,17 +32,22 @@
     "react-lazy-load": "^3.0.13",
     "react-motions": "^0.3.0",
     "react-parallax": "^2.0.1",
+    "react-redux": "^6.0.0",
     "react-responsive-masonry": "^2.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-web-tabs": "^1.0.1",
-    "reactstrap": "^6.4.0"
+    "reactstrap": "^6.4.0",
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "html-webpack-plugin": "^3.1.0",

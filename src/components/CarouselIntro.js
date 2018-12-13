@@ -18,26 +18,10 @@ class CarouselIntro extends React.Component {
     constructor(props) {
         super(props),
             this.state = {
-                collapse: false
             }
-        this.onClick = this.onClick.bind(this);
-        this.handleNavbarClick = this.handleNavbarClick.bind(this);
     }
-
-    onClick() {
-        this.setState({
-            collapse: !this.state.collapse,
-        });
-    }
-
-    handleNavbarClick() {
-        this.setState({
-            collapse: false
-        });
-    }
-
+    
     render() {
-        const overlay = <div id="sidenav-overlay" style={{ backgroundColor: 'transparent' }} onClick={this.handleNavbarClick} />
         return (
             <div id="carouselIntro" className="">
                 <Carousel

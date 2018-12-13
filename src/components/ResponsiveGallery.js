@@ -127,7 +127,7 @@ class ResponsiveGallery extends Component {
     return (
       //This allows grid view on mobile
       <ResponsiveMasonry columnsCountBreakPoints={{ 750: 1, 750: 2, 900: 3 }} >
-        <Masonry gutter="2px">
+        <Masonry gutter="1.5px">
           {gallery}
         </Masonry>
       </ResponsiveMasonry>

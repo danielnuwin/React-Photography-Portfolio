@@ -1,31 +1,39 @@
 import React, { Component } from 'react';
+import {CONSTANT_NEW, CONSTANT_OLD,
+    CONSTANT_TRAVEL,CONSTANT_WEDDING
+    ,CONSTANT_URBAN,CONSTANT_PEOPLE,
+    ACTION_TYPE_FILTER } from '../configs/constants'
 import { Container, Row, Col, Card } from 'mdbreact';
 import '../css/App.css'
 import ProjectTemplate from './ProjectTemplate'
-import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact'
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
-import { Parallax } from "react-parallax";
+import { connect } from "react-redux";
+
+
+const mapStateToProps = state => {
+    return {
+        projectObject: state.All_ProjectsReducer.projectObject
+    };
+  };
 
 class All_Projects extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            projectObject: {}
-        }
-        this.renderAllProjects = this.renderAllProjects.bind(this);
-        this.renderDropDown = this.renderDropDown.bind(this);
-        this.renderFilter = this.renderFilter.bind(this);
-        this.filterProjects = this.filterProjects.bind(this);
-    }
-    componentWillMount() {
-        this.setState({
-            // projectObject: AllProjectsConfig.imageArray
-            projectObject: this.props.imageArray
+    //Commented out for Redux
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         projectObject: {}
+    //     }
+    //     this.renderAllProjects = this.renderAllProjects.bind(this);
+    //     this.renderFilter = this.renderFilter.bind(this);
+    //     this.filterProjects = this.filterProjects.bind(this);
+    // }
+    // componentWillMount() {
+    //     this.setState({
+    //         projectObject: this.state.imageArray
 
-        });
-        // console.log("state: " + JSON.stringify(this.props.projectObject));
-    }
+    //     });
+    //     console.log("state: " + JSON.stringify(this.props.projectObject));
+    // }
     componentDidMount() {
         window.scroll({
             top: 350,
@@ -35,10 +43,10 @@ class All_Projects extends Component {
     }
 
     renderAllProjects() {
-        if (!this.state.projectObject) {
+        if (!this.props.projectObject) {
             return;
         }
-        const projectGallery = this.state.projectObject.map((obj, i) => {
+        const projectGallery = this.props.projectObject.map((obj, i) => {
             return (
                 <ProjectTemplate
                     key={i + obj.title}
@@ -49,47 +57,41 @@ class All_Projects extends Component {
         return projectGallery;
     }
 
-    renderDropDown() {
-        //***** */ allprojectmargintop change to -8em when using filter, default -5em
-
-        return (
-            <Dropdown style={{ left: "0.7em", bottom: " 3em" }}>
-                <DropdownToggle caret color="white">
-                    Filter
-            </DropdownToggle>
-                <DropdownMenu>
-                    <DropdownItem href="#">Newest</DropdownItem>
-                    <DropdownItem href="#">Oldest</DropdownItem>
-                    <DropdownItem href="#">Weddings</DropdownItem>
-                </DropdownMenu>
-            </Dropdown>
-        );
-    }
-
     // THERE IS A DELAY OF SETTING STATE ON FILTER, Does not re render for some reason. 
     filterProjects(filter) {
-        const projCopy = this.props.imageArray;
-        const reverseCopy = projCopy.reverse();
+        // const projCopy = this.props.imageArray;
+        // const reverseCopy = projCopy.reverse();
 
-        const filteredArray = projCopy.filter(function (proj) {
-            let searchValue = proj.category;
-            return searchValue.indexOf(filter) !== -1;
-        });
+        // const filteredArray = projCopy.filter(function (proj) {
+        //     let searchValue = proj.category;
+        //     return searchValue.indexOf(filter) !== -1;
+        // });
 
-        if (filter === "new") {
-            this.setState({ projectObject: projCopy });
-            // console.log("New Projects: " +JSON.stringify(this.state.projectObject));
+        // if (filter === CONSTANT_NEW) {
+        //     this.setState({ projectObject: projCopy });
+        //     // console.log("New Projects: " +JSON.stringify(this.state.projectObject));
 
+        // }
+        // else if (filter === CONSTANT_OLD) {
+        //     this.setState({ projectObject: reverseCopy });
+        //     // console.log("reverseCopy: " +JSON.stringify(this.state.projectObject));
+
+        // }
+        // else {
+        //     // console.log('before currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
+        //     this.setState({ projectObject: filteredArray });
+        //     // console.log("filteredArray: " +JSON.stringify(this.state.projectObject));
+        // }
+
+        // Added for redux
+        if (filter === CONSTANT_NEW) {
+            this.props.dispatch({type: CONSTANT_NEW, value: filter})
         }
-        else if (filter === "old") {
-            this.setState({ projectObject: reverseCopy });
-            // console.log("reverseCopy: " +JSON.stringify(this.state.projectObject));
-
+        else if (filter === CONSTANT_OLD) {
+            this.props.dispatch({type: CONSTANT_OLD, value: filter}) 
         }
         else {
-            // console.log('before currentState = ' + JSON.stringify(this.state.imageArray)); // State is delayed
-            this.setState({ projectObject: filteredArray });
-            // console.log("filteredArray: " +JSON.stringify(this.state.projectObject));
+            this.props.dispatch({type: ACTION_TYPE_FILTER, value: filter})
         }
     }
 
@@ -98,39 +100,18 @@ class All_Projects extends Component {
         return (
             <Tabs id="Tab" defaultTab="one" className="GalleryContainer ">
                 <TabList className="TabList" style={{ border: 'none', margin: '0em 0 2em 0em' }}>
-                    <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
-                    <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
-                    <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterProjects("travel")}>Travel </Tab>
-                    <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects("ppl")}> People </Tab>
-                    <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects("urb")}>Urban & Street </Tab>
-                    <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterProjects("wed")}>Weddings </Tab>
-
-                    {/* <Tab style={this.cursorStyle} tabFor="one" onClick={() => this.filterProjects("new")}>Newest <i className="fa fa-arrow-up"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="two" onClick={() => this.filterProjects("old")}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterProjects("travel")}>Travel  <i className="fa fa-plane"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterProjects("urb")}>Urban & Street   <i className="fa fa-building-o"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterProjects("ppl")}> People  <i className="fa fa-child"> </i></Tab>
-                    <Tab style={this.cursorStyle} tabFor="three" onClick={() => this.filterProjects("wed")}>Weddings  <i className="fa fa-venus-mars"> </i></Tab> */}
-                    {/* <Tab tabFor="six">
-                        <Dropdown>
-                            <DropdownToggle className="brand colorBlackLink" nav caret>Projects</DropdownToggle>
-                            <DropdownMenu>
-                                <NavbarNav>
-                                    <NavItem className="nav-format">
-                                        <NavLink className="brand nav-format" to="/projects">All Projects</NavLink>
-                                        <NavLink className="brand nav-format" to="/laurenlychee"> > Lauren Lychee</NavLink>
-                                    </NavItem>
-                                </NavbarNav>
-                            </DropdownMenu>
-                        </Dropdown>
-                    </Tab> */}
+                    <Tab style={cursorStyle} tabFor="one" onClick={() => this.filterProjects(CONSTANT_NEW)}>Newest <i className="fa fa-arrow-up"> </i></Tab>
+                    <Tab style={cursorStyle} tabFor="two" onClick={() => this.filterProjects(CONSTANT_OLD)}>Oldest  <i className="fa fa-arrow-down"> </i></Tab>
+                    <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterProjects(CONSTANT_TRAVEL)}>Travel </Tab>
+                    <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects(CONSTANT_PEOPLE)}> People </Tab>
+                    <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects(CONSTANT_URBAN)}>Urban & Street </Tab>
+                    <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterProjects(CONSTANT_WEDDING)}>Weddings </Tab>
                 </TabList>
             </Tabs>
         );
     }
 
     render() {
-        const thailand = require('../../images/2017_S.E.A_Backpacking/Asia-6.jpg');
 
         return (
             <div>
@@ -144,13 +125,9 @@ class All_Projects extends Component {
                         {this.renderAllProjects()}
                     </Row>
                 </section>
-                {/* <Parallax bgImage={thailand} strength={500}>
-                    <div style={{ height: 500 }}>
-                    </div>
-                </Parallax> */}
             </div>
         );
     };
 }
 
-export default All_Projects;
+export default connect(mapStateToProps)(All_Projects);

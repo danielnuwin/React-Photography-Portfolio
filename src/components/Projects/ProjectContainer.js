@@ -3,8 +3,6 @@ import '../css/App.css'
 import ProjectHeader from './ProjectHeader'
 import GalleryContainer from '../GalleryContainer';
 import All_Projects from './All_Projects'
-import AllProjectsConfig from '../PhotoProjects/All_Projects_Config'
-import FadeIn from 'react-fade-in';
 import ScrollAnimation from 'react-animate-on-scroll';
 import AboutPage from '../AboutPage'
 

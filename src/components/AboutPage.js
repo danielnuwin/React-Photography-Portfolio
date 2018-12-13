@@ -97,17 +97,18 @@ const AboutPage = () => {
                             I'm a software engineer with 5 years experience in the industry. I graduated with a B.S. in Computer Science at the University of California, Irvine.
                             My expertise includes Frontend development with React and Angular, some Backend development in Java, as well as Quality Assurance.
                             <br />
-                            <br />
-                            My Technical<a href="https://www.dropbox.com/s/gasb11asmkahvyx/Daniel%20Nguyen%20Resume%2007.18%20--%20Portfolio.pdf?dl=0" target="_blank"> Resume</a>
+                            {/* <br />
+                            My Technical<a href="https://www.dropbox.com/s/gasb11asmkahvyx/Daniel%20Nguyen%20Resume%2007.18%20--%20Portfolio.pdf?dl=0" target="_blank"> Resume</a> */}
                             <br />
                             Github <a href="https://github.com/danielnuwin" target="_blank"> Repo </a>
                         </p>
 
                         <h4 className="tech-info"> This Portfolio was built with</h4>
                         <ul style={{ marginLeft: '1em' }}>
-                            <li><a className="tech-info-list" href="https://reactjs.org/" rel="nofollow">Reactjs</a> - A JavaScript framework for building user interfaces</li>
-                            <li><a className="tech-info-list" href="https://webpack.js.org/" rel="nofollow">Webpack</a> - JavaScript module bundler</li>
-                            <li><a className="tech-info-list" href="http://babeljs.io/" rel="nofollow">Babel</a> - JavaScript transpiler/compiler</li>
+                            <li><a className="tech-info-list" href="https://reactjs.org/" target="_blank"> Reactjs</a> - A JavaScript framework for building user interfaces</li>
+                            <li><a className="tech-info-list" href="https://redux.js.org/" target="_blank"> Redux</a> - is a predictable state container for JavaScript apps</li>
+                            <li><a className="tech-info-list" href="https://webpack.js.org/" target="_blank"> Webpack</a> - JavaScript module bundler</li>
+                            <li><a className="tech-info-list" href="http://babeljs.io/" target="_blank"> Babel</a> - JavaScript transpiler/compiler</li>
                         </ul>
                     </Col>
                 </Row>
