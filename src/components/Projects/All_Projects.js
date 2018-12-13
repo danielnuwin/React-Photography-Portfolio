@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import {CONSTANT_NEW, CONSTANT_OLD,
-    CONSTANT_TRAVEL,CONSTANT_WEDDING
-    ,CONSTANT_URBAN,CONSTANT_PEOPLE,
-    ACTION_TYPE_FILTER } from '../configs/constants'
+import {
+    CONSTANT_NEW, CONSTANT_OLD,
+    CONSTANT_TRAVEL, CONSTANT_WEDDING
+    , CONSTANT_URBAN, CONSTANT_PEOPLE,
+    ACTION_TYPE_FILTER
+} from '../configs/constants'
 import { Container, Row, Col, Card } from 'mdbreact';
 import '../css/App.css'
 import ProjectTemplate from './ProjectTemplate'
@@ -14,7 +16,7 @@ const mapStateToProps = state => {
     return {
         projectObject: state.All_ProjectsReducer.projectObject
     };
-  };
+};
 
 class All_Projects extends Component {
     //Commented out for Redux
@@ -40,6 +42,10 @@ class All_Projects extends Component {
             behavior: "smooth"
         });
         // console.log("ALL PROJECTS: didMount: scrollUp");
+        
+        //Will Reload Reducer when coming back to projects page
+        this.props.dispatch({ type: CONSTANT_NEW })
+
     }
 
     renderAllProjects() {
@@ -85,13 +91,13 @@ class All_Projects extends Component {
 
         // Added for redux
         if (filter === CONSTANT_NEW) {
-            this.props.dispatch({type: CONSTANT_NEW, value: filter})
+            this.props.dispatch({ type: CONSTANT_NEW, value: filter })
         }
         else if (filter === CONSTANT_OLD) {
-            this.props.dispatch({type: CONSTANT_OLD, value: filter}) 
+            this.props.dispatch({ type: CONSTANT_OLD, value: filter })
         }
         else {
-            this.props.dispatch({type: ACTION_TYPE_FILTER, value: filter})
+            this.props.dispatch({ type: ACTION_TYPE_FILTER, value: filter })
         }
     }
 
