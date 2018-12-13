@@ -1,13 +1,20 @@
-node_modules
-dist
+# dependencies
+/node_modules
 package-lock.json
+
+# production
+dist
+
+#images
 /src/images/
-src/.DS_Store
+
+# misc
 .DS_Store
-.DS_Store
-src/.DS_Store
-.DS_Store
-src/.DS_Store
-src/components/.DS_Store
-src/.DS_Store
-.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
