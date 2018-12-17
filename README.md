@@ -1,9 +1,9 @@
 # React Photography Portfolio
-> My Photography
+> My Photography Portfolio. 
 
 [Demo](https://danielnuwin.github.io)
 ## Quick Start
-
+> Note: Images are private for my use only, therefore will not build without it. However the demo link will showcase the portfolio. 
 ``` bash
 # Install dependencies
 npm install
