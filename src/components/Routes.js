@@ -20,6 +20,7 @@ import AboutMeConfig from './PhotoProjects/About_Me_Config'
 import Laruen_Lychee from './PhotoProjects/10.04.18_Laruen_Lychee'
 import Wedding_Wan_Chen from './PhotoProjects/09.02.17_Yvonne_Wedding'
 import Wedding_Cbass_Becca from './PhotoProjects/08.05.18_Wedding_Cbass_Becca'
+import Wedding_WW from './PhotoProjects/12.15.18_Wedding_WW'
 import Lauren_Night_Shoot from './PhotoProjects/05.21.18_Lauren_Night_Shoot'
 import Urban_SF from './PhotoProjects/08.18.18_Urban_SF'
 import MarchForOurLives from './PhotoProjects/03.24.18_March_4_Our_Lives'
@@ -206,6 +207,15 @@ const Routes = () => {
           showFilter={false}
           headerInfo={South_America.projectHeader}
           imageArray={South_America.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      /><Route exact path="/wedding_ww" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Wedding_WW.projectHeader}
+          imageArray={Wedding_WW.imageArray}
           renderType="gallery"
         // style={"container containerMarginTopProjects"}
         />

@@ -35,7 +35,7 @@ const All_ProjectsReducer = (state = initialState, action) => {
                 return searchValue.indexOf(action.value) !== -1;
             });
             newState.projectObject = filteredArray;
-            console.log("newstate_FILTER: ", JSON.stringify(newState.projectObject));
+            // console.log("newstate_FILTER: ", JSON.stringify(newState.projectObject));
             return newState;
     }
     // console.log("newstate_END: ", JSON.stringify(newState.projectObject));
