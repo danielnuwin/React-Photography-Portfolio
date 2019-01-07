@@ -19,13 +19,22 @@ const headerData = {
 
 const imageArray = [
   {
-    title: "Sister's Double Wedding",
-    date: "December 2018",
-    coverImage: require('../../images/12.15.18_Wedding_WW/Wedding_WW-15.jpg'),
-    link: "/wedding_ww", 
+    title: "Aymand + Amanda's Wedding",
+    date: "January 2019",
+    coverImage: require('../../images/01.05.19_WW2/Wedding_WW-9.jpg'),
+    link: "/wedding_ww2", 
     category: CONSTANT_WEDDING,
-    bannerStyle: "dark"
-  }, {
+    bannerStyle: "light"
+  }, 
+  // {
+  //   title: "Sister's Double Wedding",
+  //   date: "December 2018",
+  //   coverImage: require('../../images/12.15.18_Wedding_WW/Wedding_WW-15.jpg'),
+  //   link: "/wedding_ww", 
+  //   category: CONSTANT_WEDDING,
+  //   bannerStyle: "dark"
+  // }, 
+  {
     title: "Ginger's 1st Halloween",
     date: "October 2018",
     coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-Thumb.jpg'),

@@ -41,7 +41,7 @@ for (var i = 1; i <= 34; i++) {
 const peopleArray = [];
 const featPeople = [1,2,3,4,5,6,8,10,15,17,21];
 
-for (var i = 1; i <= 24; i++) {
+for (var i = 1; i <= 25; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
