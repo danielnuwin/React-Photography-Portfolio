@@ -16,7 +16,7 @@ import ReactGA from 'react-ga';
 
 function trackGA (link) {
     ReactGA.event({
-        category: link,
+        category: 'Clicked: ' + link,
         action: 'Clicked Intro Menu',
     });
 }
@@ -44,14 +44,14 @@ const CarouselItemTemplate = (props) => {
                                                 <hr className="hr-light" />
                                                 {/* <h6 className="mb-4 display-6 text-center" style={{ color: 'black', fontWeight: "400" }}> “Embrace the unknown for which it will eventually bring you to where you need to be”</h6> */}
                                                 <AnchorLink href='#headerbox'>
-                                                    <Button color="white" onClick={() => trackGA('portfolio1_click')}>Portfolio</Button>
+                                                    <Button color="white" onClick={() => trackGA('smallMenuClick: Portfolio1')}>Portfolio</Button>
                                                 </AnchorLink>
                                                 <Link to="/projects">
-                                                    <Button outline color="white" onClick={() => trackGA('project_click')}> Projects</Button>
+                                                    <Button outline color="white" onClick={() => trackGA('smallMenuClick: Projects')}> Projects</Button>
                                                 </Link>
                                                 {/* <AnchorLink href='#contactcard'> */}
                                                 <AnchorLink href='#footer_anchor'>
-                                                    <Button color="red" onClick={() => trackGA('contact_click')}> Contact </Button>
+                                                    <Button color="red" onClick={() => trackGA('smallMenuClick: Contact')}> Contact </Button>
                                                 </AnchorLink>
                                             </div>
                                         </Col>

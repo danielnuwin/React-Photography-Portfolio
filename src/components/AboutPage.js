@@ -10,7 +10,7 @@ const AboutPage = () => {
         behavior: "smooth"
     });    // console.log("*******Lazy Load*******");
     ReactGA.event({
-        category: '/AboutPage',
+        category: 'LandedOn: /AboutPage',
         action: 'Landed On',
     });
     return (

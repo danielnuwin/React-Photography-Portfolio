@@ -42,7 +42,7 @@ class All_Projects extends Component {
             behavior: "smooth"
         });
         ReactGA.event({
-            category: "/All_Projects",
+            category: "LandedOn: /All_Projects_Page",
             action: 'Landed On',
         });
         
