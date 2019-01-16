@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 import './css/App.css'
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReactGA from 'react-ga';
 
 const AboutPage = () => {
     window.scroll({
         top: 0,
         behavior: "smooth"
     });    // console.log("*******Lazy Load*******");
+    ReactGA.event({
+        category: '/AboutPage',
+        action: 'Landed On',
+    });
     return (
         <ScrollAnimation delay={300} animateIn="fadeIn" animateOnce={true}>
 

@@ -10,7 +10,7 @@ import '../css/App.css'
 import ProjectTemplate from './ProjectTemplate'
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import { connect } from "react-redux";
-
+import ReactGA from 'react-ga';
 
 const mapStateToProps = state => {
     return {
@@ -41,6 +41,11 @@ class All_Projects extends Component {
             top: 350,
             behavior: "smooth"
         });
+        ReactGA.event({
+            category: "/All_Projects",
+            action: 'Landed On',
+        });
+        
         // console.log("ALL PROJECTS: didMount: scrollUp");
         
         //Will Reload Reducer when coming back to projects page

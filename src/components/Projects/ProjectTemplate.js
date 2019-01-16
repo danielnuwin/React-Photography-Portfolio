@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Card } from 'mdbreact';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import '../css/App.css'
+import ReactGA from 'react-ga'
 
 class ProjectTemplate extends Component {
     constructor(props) {
@@ -14,7 +15,14 @@ class ProjectTemplate extends Component {
             bannerStyle: "",
             projectObject: {},
             style: ""
-        }
+        };
+    }
+
+    trackGA(link) {
+        ReactGA.event({
+            category: link,
+            action: 'Clicked Project',
+        });
     }
 
     componentWillMount() {
@@ -31,6 +39,7 @@ class ProjectTemplate extends Component {
             bannerStyle: this.props.projectObject.bannerStyle,
             style: this.props.projectObject.style
         });
+
     }
 
     render() {
@@ -39,7 +48,7 @@ class ProjectTemplate extends Component {
 
         return (
             <Col lg="3" md="6" className="card-margin">
-                <Card collection className="z-depth-1-half">
+                <Card collection className="z-depth-1-half" onClick={() => this.trackGA(link)}>
                     <Link className="" to={link}>
                         <div className="view zoom cursor-pointer" style={{ overflow: "hidden" }}>
                             <img src={coverImage} className={`imgFit img-fluid ` + style} alt="" />

@@ -12,6 +12,15 @@ import { Bounce } from 'react-motions'
 import { BrowserRouter as Router, Route, Link, withRouter, Redirect } from "react-router-dom";
 import FadeIn from 'react-fade-in';
 
+import ReactGA from 'react-ga';
+
+function trackGA (link) {
+    ReactGA.event({
+        category: link,
+        action: 'Clicked Intro Menu',
+    });
+}
+
 const CarouselItemTemplate = (props) => {
     const {view} = props;
     return (
@@ -35,14 +44,14 @@ const CarouselItemTemplate = (props) => {
                                                 <hr className="hr-light" />
                                                 {/* <h6 className="mb-4 display-6 text-center" style={{ color: 'black', fontWeight: "400" }}> “Embrace the unknown for which it will eventually bring you to where you need to be”</h6> */}
                                                 <AnchorLink href='#headerbox'>
-                                                    <Button color="white">Portfolio</Button>
+                                                    <Button color="white" onClick={() => trackGA('portfolio1_click')}>Portfolio</Button>
                                                 </AnchorLink>
                                                 <Link to="/projects">
-                                                    <Button outline color="white"> Projects</Button>
+                                                    <Button outline color="white" onClick={() => trackGA('project_click')}> Projects</Button>
                                                 </Link>
                                                 {/* <AnchorLink href='#contactcard'> */}
                                                 <AnchorLink href='#footer_anchor'>
-                                                    <Button color="red"> Contact </Button>
+                                                    <Button color="red" onClick={() => trackGA('contact_click')}> Contact </Button>
                                                 </AnchorLink>
                                             </div>
                                         </Col>
@@ -56,7 +65,8 @@ const CarouselItemTemplate = (props) => {
             <CarouselCaption>
                 <FadeIn delay={2000}>
                     <Bounce duration={2} infinite>
-                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'> </AnchorLink>
+                        <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'
+                             onClick={() => trackGA('portfolio2_click')}> </AnchorLink>
                     </Bounce>
                 </FadeIn>
             </CarouselCaption>
