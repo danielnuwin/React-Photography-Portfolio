@@ -20,7 +20,7 @@ class ProjectTemplate extends Component {
 
     trackGA(link) {
         ReactGA.event({
-            category: 'Project: ' + link,
+            category: 'Clicked Project: ' + link,
             action: 'Clicked Project',
         });
     }

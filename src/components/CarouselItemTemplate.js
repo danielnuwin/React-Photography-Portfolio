@@ -44,14 +44,14 @@ const CarouselItemTemplate = (props) => {
                                                 <hr className="hr-light" />
                                                 {/* <h6 className="mb-4 display-6 text-center" style={{ color: 'black', fontWeight: "400" }}> “Embrace the unknown for which it will eventually bring you to where you need to be”</h6> */}
                                                 <AnchorLink href='#headerbox'>
-                                                    <Button color="white" onClick={() => trackGA('smallMenuClick: Portfolio1')}>Portfolio</Button>
+                                                    <Button color="white" onClick={() => trackGA('Portfolio_Anchor')}>Portfolio</Button>
                                                 </AnchorLink>
                                                 <Link to="/projects">
-                                                    <Button outline color="white" onClick={() => trackGA('smallMenuClick: Projects')}> Projects</Button>
+                                                    <Button outline color="white" onClick={() => trackGA('Projects_Anchor')}> Projects</Button>
                                                 </Link>
                                                 {/* <AnchorLink href='#contactcard'> */}
                                                 <AnchorLink href='#footer_anchor'>
-                                                    <Button color="red" onClick={() => trackGA('smallMenuClick: Contact')}> Contact </Button>
+                                                    <Button color="red" onClick={() => trackGA('Contact_Anchor')}> Contact </Button>
                                                 </AnchorLink>
                                             </div>
                                         </Col>
@@ -66,7 +66,7 @@ const CarouselItemTemplate = (props) => {
                 <FadeIn delay={2000}>
                     <Bounce duration={2} infinite>
                         <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'
-                             onClick={() => trackGA('portfolio2_click')}> </AnchorLink>
+                             onClick={() => trackGA('Portfolio_Arrow')}> </AnchorLink>
                     </Bounce>
                 </FadeIn>
             </CarouselCaption>
