@@ -26,14 +26,14 @@ const imageArray = [
     category: CONSTANT_WEDDING,
     bannerStyle: "light"
   }, 
-  // {
-  //   title: "Sister's Double Wedding",
-  //   date: "December 2018",
-  //   coverImage: require('../../images/12.15.18_Wedding_WW/Wedding_WW-15.jpg'),
-  //   link: "/wedding_ww", 
-  //   category: CONSTANT_WEDDING,
-  //   bannerStyle: "dark"
-  // }, 
+  {
+    title: "Sister's Double Wedding",
+    date: "December 2018",
+    coverImage: require('../../images/12.15.18_Wedding_WW/Wedding_WW-15.jpg'),
+    link: "/wedding_ww", 
+    category: CONSTANT_WEDDING,
+    bannerStyle: "dark"
+  }, 
   {
     title: "Ginger's 1st Halloween",
     date: "October 2018",

@@ -66,7 +66,7 @@ const CarouselItemTemplate = (props) => {
                 <FadeIn delay={2000}>
                     <Bounce duration={2} infinite>
                         <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'
-                             onClick={() => trackGA('Portfolio_Arrow')}> </AnchorLink>
+                             onClick={() => trackGA('Portfolio_Arrow_Down')}> </AnchorLink>
                     </Bounce>
                 </FadeIn>
             </CarouselCaption>
