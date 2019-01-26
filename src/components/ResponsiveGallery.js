@@ -12,6 +12,17 @@ import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-d
 import LazyLoad from 'react-lazy-load';
 import shuffle from './configs/shuffle'
 
+import ReactGA from 'react-ga';
+
+function trackGA(action) {
+  console.log("clicked Action: ", action);
+  
+  ReactGA.event({
+    category: 'Clicked: ' + action,
+    action: 'Clicked Portolio Image/Filter' + action,
+  });
+}
+
 class ResponsiveGallery extends Component {
   constructor(props) {
     super(props);
@@ -41,6 +52,7 @@ class ResponsiveGallery extends Component {
   }
   //************************ LightBox *************************//
   openLightbox(index, event) {
+    trackGA("clicked_image: "+index)
     event.preventDefault();
     this.setState({
       currentImage: index,
@@ -114,6 +126,7 @@ class ResponsiveGallery extends Component {
                 // onClick={(e) => this.openLightbox(i, e)}
                 src={obj.src}
                 style={{ width: "100%", height: "auto", display: "block" }}
+                onClick={() => trackGA("image: " + i)}
               />
               <div style={this.cursorStyle} className="mask flex-center rgba-white-light" onClick={(e) => this.openLightbox(i, e)}>
                 {/* Show Banner only on Feature Page */}
@@ -141,13 +154,16 @@ class ResponsiveGallery extends Component {
     //   return searchValue.indexOf(filter) !== -1;
     // });
 
+    //Track clicks
+    trackGA(filter);
+
     //Filter Images
     let newArray = imagesCopy.filter(function (img) {
       let searchValue = img.category; //Array of Categories
       return searchValue.includes(filter);
     });
-    
-    if(filter === "*"){
+
+    if (filter === "*") {
       newArray = shuffle(newArray);
     }
     this.setState({ imageArray: newArray });

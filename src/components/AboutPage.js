@@ -3,6 +3,7 @@ import { Container, Row, Col, Mask, Fa, View, Button } from 'mdbreact';
 import './css/App.css'
 import ScrollAnimation from 'react-animate-on-scroll';
 import ReactGA from 'react-ga';
+// ReactGA.pageview(window.location.href);
 
 const AboutPage = () => {
     window.scroll({

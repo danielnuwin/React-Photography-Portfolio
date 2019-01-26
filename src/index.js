@@ -31,3 +31,13 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('app'));
 
+//Disable right click
+document.oncontextmenu = function (e) {
+    console.log(e.button);
+    if (e.button == 2) {
+        e.preventDefault();
+        alert("Images are copy protected");
+        return false;
+    }
+
+}
