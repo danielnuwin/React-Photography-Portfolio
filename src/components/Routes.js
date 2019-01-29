@@ -34,6 +34,7 @@ import Europe_2018 from './PhotoProjects/2018_Europe'
 import Baby_Ginger from './PhotoProjects/10.24.18_Baby_Ginger'
 import SEA_Backpacking from './PhotoProjects/2017_S.E.A_Backpacking'
 import South_America from './PhotoProjects/2017_South_America'
+import JJ_Proposal from './PhotoProjects/01.26.19_JJ_Proposal'
 
 const Routes = () => {
 
@@ -202,7 +203,7 @@ const Routes = () => {
         // style={"container containerMarginTopProjects"}
         />
       }
-      /> 
+      />
       <Route exact path="/2017_South_America" render={() =>
         <ProjectContainer
           showFilter={false}
@@ -222,12 +223,22 @@ const Routes = () => {
         // style={"container containerMarginTopProjects"}
         />
       }
-      /> 
+      />
       <Route exact path="/wedding_ww2" render={() =>
         <ProjectContainer
           showFilter={false}
           headerInfo={Wedding_WW2.projectHeader}
           imageArray={Wedding_WW2.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+      <Route exact path="/jj_proposal" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={JJ_Proposal.projectHeader}
+          imageArray={JJ_Proposal.imageArray}
           renderType="gallery"
         // style={"container containerMarginTopProjects"}
         />

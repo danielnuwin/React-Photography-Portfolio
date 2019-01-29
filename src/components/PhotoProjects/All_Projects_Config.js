@@ -19,6 +19,14 @@ const headerData = {
 
 const imageArray = [
   {
+    title: "Jeremy & Jessica's Proposal",
+    date: "January 2019",
+    coverImage: require('../../images/01.26.19_JJ_Proposal/JJ-17.jpg'),
+    link: "/jj_proposal", 
+    category: CONSTANT_WEDDING,
+    bannerStyle: "dark"
+  },  
+  {
     title: "Aymand + Amanda's Wedding",
     date: "January 2019",
     coverImage: require('../../images/01.05.19_WW2/Wedding_WW-9.jpg'),
@@ -80,7 +88,7 @@ const imageArray = [
   }, {
     title: "Lauren at the Pier",
     date: "May 2018",
-    coverImage: require('../../images/05.21.18_Lauren_Night_Shoot/Lauren_Night-12.jpg'),
+    coverImage: require('../../images/05.21.18_Lauren_Night_Shoot/Lauren_Night-11.jpg'),
     link: "/lauren_night_shoot",
     category: CONSTANT_PEOPLE,
     bannerStyle: "light"
