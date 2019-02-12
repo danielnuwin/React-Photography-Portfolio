@@ -39,9 +39,9 @@ for (var i = 1; i <= 39; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-const featPeople = [1,2,3,4,5,7,8,9,12,17,19,23];
+const featPeople = [1,2,3,4,5,7,8,9,12,17,19,23,29];
 
-for (var i = 1; i <= 28; i++) {
+for (var i = 1; i <= 29; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
