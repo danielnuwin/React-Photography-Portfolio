@@ -19,6 +19,14 @@ const headerData = {
 
 const imageArray = [
   {
+    title: "NOLA 2019",
+    date: "February 2019",
+    coverImage: require('../../images/02.02.19_Nola/Nola-8.jpg'),
+    link: "/nola2019", 
+    category: CONSTANT_TRAVEL,
+    bannerStyle: "light"
+  },  
+  {
     title: "Jeremy & Jessica's Proposal",
     date: "January 2019",
     coverImage: require('../../images/01.26.19_JJ_Proposal/JJ-17.jpg'),

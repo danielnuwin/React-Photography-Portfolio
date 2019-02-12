@@ -60,13 +60,13 @@ const AboutPage = () => {
 
                         <h4 className="tech-info"> My Camera Gear</h4>
                         <ul style={{ marginLeft: '1em' }}>
-                            <li className="camera-info-list"> Canon 6D</li>
+                            <li className="camera-info-list"> Canon 5D mark iii</li>
                             {/* <li className="camera-info-list"> Canon 5D mark III</li> */}
                             <li className="camera-info-list"> Sigma 35mm f/1.4</li>
                             <li className="camera-info-list"> Tamron 24-70mm f/2.8</li>
-                            <li className="camera-info-list"> Canon 50mm f/1.8</li>
                             <li className="camera-info-list"> Canon 70-200mm IS f/2.8</li>
-                            <li className="camera-info-list"> Canon Flash 430ex ii</li>
+                            <li className="camera-info-list"> Canon 50mm f/1.8</li>
+                            <li className="camera-info-list"> Canon Speedlite 430ex ii</li>
                         </ul>
 
                     </Col>

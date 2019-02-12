@@ -22,9 +22,9 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,3,6,8,9,10,11,12,15,18,19,20,21,25,26,28,31];
+const featTravel = [1,2,3,4,6,8,9,10,12,13,15,17,18,21,22,23,24,28,31,36,38];
 
-for (var i = 1; i <= 35; i++) {
+for (var i = 1; i <= 39; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
@@ -39,8 +39,7 @@ for (var i = 1; i <= 35; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-// const featPeople = [1,2,3,4,5,6,7,9,11,16,18,22,27,28];
-const featPeople = [1,2,3,4,5,6,7,8,9,12,17,19,23,28];
+const featPeople = [1,2,3,4,5,7,8,9,12,17,19,23];
 
 for (var i = 1; i <= 28; i++) {
   const obj = {
@@ -56,9 +55,9 @@ for (var i = 1; i <= 28; i++) {
 }
 {/************************** Wedding Data *************************/ }
 const weddingArray = [];
-const featWedding = [1,4,10,12,13,15,20,27,28];
+const featWedding = [1,4,10,12,13,15,20,27,28,40];
 
-for (var i = 1; i <= 37; i++) {
+for (var i = 1; i <= 44; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
@@ -73,9 +72,9 @@ for (var i = 1; i <= 37; i++) {
 
 {/************************** Urban Data *************************/ }
 const urbanArray = [];
-const featUrban = [1,3,4,6,8,13,14,21,22];
+const featUrban = [1,3,4,6,8,14,21,26,27,28,29,30,31];
 
-for (var i = 1; i <= 27; i++) {
+for (var i = 1; i <= 30; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),

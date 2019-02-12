@@ -35,6 +35,7 @@ import Baby_Ginger from './PhotoProjects/10.24.18_Baby_Ginger'
 import SEA_Backpacking from './PhotoProjects/2017_S.E.A_Backpacking'
 import South_America from './PhotoProjects/2017_South_America'
 import JJ_Proposal from './PhotoProjects/01.26.19_JJ_Proposal'
+import Nola from './PhotoProjects/02.02.19_Nola'
 
 const Routes = () => {
 
@@ -244,7 +245,16 @@ const Routes = () => {
         />
       }
       />
-
+      <Route exact path="/nola2019" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Nola.projectHeader}
+          imageArray={Nola.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
     </div>
 
     // </Switch>
