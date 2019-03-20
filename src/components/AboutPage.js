@@ -64,7 +64,7 @@ const AboutPage = () => {
                             {/* <li className="camera-info-list"> Canon 5D mark III</li> */}
                             <li className="camera-info-list"> Sigma 35mm f/1.4</li>
                             <li className="camera-info-list"> Tamron 24-70mm f/2.8</li>
-                            <li className="camera-info-list"> Canon 70-200mm IS f/2.8</li>
+                            <li className="camera-info-list"> Canon 70-200mm is f/2.8</li>
                             <li className="camera-info-list"> Canon 50mm f/1.8</li>
                             <li className="camera-info-list"> Canon Speedlite 430ex ii</li>
                         </ul>

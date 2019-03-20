@@ -54,7 +54,8 @@ class ProjectTemplate extends Component {
                             <img src={coverImage} className={`imgFit img-fluid ` + style} alt="" />
                             <div className={`stripe ` + bannerStyle}>
                                 <div>
-                                    <p> {title} </p>
+                                {/* <p style={{fontSize: title.length > 21 ? "1.25em" : ""}}> {title} </p> */}
+                                <p> {title} </p>
                                     {/* <p> Category </p> */}
                                     <p><i className="fa fa-calendar date" aria-hidden="true"> {date} </i></p>
                                 </div>

@@ -39,7 +39,7 @@ for (var i = 1; i <= 39; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-const featPeople = [1,2,3,4,5,7,8,9,12,17,19,23,29];
+const featPeople = [1,2,5,7,8,9,10,12,17,19,23,29];
 
 for (var i = 1; i <= 29; i++) {
   const obj = {

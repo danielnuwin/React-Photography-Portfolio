@@ -39,7 +39,7 @@ const CarouselItemTemplate = (props) => {
                                                 <div>
                                                     <h4 className="display-4 intro-title" > Daniel NuWin </h4>
                                                     {/* <h3 className="display-5 intro-subtitle" > Photography </h3> */}
-                                                    <h3 className="display-5 intro-subtitle" > Photography | Explore | Tech </h3>
+                                                    <h3 className="display-5 intro-subtitle" > Photography | Travel | Tech </h3>
                                                 </div>
                                                 <hr className="hr-light" />
                                                 {/* <h6 className="mb-4 display-6 text-center" style={{ color: 'black', fontWeight: "400" }}> “Embrace the unknown for which it will eventually bring you to where you need to be”</h6> */}
