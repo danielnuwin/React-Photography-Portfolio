@@ -4,7 +4,7 @@ Date:        Project:
 08.05.18     Lauren & Lychee
 
 **********/ }
-import { CONSTANT_TRAVEL,CONSTANT_WEDDING,CONSTANT_URBAN,CONSTANT_PEOPLE } from '../configs/constants'
+import { CONSTANT_TRAVEL,CONSTANT_WEDDING,CONSTANT_URBAN,CONSTANT_PEOPLE,CONSTANT_CONCERT } from '../configs/constants'
 
 {/************************** Header Data *************************/ }
 const headerData = {
@@ -19,6 +19,13 @@ const headerData = {
 
 const imageArray = [
   {
+    title: "Nina Sky",
+    date: "September 2019",
+    coverImage: require('../../images/09.01.19_Ninasky/Ninasky-18.jpg'),
+    link: "/ninasky2019", 
+    category: CONSTANT_CONCERT,
+    bannerStyle: "dark"
+  }, {
     title: "New Orleans 2019",
     date: "February 2019",
     coverImage: require('../../images/02.02.19_Nola/Nola-8.jpg'),

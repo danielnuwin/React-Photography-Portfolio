@@ -4,10 +4,9 @@ import './css/App.css';
 import NavigationBar from './NavigationBar';
 import Routes from './Routes'
 import FooterPage from './Footer';
-import Home from './Home'
-import ScrollAnimation from 'react-animate-on-scroll';
+// import Home from './Home'
+// import ScrollAnimation from 'react-animate-on-scroll';
 import Headroom from 'react-headroom'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-128379418-1');

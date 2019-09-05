@@ -36,6 +36,7 @@ import SEA_Backpacking from './PhotoProjects/2017_S.E.A_Backpacking'
 import South_America from './PhotoProjects/2017_South_America'
 import JJ_Proposal from './PhotoProjects/01.26.19_JJ_Proposal'
 import Nola from './PhotoProjects/02.02.19_Nola'
+import Ninasky from './PhotoProjects/09.01.19_Ninasky'
 
 const Routes = () => {
 
@@ -250,6 +251,16 @@ const Routes = () => {
           showFilter={false}
           headerInfo={Nola.projectHeader}
           imageArray={Nola.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
+      <Route exact path="/ninasky2019" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Ninasky.projectHeader}
+          imageArray={Ninasky.imageArray}
           renderType="gallery"
         // style={"container containerMarginTopProjects"}
         />

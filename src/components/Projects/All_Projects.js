@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     CONSTANT_NEW, CONSTANT_OLD,
     CONSTANT_TRAVEL, CONSTANT_WEDDING
-    , CONSTANT_URBAN, CONSTANT_PEOPLE,
+    , CONSTANT_URBAN, CONSTANT_PEOPLE, CONSTANT_CONCERT,
     ACTION_TYPE_FILTER
 } from '../configs/constants'
 import { Container, Row, Col, Card } from 'mdbreact';
@@ -117,6 +117,7 @@ class All_Projects extends Component {
                     <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterProjects(CONSTANT_PEOPLE)}> People </Tab>
                     <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterProjects(CONSTANT_URBAN)}>Urban & Street </Tab>
                     <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterProjects(CONSTANT_WEDDING)}>Weddings </Tab>
+                    <Tab style={cursorStyle} tabFor="seven" onClick={() => this.filterProjects(CONSTANT_CONCERT)}>Concerts </Tab>
                 </TabList>
             </Tabs>
         );

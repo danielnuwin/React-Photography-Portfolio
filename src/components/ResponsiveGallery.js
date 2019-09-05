@@ -192,6 +192,7 @@ class ResponsiveGallery extends Component {
             <Tab style={cursorStyle} tabFor="three" onClick={() => this.filterImage("ppl")}>People</Tab>
             <Tab style={cursorStyle} tabFor="four" onClick={() => this.filterImage("urb")}>Urban & Street</Tab>
             <Tab style={cursorStyle} tabFor="five" onClick={() => this.filterImage("wed")}>Weddings</Tab>
+            <Tab style={cursorStyle} tabFor="six" onClick={() => this.filterImage("concert")}>Concert</Tab>
             {/* <Tab style={this.cursorStyle} tabFor="six" onClick={() => this.filterImage("all")}>All</Tab> */}
             <Tab tabFor="sevon">
               <Dropdown>

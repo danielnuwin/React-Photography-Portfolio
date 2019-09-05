@@ -87,8 +87,25 @@ for (var i = 1; i <= 30; i++) {
   urbanArray.push(obj);
 }
 
+{/************************** Concert Data *************************/ }
+const concertArray = [];
+const featConcert = [6,7,8,9,10,12,15,16,20,23,26,32,37,39,40,43,44];
+
+for (var i = 1; i <= 44; i++) {
+  const obj = {
+    src: require('../../images/Featured_Portfolio/Concert/Concert-' + i + '.jpg'),
+    thumbnail: require('../../images/Featured_Portfolio/Concert/Concert-' + i + '.jpg'),
+    caption: '',
+    category: ["concert"]
+  }
+  if(featConcert.includes(i)){
+    obj['category'].push('*')
+  }
+  concertArray.push(obj);
+}
+
 {/*********************** Return Object Data ***********************/ }
-imageArray = [...travelArray, ...peopleArray, ...weddingArray, ...urbanArray];
+imageArray = [...travelArray, ...peopleArray, ...weddingArray, ...urbanArray, ...shuffle(concertArray)];
 // console.log("arrayIMages: " + JSON.stringify(imageArray))
 
 const projectData = {

@@ -64,6 +64,7 @@ class Home extends Component {
                             imageArray={Featured.imageArray}
                             headerInfo={Featured.projectHeader}
                             renderType="feature"
+                            // SHOW SMALLER MARGINS FOR GALLERY
                         // style={"container containerMarginTopFeature"}
                         />
                     </ScrollAnimation>
