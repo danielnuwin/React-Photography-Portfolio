@@ -36,6 +36,7 @@ class CarouselIntro extends React.Component {
                         <CarouselItemTemplate view="2" />
                         <CarouselItemTemplate view="3" />
                         <CarouselItemTemplate view="4" />
+                        <CarouselItemTemplate view="5" />
                     </CarouselInner>
                 </Carousel>
 

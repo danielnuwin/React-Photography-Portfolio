@@ -24,7 +24,8 @@ const imageArray = [
     coverImage: require('../../images/09.01.19_Ninasky/Ninasky-18.jpg'),
     link: "/ninasky2019", 
     category: CONSTANT_CONCERT,
-    bannerStyle: "dark"
+    bannerStyle: "dark",
+    style: "ap-mobile-cover-Ninasky"
   }, {
     title: "New Orleans 2019",
     date: "February 2019",

@@ -22,9 +22,9 @@ let imageArray = [];
 
 {/************************** Travel Data *************************/ }
 const travelArray = [];
-const featTravel = [1,2,3,4,6,8,9,10,12,13,15,17,18,21,22,23,24,28,31,36,38];
+const featTravel = [1,2,3,4,6,8,9,10,12,13,15,17,18,21,22,23,24,28,31,36,38,40,42,43,46];
 
-for (var i = 1; i <= 39; i++) {
+for (var i = 1; i <= 46; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Travel/Travel-' + i + '.jpg'),
@@ -39,9 +39,9 @@ for (var i = 1; i <= 39; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-const featPeople = [1,2,5,7,8,9,10,12,17,19,23,29];
+const featPeople = [1,2,5,7,8,9,10,12,17,19,23,29,30];
 
-for (var i = 1; i <= 29; i++) {
+for (var i = 1; i <= 30; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/People/People-' + i + '.jpg'),
@@ -55,9 +55,9 @@ for (var i = 1; i <= 29; i++) {
 }
 {/************************** Wedding Data *************************/ }
 const weddingArray = [];
-const featWedding = [1,4,10,12,13,15,20,27,28,40];
+const featWedding = [1,4,10,12,13,15,20,27,28,40,45,47,49,50];
 
-for (var i = 1; i <= 44; i++) {
+for (var i = 1; i <= 50; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Wedding/Wedding-' + i + '.jpg'),
@@ -72,9 +72,9 @@ for (var i = 1; i <= 44; i++) {
 
 {/************************** Urban Data *************************/ }
 const urbanArray = [];
-const featUrban = [1,3,4,6,8,14,21,26,27,28,29,30,31];
+const featUrban = [1,3,4,6,8,14,21,26,27,28,31,35];
 
-for (var i = 1; i <= 30; i++) {
+for (var i = 1; i <= 35; i++) {
   const obj = {
     src: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
     thumbnail: require('../../images/Featured_Portfolio/Urban/Urban-' + i + '.jpg'),
@@ -89,7 +89,7 @@ for (var i = 1; i <= 30; i++) {
 
 {/************************** Concert Data *************************/ }
 const concertArray = [];
-const featConcert = [6,7,8,9,10,12,15,16,20,23,26,32,37,39,40,43,44];
+const featConcert = [2,6,8,9,16,23,26,29,39,40,43,44];
 
 for (var i = 1; i <= 44; i++) {
   const obj = {
@@ -105,7 +105,7 @@ for (var i = 1; i <= 44; i++) {
 }
 
 {/*********************** Return Object Data ***********************/ }
-imageArray = [...travelArray, ...peopleArray, ...weddingArray, ...urbanArray, ...shuffle(concertArray)];
+imageArray = [...shuffle(travelArray), ...shuffle(peopleArray), ...weddingArray, ...urbanArray, ...shuffle(concertArray)];
 // console.log("arrayIMages: " + JSON.stringify(imageArray))
 
 const projectData = {
