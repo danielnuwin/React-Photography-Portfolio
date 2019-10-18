@@ -38,13 +38,7 @@ export default class GalleryContainer extends Component {
         {/* Remove Container if you want entire page gallery */}
         <View id="GalleryContainer" className={ style }>
           <section id="gallery">
-            <ResponseiveGallery showFilter={showFilter} images={imageArray.map(({ src, thumbnail, caption, category }) => ({
-              src,
-              thumbnail,
-              caption,
-              category
-            }))}
-            />
+            <ResponseiveGallery showFilter={showFilter} images={imageArray}/>
           </section>
         </View>
 

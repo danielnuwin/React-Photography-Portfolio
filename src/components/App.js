@@ -20,13 +20,17 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // console.log("App > CDM() > Headroom Scroll");
+
     window.scroll({
       top: 70,
       behavior: "smooth"
     });
   }
   
-  render() {
+  render() {   
+    // console.log("App > Render()",this.props);
+     
     return (
       <div>
         <Headroom >

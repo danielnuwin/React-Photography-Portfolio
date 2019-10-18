@@ -8,37 +8,39 @@ import AboutPage from '../AboutPage'
 
 class ProjectContainer extends Component {
     constructor(props) {
-        super(props),
-            this.state = {
-                headerInfo: {},
-                imageArray: [],
-                renderType: "",
-                showFilter: false,
-                style: ""
-            }
+        super(props);
+        const { headerInfo, imageArray, renderType, showFilter, style } = props;
+
+        this.state = {
+            headerInfo: headerInfo,
+            imageArray: imageArray,
+            renderType: renderType,
+            showFilter: showFilter,
+            style: style
+        }
 
         this.renderProject = this.renderProject.bind(this);
     }
-    componentWillMount() {
-        this.setState({
-            headerInfo: this.props.headerInfo,
-            imageArray: this.props.imageArray,
-            renderType: this.props.renderType,
-            showFilter: this.props.showFilter,
-            style: this.props.style
-        });
+    // componentWillMount() {
+    //     this.setState({
+    //         headerInfo: this.props.headerInfo,
+    //         imageArray: this.props.imageArray,
+    //         renderType: this.props.renderType,
+    //         showFilter: this.props.showFilter,
+    //         style: this.props.style
+    //     });
 
-        // console.log("props: " + JSON.stringify(this.props));
-        // console.log("state: " + JSON.stringify(this.state));
-    }
+    // console.log("props: " + JSON.stringify(this.props));
+    // console.log("state: " + JSON.stringify(this.state));
+    // }
     //Main Scroll, will scroll on most pages, interchange 350, 100 to not show nav
-    componentDidMount() {
-        window.scroll({
-            top: 100,
-            behavior: "smooth"
-        });
-        // console.log("ProjectContainer: window did mount");
-    }
+    // componentDidMount() {
+    //     window.scroll({
+    //         top: 100,
+    //         behavior: "smooth"
+    //     });
+    //     // console.log("ProjectContainer: window did mount");
+    // }
 
     //Cause issue with home '/' scroll mid way"
     // componentWillUpdate() {
@@ -52,6 +54,7 @@ class ProjectContainer extends Component {
         // Check which project type (Gallery, Projects Page, or Ind. Project)
         // Gallery Container
         // Projects Page
+
         if (renderType === "gallery" || renderType === "feature") {
             return <GalleryContainer
                 style={this.state.style}
@@ -73,16 +76,17 @@ class ProjectContainer extends Component {
     }
 
     render() {
-        const { title, desc, bgImage, date, style } = this.state.headerInfo;
-        const { renderType } = this.state;
+        // **Alan > Deconstruct Defaults
+        const { renderType, headerInfo: { title= 'default', desc, bgImage, date, style } } = this.state;
         return (
             <div id="projectcontainer" className="">
                 <ProjectHeader
-                    title={title}
-                    desc={desc}
-                    date={date}
-                    bgImage={bgImage}
-                    style={style}
+                 {...this.state.headerInfo} // **Alan > Passing a spread operator as props
+                    // title={title}
+                    // desc={desc}
+                    // date={date}
+                    // bgImage={bgImage}
+                    // style={style}
                 />
                 {this.renderProject(renderType)}
             </div>
