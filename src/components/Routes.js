@@ -266,6 +266,16 @@ const Routes = () => {
         />
       }
       />
+      <Route exact path="/scmf19" render={() =>
+        <ProjectContainer
+          showFilter={false}
+          headerInfo={Ninasky.projectHeader}
+          imageArray={Ninasky.imageArray}
+          renderType="gallery"
+        // style={"container containerMarginTopProjects"}
+        />
+      }
+      />
     </div>
 
     // </Switch>
