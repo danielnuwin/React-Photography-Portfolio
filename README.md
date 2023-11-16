@@ -15,7 +15,7 @@ npm start
 npm run build
 ```
 
-## Code Architecture
+## Code Work Flow
 ![Flow Diagram](https://www.dropbox.com/s/6l7tl4mvuh4dci7/Portfolio_Flowdiagram.png?raw=1)
 
 ### Author
