@@ -14,7 +14,7 @@ import FadeIn from 'react-fade-in';
 
 import ReactGA from 'react-ga';
 
-function trackGA (link) {
+function trackGA(link) {
     ReactGA.event({
         category: 'Clicked: ' + link,
         action: 'Clicked Intro Menu',
@@ -22,12 +22,12 @@ function trackGA (link) {
 }
 
 const CarouselItemTemplate = (props) => {
-    const {view} = props;
+    const { view } = props;
     return (
         <CarouselItem itemId={view}>
             <View>
                 {/* <img id="view1" className="d-block w-100" src={require('../images/slider1.jpg')} alt="Second slide" /> */}
-                <div className={`view`+view}></div>
+                <div className={`view` + view}></div>
                 <Mask className="d-flex justify-content-center align-items-center">
                     <Container className="mb-intro" >
                         <div>
@@ -49,7 +49,10 @@ const CarouselItemTemplate = (props) => {
                                                 <Link to="/projects">
                                                     <Button outline color="white" onClick={() => trackGA('Projects_Anchor')}> Projects</Button>
                                                 </Link>
-                                                {/* <AnchorLink href='#contactcard'> */}
+                                                <Button class="btn btn-intro" color="white" outline onClick={() => trackGA('Clients_Anchor')}>
+                                                    <a href="https://danielnuwinphotography.pixieset.com/" target="_blank">Client Photos</a>
+                                                </Button>
+                                                {/* <AnchorLink href='#contactcard'/> */}
                                                 <AnchorLink href='#footer_anchor'>
                                                     <Button color="red" onClick={() => trackGA('Contact_Anchor')}> Contact </Button>
                                                 </AnchorLink>
@@ -66,7 +69,7 @@ const CarouselItemTemplate = (props) => {
                 <FadeIn delay={2000}>
                     <Bounce duration={2} infinite>
                         <AnchorLink id="buttonDown" className="nav-link buttonMore button style2 down centerdiv" href='#headerbox'
-                             onClick={() => trackGA('Portfolio_Arrow_Down')}> </AnchorLink>
+                            onClick={() => trackGA('Portfolio_Arrow_Down')}> </AnchorLink>
                     </Bounce>
                 </FadeIn>
             </CarouselCaption>

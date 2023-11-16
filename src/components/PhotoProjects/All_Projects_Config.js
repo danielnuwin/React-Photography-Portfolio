@@ -4,7 +4,7 @@ Date:        Project:
 08.05.18     Lauren & Lychee
 
 **********/ }
-import { CONSTANT_TRAVEL,CONSTANT_WEDDING,CONSTANT_URBAN,CONSTANT_PEOPLE,CONSTANT_CONCERT } from '../configs/constants'
+import { CONSTANT_TRAVEL, CONSTANT_WEDDING, CONSTANT_URBAN, CONSTANT_PEOPLE, CONSTANT_CONCERT } from '../configs/constants'
 
 {/************************** Header Data *************************/ }
 const headerData = {
@@ -22,7 +22,7 @@ const imageArray = [
     title: "Nina Sky",
     date: "September 2019",
     coverImage: require('../../images/09.01.19_Ninasky/Ninasky-18.jpg'),
-    link: "/ninasky2019", 
+    link: "/ninasky2019",
     category: CONSTANT_CONCERT,
     bannerStyle: "dark",
     style: "ap-mobile-cover-Ninasky"
@@ -30,42 +30,42 @@ const imageArray = [
     title: "New Orleans 2019",
     date: "February 2019",
     coverImage: require('../../images/02.02.19_Nola/Nola-8.jpg'),
-    link: "/nola2019", 
+    link: "/nola2019",
     category: CONSTANT_TRAVEL,
     bannerStyle: "light"
-  },  
+  },
   {
     title: "Jeremy + Jessica's Proposal",
     date: "January 2019",
     coverImage: require('../../images/01.26.19_JJ_Proposal/JJ-17.jpg'),
-    link: "/jj_proposal", 
+    link: "/jj_proposal",
     category: CONSTANT_WEDDING,
     bannerStyle: "dark"
-  },  
+  },
   {
     title: "Aymand + Amanda's Wedding",
     date: "January 2019",
     coverImage: require('../../images/01.05.19_WW2/Wedding_WW-9.jpg'),
-    link: "/wedding_ww2", 
+    link: "/wedding_ww2",
     category: CONSTANT_WEDDING,
     bannerStyle: "light"
-  }, 
+  },
   {
     title: "Sister's Double Wedding",
     date: "December 2018",
     coverImage: require('../../images/12.15.18_Wedding_WW/Wedding_WW-15.jpg'),
-    link: "/wedding_ww", 
+    link: "/wedding_ww",
     category: CONSTANT_WEDDING,
     bannerStyle: "dark"
-  }, 
+  },
   {
     title: "Ginger's 1st Halloween",
     date: "October 2018",
     coverImage: require('../../images/10.24.18_Baby_Ginger/Ginger-Thumb.jpg'),
-    link: "/baby_ginger", 
+    link: "/baby_ginger",
     category: CONSTANT_PEOPLE,
     bannerStyle: "light"
-  },{
+  }, {
     title: "Antoine + Ayton Wedding",
     date: "October 2018",
     coverImage: require('../../images/10.11.18_Wedding_AA/Wedding_AA-Thumb.jpg'),
@@ -108,14 +108,16 @@ const imageArray = [
     link: "/lauren_night_shoot",
     category: CONSTANT_PEOPLE,
     bannerStyle: "light"
-  }, {
-    title: "Europe 2018",
-    date: "April-May 2018",
-    coverImage: require('../../images/2018_Europe/Europe-36.jpg'),
-    link: "/europe_2018",
-    category: CONSTANT_TRAVEL,
-    bannerStyle: "dark"
-  }, {
+  },
+  // }, {
+  //   title: "Europe 2018",
+  //   date: "April-May 2018",
+  //   coverImage: require('../../images/2018_Europe/Europe-36.jpg'),
+  //   link: "/europe_2018",
+  //   category: CONSTANT_TRAVEL,
+  //   bannerStyle: "dark"
+  // }, {
+  {
     title: "March 4 Our Lives SF",
     date: "March 2018",
     coverImage: require('../../images/03.24.18_March_4_Our_Lives/M4OL-27.jpg'),
@@ -144,7 +146,7 @@ const imageArray = [
     link: "/wedding_wan_chen",
     category: CONSTANT_WEDDING,
     bannerStyle: "dark"
-  }, 
+  },
   // {
   //   title: "Brielle of Tarth",
   //   date: "May 1st, 2017",
@@ -152,7 +154,7 @@ const imageArray = [
   //   link: "/brielle_of_tarth",
   //   bannerStyle: "light"
   // },
-   {
+  {
     title: "South American Adventures",
     date: "Summer 2017",
     coverImage: require('../../images/2017_South_America/South-18.jpg'),

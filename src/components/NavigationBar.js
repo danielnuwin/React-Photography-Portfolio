@@ -79,6 +79,7 @@ class NavigationBar extends React.Component {
                             <NavItem>
                                 <NavLink onClick={this.onClick} className="" to="/projects">Projects</NavLink>
                             </NavItem>
+                            
                             <NavItem>
                                 <NavLink onClick={this.onClick} className="" to="/about">About Me</NavLink>
                             </NavItem>

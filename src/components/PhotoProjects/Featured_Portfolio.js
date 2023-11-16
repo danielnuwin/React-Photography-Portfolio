@@ -39,7 +39,7 @@ for (var i = 1; i <= 46; i++) {
 
 {/************************** People Data *************************/ }
 const peopleArray = [];
-const featPeople = [1,2,5,7,8,9,10,12,17,19,23,29,30];
+const featPeople = [1,2,5,7,9,10,12,17,19,23,29,30];
 
 for (var i = 1; i <= 30; i++) {
   const obj = {
@@ -51,7 +51,11 @@ for (var i = 1; i <= 30; i++) {
   if(featPeople.includes(i)){
     obj['category'].push('*')
   }
-  peopleArray.push(obj);
+  //Remove Lani Photos
+  if(i !== 8 && i !== 15){    
+    peopleArray.push(obj);
+  }
+  //peopleArray.push(obj);
 }
 {/************************** Wedding Data *************************/ }
 const weddingArray = [];
