@@ -19,14 +19,6 @@ const headerData = {
 
 const imageArray = [
   {
-    title: "Santa Cruz Music Fest",
-    date: "October 2019",
-    coverImage: require('../../images/09.01.19_Ninasky/Ninasky-18.jpg'),
-    link: "/scmf19", 
-    category: CONSTANT_CONCERT,
-    bannerStyle: "light",
-    style: "ap-mobile-cover-Ninasky"
-  }, { 
     title: "Nina Sky",
     date: "September 2019",
     coverImage: require('../../images/09.01.19_Ninasky/Ninasky-18.jpg'),
