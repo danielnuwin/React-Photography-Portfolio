@@ -110,7 +110,7 @@
 	/* background-image: url('../../images/About_Page/about_header.jpg'); */
 	/* background-image: url('../../images/About_Page/home1.jpg'); */
 	/* background-image: url('../../images/About_Page/home2.jpg'); */
-	background-image: url('../../images/Backgrounds/Carousel-14.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -125,14 +125,14 @@
 	height: 103vh;
 }
 #carouselIntro .view3 {
-	background-image: url('../../images/Backgrounds/Carousel-10.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-16.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	height: 103vh;
 }
 #carouselIntro .view4 {
-	background-image: url('../../images/Backgrounds/Carousel-11.jpg');
+	background-image: url('../../images/Backgrounds/Carousel-14.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
